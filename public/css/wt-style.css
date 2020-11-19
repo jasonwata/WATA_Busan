@@ -128,7 +128,7 @@ video{
     left: 0;
     top: 0;
     background-color: rgba(230, 36, 36, 0.3);
-
+    display: none;
 }
 
 .alert-caution{
@@ -213,6 +213,9 @@ video{
 table .d-flex a.js-lists-values-orders-name{
     color: #fff;
 }
+table a.js-lists-values-orders-amount{
+    color: rgba(242,249,255,.5);
+}
 .flatpickr-wrapper a.link-date{
     background-color: rgba(255,255,255,0.05);
     color: rgb(171 179 191 / 70%);
@@ -220,3 +223,47 @@ table .d-flex a.js-lists-values-orders-name{
 html[dir].dark-mode .layout-boxed #default-drawer .sidebar-brand{
     background-color: transparent !important;
 }
+[data-position=right] > .mdk-drawer__content{
+    right: auto;
+    left: 0;
+    transform: translate3d(-100%, 0, 0);
+}
+.sidebar-heading__sub{
+    font-size: .750rem;
+    text-transform: lowercase;
+    opacity: 0.5;
+}
+a.btn-fullScreen{
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+a.btn-fullScreen i.material-icon{
+    color: #000 !important;
+}
+
+.full-map{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.close-modal {
+    display: none !important;
+}
+a.faull-map-close{
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+
+
+
+
+
+
+
