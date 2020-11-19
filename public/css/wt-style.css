@@ -60,7 +60,7 @@ video{
 .sidebar-brand img{
     width: 120px;
     display: block;
-    margin: 0 auto;
+    padding-left: 10px;
 }
 
 
@@ -202,4 +202,21 @@ video{
 .wt-col-2 {
     flex: 0 0 20%;
     max-width: 20%;
+}
+
+[dir] .bg-alt{
+    background-color: #202129 !important;
+}
+[dir] .bg-alt .text-primary{
+    color: #fff !important;
+}
+table .d-flex a.js-lists-values-orders-name{
+    color: #fff;
+}
+.flatpickr-wrapper a.link-date{
+    background-color: rgba(255,255,255,0.05);
+    color: rgb(171 179 191 / 70%);
+}
+html[dir].dark-mode .layout-boxed #default-drawer .sidebar-brand{
+    background-color: transparent !important;
 }
