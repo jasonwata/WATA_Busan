@@ -246,7 +246,7 @@ a.btn-fullScreen i.material-icon{
     color: #000 !important;
 }
 
-.full-map{
+.full-map
     max-width: 100% !important;
     width: 100% !important;
 }
@@ -260,9 +260,32 @@ a.faull-map-close{
     top: 15px;
 }
 
+.wt-home-layout{
+    padding: 0 !important;
+}
+.navbar-wrap{
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    border-radius: .5rem;
+}
 
+.home-map-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../public/images/wt_map2.jpg) no-repeat center;
+    background-size: cover;
+}
 
-
+.contents-wrap{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+}
 
 
 
