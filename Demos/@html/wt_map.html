@@ -27,8 +27,7 @@
     <!-- Preloader -->
     <link type="text/css" href="../../public/css/preloader.css" rel="stylesheet">
 
-    <!-- App CSS -->
-    <link type="text/css" href="../../public/css/app.css" rel="stylesheet">
+
 
     <link type="text/css" href="../../public/css/map.css" rel="stylesheet">
 
@@ -39,7 +38,9 @@
     <link type="text/css" href="../../public/css/flatpickr-airbnb.css" rel="stylesheet">
     <!-- wtStyle CSS -->
     <link type="text/css" href="../../public/css/wt-style.css" rel="stylesheet">
-
+    <!-- ion Range Slider -->
+    <link type="text/css" href="../../public/css/ion-rangeslider.css" rel="stylesheet">
+    <link type="text/css" href="../../public/css/jquery.modal.min.css" rel="stylesheet">
 
 </head>
 
@@ -154,12 +155,13 @@
                     <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                            <h2 class="mb-0">대시보드</h2>
+                            <h2 class="mb-0">부산센텀</h2>
                         </div>
                     </div>
 
                     <div class="row" role="tablist">
                         <div class="col-auto">
+                            <a href="#" data-target="#library-drawer" data-toggle="sidebar" class="btn btn-outline-secondary"><i class="material-icons icon--left">tune</i> Filters</a>
                             <a href="" class="btn btn-outline-secondary">대시보드 구성</a>
                         </div>
                     </div>
@@ -246,6 +248,7 @@
             </div>
             <div class="map-wrap">
                 <div class="map-inner">
+                    <a href="#fullScreenMap" class="btn-fullScreen" rel="modal:open"><i class="material-icons icon-40pt">fullscreen</i></a>
                     <!--
                     <div class="alert-caution">
                         <span class="alert-case">
@@ -1058,7 +1061,145 @@
 
         <!-- // END Drawer -->
 
+        <div class="mdk-drawer js-mdk-drawer" id="library-drawer" data-align="end">
+            <div class="mdk-drawer__content ">
+                <div class="sidebar sidebar-black-dodger-blue sidebar-right py-16pt" data-perfect-scrollbar data-perfect-scrollbar-wheel-propagation="true">
+
+                    <div class="d-flex align-items-center mb-24pt  d-lg-none">
+                        <form action="index.html" class="search-form search-form--light mx-16pt pr-0 pl-16pt">
+                            <input type="text" class="form-control pl-0" placeholder="Search">
+                            <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-heading">Category</div>
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item active">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
+                                <span class="sidebar-menu-text">Web Development</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">brush</span>
+                                <span class="sidebar-menu-text">Design</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">settings_cell</span>
+                                <span class="sidebar-menu-text">iOS &amp; Swift</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                                <span class="sidebar-menu-text">Android</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">business_center</span>
+                                <span class="sidebar-menu-text">Business</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">crop_original</span>
+                                <span class="sidebar-menu-text">Photography</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="sidebar-heading">신관 4층</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck01" checked="">
+                                <label class="custom-control-label" for="filtersCheck01">이벤트 참여자</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck02">
+                                <label class="custom-control-label" for="filtersCheck02">신규방문자</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">성별</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck07" checked="">
+                                <label class="custom-control-label" for="filtersCheck07">남</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck08">
+                                <label class="custom-control-label" for="filtersCheck08">여</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">폰타입</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck11" checked="">
+                                <label class="custom-control-label" for="filtersCheck11">Android</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck12">
+                                <label class="custom-control-label" for="filtersCheck12">iOS</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">연령대</div>
+                    <div class="sidebar-block">
+                        <div class="flex" style="max-width: 100%">
+                            <input type="text"
+                                   data-toggle="ion-rangeslider"
+                                   data-min="0"
+                                   data-max="100"
+                                   data-from="25"
+                                   data-to="75"
+                                   data-type="double"
+                                   data-grid="true">
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">체류시간<span class="sidebar-heading__sub">(minute)</span></div>
+                    <div class="sidebar-block">
+                        <div class="flex" style="max-width: 100%">
+                            <input type="text"
+                                   data-toggle="ion-rangeslider"
+                                   data-min="5"
+                                   data-max="50"
+                                   data-from="16"
+                                   data-to="39"
+                                   data-type="double"
+                                   data-grid="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div id="fullScreenMap" class="full-map modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" class="faull-map-close" rel="modal:close"><i class="material-icons icon-40pt">fullscreen_exit</i></a>
+    </div>
+
+
 
     <!-- // END Drawer Layout -->
 
@@ -1083,6 +1224,10 @@
 
     <!-- Preloader -->
     <script src="../../public/js/preloader.js"></script>
+
+    <!-- Range Slider -->
+    <script src="../../public/vendor/ion.rangeSlider.min.js"></script>
+    <script src="../../public/js/ion-rangeslider.js"></script>
 
     <!-- Global Settings -->
     <script src="../../public/js/settings.js"></script>
@@ -1110,6 +1255,8 @@
     <!-- Tables -->
     <script src="../../public/js/toggle-check-all.js"></script>
     <script src="../../public/js/check-selected-row.js"></script>
+
+    <script src="../../public/js/jquery.modal.min.js"></script>
 
 </body>
 
