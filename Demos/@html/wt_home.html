@@ -90,8 +90,13 @@
                     </a>
 
                     <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
-                        <li class="nav-item active">
-                            <a href="index.html" class="nav-link">한아세안ICT융합빌리지</a>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" data-caret="false">한아세안ICT융합빌리지</a>
+                            <div class="dropdown-menu">
+                                <a href="wt_home.html" class="dropdown-item">문화 콘텐츠 콤플렉스</a>
+                                <a href="wt_home.html" class="dropdown-item">K-ASEAN XR LAB</a>
+                                <a href="wt_home.html" class="dropdown-item">나루공원</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
@@ -114,39 +119,10 @@
                                 <option value="all">모든공간</option>
                             </select>
                         </li>
-<!--
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">기간설정</a>
-                            <div class="dropdown-menu">
-                                <a href="courses.html" class="dropdown-item">Browse Courses</a>
-                                <a href="student-course.html" class="dropdown-item">Preview Course</a>
-                                <a href="student-lesson.html" class="dropdown-item">Preview Lesson</a>
-                                <a href="student-take-course.html" class="dropdown-item"><span class="mr-16pt">Take Course</span> <span class="badge badge-notifications badge-accent text-uppercase ml-auto">Pro</span></a>
-                                <a href="student-take-lesson.html" class="dropdown-item">Take Lesson</a>
-                                <a href="student-take-quiz.html" class="dropdown-item">Take Quiz</a>
-                                <a href="student-quiz-result-details.html" class="dropdown-item">Quiz Result</a>
-                                <a href="student-dashboard.html" class="dropdown-item">Student Dashboard</a>
-                                <a href="student-my-courses.html" class="dropdown-item">My Courses</a>
-                                <a href="student-quiz-results.html" class="dropdown-item">My Quizzes</a>
-                                <a href="help-center.html" class="dropdown-item">Help Center</a>
-                            </div>
-                        </li>
--->
-<!--
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">공간선택</a>
-                            <div class="dropdown-menu">
-                                <a href="paths.html" class="dropdown-item">Browse Paths</a>
-                                <a href="student-path.html" class="dropdown-item">Path Details</a>
-                                <a href="student-path-assessment.html" class="dropdown-item">Skill Assessment</a>
-                                <a href="student-path-assessment-result.html" class="dropdown-item">Skill Result</a>
-                                <a href="student-paths.html" class="dropdown-item">My Paths</a>
-                            </div>
-                        </li>
--->
+
                     </ul>
 
-<!--
+                    <!--
                     <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="index.html" style="max-width: 230px">
                         <button class="btn" type="submit"><i class="material-icons">search</i></button>
                         <input type="text" class="form-control" placeholder="Search ...">
@@ -168,6 +144,27 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="nav-item dropdown">
+                            <a href="#"
+                               class="nav-link d-flex align-items-center dropdown-toggle"
+                               data-toggle="dropdown"
+                               data-caret="false">
+
+                                <span class="avatar avatar-sm mr-8pt2">
+
+                                    <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+
+                                </span>
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-header"><strong>계정</strong></div>
+                                <a class="dropdown-item"
+                                   href="account.html">관리자 설정</a>
+                                <a class="dropdown-item"
+                                   href="login.html">로그아웃</a>
+                            </div>
+                        </div>
                 </div>
             </div>
 
@@ -184,26 +181,37 @@
             </div>
 
             <div class="side-btn-wrap">
-              <div class="btn-gl-top">
+
+
+                <div class="btn-gl-top">
+
                     <div class="btn-group-vertical mb-0">
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="이벤트"><i class="material-icons text-dark">blur_circular</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="경보"><i class="material-icons text-dark">notification_important</i></button>
                         <button id="opener" type="button" class="btn btn-white testBtn" data-toggle="tooltip" data-placement="left" title="정보창"><i class="material-icons text-dark">call_to_action</i></button>
                     </div>
+
                </div>
-               <div class="btn-gl-mid">
+
+
+                <div class="btn-gl-mid">
+
                     <div class="btn-group-vertical mb-0">
                         <button type="button" class="btn btn-white">4F</button>
                         <button type="button" class="btn btn-white">1F</button>
                     </div>
-               </div>
+
+                </div>
+
                 <div class="btn-gl-bot">
                     <div class="btn-group-vertical mb-0">
                         <button type="button" class="btn btn-white"><i class="material-icons text-dark">add</i></button>
                         <button type="button" class="btn btn-white"><i class="material-icons text-dark">remove</i></button>
                     </div>
-               </div>
+
+                </div>
+
             </div>
 
             <!-- data list -->
@@ -213,10 +221,10 @@
 
                 <div class="card p-relative o-hidden mb-0">
                     <div class="card-header card-header-tabs-basic nav px-0" role="tablist">
-                        <a href="#menu01" class="active" aria-controls="menu01" role="tab" data-toggle="tab">menu01</a>
-                        <a href="#menu02" aria-controls="menu02" role="tab" data-toggle="tab">menu02</a>
-                        <a href="#menu03" aria-controls="menu03" role="tab" data-toggle="tab">menu03</a>
-                        <a href="#menu04" aria-controls="menu04" role="tab" data-toggle="tab">menu04</a>
+                        <a href="#menu01" class="active" aria-controls="menu01" role="tab" data-toggle="tab">이용자 정보</a>
+                        <a href="#menu02" aria-controls="menu02" role="tab" data-toggle="tab">일간 통계</a>
+                        <a href="#menu03" aria-controls="menu03" role="tab" data-toggle="tab">주간 통계</a>
+                        <a href="#menu04" aria-controls="menu04" role="tab" data-toggle="tab">월간 통계</a>
                     </div>
 
                     <!-- Tab panes -->
@@ -226,7 +234,7 @@
                                 <div class="card-header d-flex align-items-center">
                                     <div class="flatpickr-wrapper flex">
                                         <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
-                                            <strong class="card-title d-block">Recent Orders</strong>
+                                            <strong class="card-title d-block">관제기간</strong>
                                             <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 to 20/03/2018</a>
                                             <input class="d-none" type="hidden" value="13/03/2018 to 20/03/2018" data-input>
                                         </div>
@@ -246,19 +254,19 @@
                                                 <th>
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-user">사용자구분</a>
                                                 </th>
-                                                <th style="width: 150px;">
+                                                <th style="width: 300px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-gender">성별</a>
                                                 </th>
-                                                <th style="width: 150px;">
+                                                <th style="width: 300px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-age">연령</a>
                                                 </th>
-                                                <th style="width: 150px;">
+                                                <th style="width: 300px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-type">OS 타입</a>
                                                 </th>
-                                                <th style="width: 150px;">
+                                                <th style="width: 300px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-device">기기 명</a>
                                                 </th>
-                                                <th style="width: 150px;">
+                                                <th style="width: 300px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-time">체류시간</a>
                                                 </th>
                                                 <th style="width: 24px;"></th>
@@ -647,26 +655,31 @@
                     <ul class="sidebar-menu">
 
                         <li class="sidebar-menu-item active">
-                            <a class="sidebar-menu-button" href="index.html">
+                            <a class="sidebar-menu-button" href="wt_home.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">홈</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="courses.html">
+
+                            <a class="sidebar-menu-button" href="wt_home.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
                                 <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">NEW</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="paths.html">
+
+                            <a class="sidebar-menu-button" href="wt_home.html">
+
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">K-ASEAN XR LAB</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="student-dashboard.html">
+
+                            <a class="sidebar-menu-button" href="wt_home.html">
+
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">나루공원</span>
                             </a>
@@ -684,21 +697,27 @@
                             </a>
                             <ul class="sidebar-submenu collapse sm-indent" id="enterprise_menu">
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="erp-dashboard.html">
+                                    <a class="sidebar-menu-button" href="dashboard.html">
                                         <span class="sidebar-menu-text">대시보드</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="crm-dashboard.html">
+                                    <a class="sidebar-menu-button" href="user.html">
+                                        <span class="sidebar-menu-text">이용자 정보</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="event.html">
                                         <span class="sidebar-menu-text">이벤트 관리</span>
                                     </a>
                                 </li>
 
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="employees.html">
+                                    <a class="sidebar-menu-button" href="account.html">
                                         <span class="sidebar-menu-text">관리자 설정</span>
                                     </a>
                                 </li>
+
                                 <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-button" href="staff.html">
                                         <span class="sidebar-menu-text">유저데이터</span>
