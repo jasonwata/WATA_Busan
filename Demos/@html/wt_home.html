@@ -40,7 +40,6 @@
     <link type="text/css" href="../../public/css/wt-style.css" rel="stylesheet">
     <!-- ion Range Slider -->
     <link type="text/css" href="../../public/css/ion-rangeslider.css" rel="stylesheet">
-    <link type="text/css" href="../../public/css/jquery.modal.min.css" rel="stylesheet">
 
 </head>
 
@@ -69,7 +68,7 @@
         <div class="mdk-drawer-layout__content page-content wt-home-layout">
             <div class="home-map-wrap"></div>
             <!-- Header -->
-            <div class="navbar-wrap">
+            <div class="navbar-wrap nav-btn__styling">
                 <div class="navbar navbar-expand navbar-dark navbar-dark-pickled-bluewood navbar-shadow navbar-float" id="default-navbar" data-primary>
 
                     <!-- Navbar toggler -->
@@ -91,13 +90,8 @@
                     </a>
 
                     <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" data-caret="false">한아세안ICT융합빌리지</a>
-                            <div class="dropdown-menu">
-                                <a href="wt_home.html" class="dropdown-item">문화 콘텐츠 콤플렉스</a>
-                                <a href="wt_home.html" class="dropdown-item">K-ASEAN XR LAB</a>
-                                <a href="wt_home.html" class="dropdown-item">나루공원</a>
-                            </div>
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">한아세안ICT융합빌리지</a>
                         </li>
                         <li class="nav-item">
                             <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
@@ -120,10 +114,39 @@
                                 <option value="all">모든공간</option>
                             </select>
                         </li>
-
+<!--
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">기간설정</a>
+                            <div class="dropdown-menu">
+                                <a href="courses.html" class="dropdown-item">Browse Courses</a>
+                                <a href="student-course.html" class="dropdown-item">Preview Course</a>
+                                <a href="student-lesson.html" class="dropdown-item">Preview Lesson</a>
+                                <a href="student-take-course.html" class="dropdown-item"><span class="mr-16pt">Take Course</span> <span class="badge badge-notifications badge-accent text-uppercase ml-auto">Pro</span></a>
+                                <a href="student-take-lesson.html" class="dropdown-item">Take Lesson</a>
+                                <a href="student-take-quiz.html" class="dropdown-item">Take Quiz</a>
+                                <a href="student-quiz-result-details.html" class="dropdown-item">Quiz Result</a>
+                                <a href="student-dashboard.html" class="dropdown-item">Student Dashboard</a>
+                                <a href="student-my-courses.html" class="dropdown-item">My Courses</a>
+                                <a href="student-quiz-results.html" class="dropdown-item">My Quizzes</a>
+                                <a href="help-center.html" class="dropdown-item">Help Center</a>
+                            </div>
+                        </li>
+-->
+<!--
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">공간선택</a>
+                            <div class="dropdown-menu">
+                                <a href="paths.html" class="dropdown-item">Browse Paths</a>
+                                <a href="student-path.html" class="dropdown-item">Path Details</a>
+                                <a href="student-path-assessment.html" class="dropdown-item">Skill Assessment</a>
+                                <a href="student-path-assessment-result.html" class="dropdown-item">Skill Result</a>
+                                <a href="student-paths.html" class="dropdown-item">My Paths</a>
+                            </div>
+                        </li>
+-->
                     </ul>
 
-                    <!--
+<!--
                     <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="index.html" style="max-width: 230px">
                         <button class="btn" type="submit"><i class="material-icons">search</i></button>
                         <input type="text" class="form-control" placeholder="Search ...">
@@ -145,56 +168,42 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="nav-item dropdown">
-                            <a href="#"
-                               class="nav-link d-flex align-items-center dropdown-toggle"
-                               data-toggle="dropdown"
-                               data-caret="false">
-
-                                <span class="avatar avatar-sm mr-8pt2">
-
-                                    <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
-
-                                </span>
-
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-header"><strong>계정</strong></div>
-                                <a class="dropdown-item"
-                                   href="account.html">관리자 설정</a>
-                                <a class="dropdown-item"
-                                   href="login.html">로그아웃</a>
-                            </div>
-                        </div>
                 </div>
             </div>
 
+            <div class="side-btn-wrap-left">
+                <div class="btn-gl-mid">
+                    <div class="btn-group-vertical mb-0">
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu01">1</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu02">2</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu03">3</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu04">4</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu05">5</button>
+                    </div>
+               </div>
+            </div>
 
             <div class="side-btn-wrap">
-
-                <div class="btn-gl-top">
+              <div class="btn-gl-top">
                     <div class="btn-group-vertical mb-0">
-                        <button onclick="location.href='#sideItem01'" type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
+                        <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="이벤트"><i class="material-icons text-dark">blur_circular</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="경보"><i class="material-icons text-dark">notification_important</i></button>
                         <button id="opener" type="button" class="btn btn-white testBtn" data-toggle="tooltip" data-placement="left" title="정보창"><i class="material-icons text-dark">call_to_action</i></button>
                     </div>
-                </div>
-
-                <div class="btn-gl-mid">
+               </div>
+               <div class="btn-gl-mid">
                     <div class="btn-group-vertical mb-0">
                         <button type="button" class="btn btn-white">4F</button>
                         <button type="button" class="btn btn-white">1F</button>
                     </div>
-                </div>
-
+               </div>
                 <div class="btn-gl-bot">
                     <div class="btn-group-vertical mb-0">
                         <button type="button" class="btn btn-white"><i class="material-icons text-dark">add</i></button>
                         <button type="button" class="btn btn-white"><i class="material-icons text-dark">remove</i></button>
                     </div>
-                </div>
-
+               </div>
             </div>
 
             <!-- data list -->
@@ -204,10 +213,10 @@
 
                 <div class="card p-relative o-hidden mb-0">
                     <div class="card-header card-header-tabs-basic nav px-0" role="tablist">
-                        <a href="#menu01" class="active" aria-controls="menu01" role="tab" data-toggle="tab">이용자 정보</a>
-                        <a href="#menu02" aria-controls="menu02" role="tab" data-toggle="tab">일간 통계</a>
-                        <a href="#menu03" aria-controls="menu03" role="tab" data-toggle="tab">주간 통계</a>
-                        <a href="#menu04" aria-controls="menu04" role="tab" data-toggle="tab">월간 통계</a>
+                        <a href="#menu01" class="active" aria-controls="menu01" role="tab" data-toggle="tab">menu01</a>
+                        <a href="#menu02" aria-controls="menu02" role="tab" data-toggle="tab">menu02</a>
+                        <a href="#menu03" aria-controls="menu03" role="tab" data-toggle="tab">menu03</a>
+                        <a href="#menu04" aria-controls="menu04" role="tab" data-toggle="tab">menu04</a>
                     </div>
 
                     <!-- Tab panes -->
@@ -217,7 +226,7 @@
                                 <div class="card-header d-flex align-items-center">
                                     <div class="flatpickr-wrapper flex">
                                         <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
-                                            <strong class="card-title d-block">관제기간</strong>
+                                            <strong class="card-title d-block">Recent Orders</strong>
                                             <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 to 20/03/2018</a>
                                             <input class="d-none" type="hidden" value="13/03/2018 to 20/03/2018" data-input>
                                         </div>
@@ -237,19 +246,19 @@
                                                 <th>
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-user">사용자구분</a>
                                                 </th>
-                                                <th style="width: 300px;">
+                                                <th style="width: 150px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-gender">성별</a>
                                                 </th>
-                                                <th style="width: 300px;">
+                                                <th style="width: 150px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-age">연령</a>
                                                 </th>
-                                                <th style="width: 300px;">
+                                                <th style="width: 150px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-type">OS 타입</a>
                                                 </th>
-                                                <th style="width: 300px;">
+                                                <th style="width: 150px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-device">기기 명</a>
                                                 </th>
-                                                <th style="width: 300px;">
+                                                <th style="width: 150px;">
                                                     <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-time">체류시간</a>
                                                 </th>
                                                 <th style="width: 24px;"></th>
@@ -637,26 +646,26 @@
                     <ul class="sidebar-menu">
 
                         <li class="sidebar-menu-item active">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">홈</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="courses.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
                                 <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">NEW</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="paths.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">K-ASEAN XR LAB</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="student-dashboard.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">나루공원</span>
                             </a>
@@ -674,27 +683,26 @@
                             </a>
                             <ul class="sidebar-submenu collapse sm-indent" id="enterprise_menu">
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="dashboard.html">
+                                    <a class="sidebar-menu-button" href="erp-dashboard.html">
                                         <span class="sidebar-menu-text">대시보드</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="user.html">
-                                        <span class="sidebar-menu-text">이용자 정보</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="event.html">
+                                    <a class="sidebar-menu-button" href="crm-dashboard.html">
                                         <span class="sidebar-menu-text">이벤트 관리</span>
                                     </a>
                                 </li>
 
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="account.html">
+                                    <a class="sidebar-menu-button" href="employees.html">
                                         <span class="sidebar-menu-text">관리자 설정</span>
                                     </a>
                                 </li>
-
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="staff.html">
+                                        <span class="sidebar-menu-text">유저데이터</span>
+                                    </a>
+                                </li>
 
                             </ul>
                         </li>
@@ -828,11 +836,114 @@
 
     </div>
 
-    <div id="sideItem01" class="modal">
-        <p>Thanks for clicking. That felt good.</p>
-        <a href="#" class="faull-map-close" rel="modal:close"><i class="material-icons icon-40pt">fullscreen_exit</i></a>
+<!-- Modal -->
+<div class="modal fade wide-modal" id="iconMenu01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../../public/images/bg_virus.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="caution-title">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                   <i class="material-icons">coronavirus</i>
+                   <h2>감염병 위험이 감지되었습니다.</h2>
+                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                   <button type="button" class="btn btn-outline-accent">감염병 위치 확인</button>
+                </div>
+            </div>
+        </div>
     </div>
-
+</div>
+<!-- Modal -->
+<div class="modal fade wide-modal" id="iconMenu02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../../public/images/bg_fire.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="caution-title">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                   <i class="material-icons">local_fire_department</i>
+                   <h2>화재 위험이 감지되었습니다.</h2>
+                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                   <button type="button" class="btn btn-outline-accent">화재 위치 확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade wide-modal" id="iconMenu03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../../public/images/bg_warning.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="caution-title">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                   <i class="material-icons">warning</i>
+                   <h2>긴급상황이 감지되었습니다.</h2>
+                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                   <button type="button" class="btn btn-outline-accent">긴급상황 위치 확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade wide-modal" id="iconMenu04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../../public/images/bg_warning.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="caution-title">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                   <i class="material-icons">warning</i>
+                   <h2>구조 요청이 감지되었습니다.</h2>
+                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                   <button type="button" class="btn btn-outline-accent">구조 위치 확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="iconMenu05" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- // END Drawer Layout -->
 
     <!-- jQuery -->
@@ -890,7 +1001,6 @@
 
     <script src="../../public/js/wt-global.js"></script>
 
-    <script src="../../public/js/jquery.modal.min.js"></script>
 
 </body>
 
