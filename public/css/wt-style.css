@@ -283,16 +283,26 @@ a.faull-map-close{
     background: url(../../public/images/wt_map2.jpg) no-repeat center;
     background-size: cover;
 }
-
+.heat-sensing{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../public/images/img_heatmap.png) no-repeat center;
+    background-size: cover;
+}
 .contents-wrap{
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 0 2rem;
+    height: 500px;
 
 }
-.contents-wrap .btn-panel{
-
+.contents-wrap .contents-wrap-inner{
+    background-color: #22242e;
+    height: 100%;
 }
 .contents-wrap .card{
     transition: all 0.2s ease-out;
