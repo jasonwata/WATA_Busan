@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark-mode">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WATA // Platform. </title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css" href="../../public/vendor/spinkit.css" rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="../../public/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="../../public/css/material-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="../../public/css/fontawesome.css" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css" href="../../public/css/preloader.css" rel="stylesheet">
+
+
+
+    <link type="text/css" href="../../public/css/map.css" rel="stylesheet">
+
+
+    <link type="text/css" href="../../public/css/dark.css" rel="stylesheet">
+    <!-- Flatpickr -->
+    <link type="text/css" href="../../public/css/flatpickr.css" rel="stylesheet">
+    <link type="text/css" href="../../public/css/flatpickr-airbnb.css" rel="stylesheet">
+    <!-- wtStyle CSS -->
+    <link type="text/css" href="../../public/css/wt-style.css" rel="stylesheet">
+    <!-- ion Range Slider -->
+    <link type="text/css" href="../../public/css/ion-rangeslider.css" rel="stylesheet">
+    <link type="text/css" href="../../public/css/jquery.modal.min.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-boxed ">
+
+    <div class="preloader">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+
+        <!-- <div class="sk-bounce">
+        <div class="sk-bounce-dot"></div>
+        <div class="sk-bounce-dot"></div>
+      </div> -->
+
+    </div>
+
+    <!-- Drawer Layout -->
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+        <div class="mdk-drawer-layout__content page-content">
+
+            <!-- Header -->
+
+            <div style="display: none;" class="navbar navbar-expand navbar-dark navbar-dark-pickled-bluewood navbar-shadow" id="default-navbar" data-primary>
+
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
+                    <span class="material-icons">short_text</span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <a href="index.html" class="navbar-brand mr-16pt d-lg-none">
+                    <!-- <img class="navbar-brand-icon" src="../../public/images/logo/white-100@2x.png" width="30" alt="WATA"> -->
+
+                    <img src="../../public/images/wata_logo.png" alt="WATA" />
+                </a>
+
+                <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">홈</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">내 어플리케이션</a>
+                        <div class="dropdown-menu">
+                            <a href="paths.html" class="dropdown-item">Browse Paths</a>
+                            <a href="student-path.html" class="dropdown-item">Path Details</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pricing.html" class="nav-link">문서</a>
+                    </li>
+                    <li class="nav-item dropdown" data-toggle="tooltip" data-title="Community" data-placement="bottom" data-boundary="window">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                            <i class="material-icons">people_outline</i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="teachers.html" class="dropdown-item">계정관리</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="index.html" style="max-width: 230px">
+                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                    <input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+                </form>
+
+                <ul class="nav navbar-nav ml-auto mr-0">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link" data-toggle="tooltip" data-title="로그인" data-placement="bottom" data-boundary="window"><i class="material-icons">lock_open</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="btn btn-outline-identity">시작하기</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- // END Header -->
+
+            <!-- BEFORE Page Content -->
+
+            <!-- // END BEFORE Page Content -->
+
+            <!-- Page Content -->
+
+            <!--
+            <div class="mdk-box mdk-box--bg-primary bg-dark js-mdk-box mb-0" data-effects="parallax-background blend-background">
+                <div class="mdk-box__bg">
+                    <div class="mdk-box__bg-front" style="background-image: url(../../public/images/main.png);"></div>
+                </div>
+                <div class="mdk-box__content justify-content-center">
+                    <div class="hero container-fluid page__container text-center py-112pt">
+                        <h1 class="text-white text-shadow">공간인식플랫폼</h1>
+                        <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-48pt">와따는 공간인식 기술을 기반으로 산업별 스마트 솔루션을 제공합니다.</p>
+
+                        <a href="courses.html" class="btn btn-lg btn-white btn--raised mb-16pt">시작하기</a>
+
+                        <p class="mb-0"><a href="" class="text-white text-shadow"><strong>아직 회원이 아니세요?</strong></a></p>
+
+                    </div>
+                </div>
+            </div>
+-->
+            <div class="pt-32pt">
+                <div class="container-fluid page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+
+                        <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                            <h2 class="mb-0">관리자 설정</h2>
+                        </div>
+                    </div>
+
+                    <div class="row" role="tablist">
+                        <div class="col-auto">
+                            <a href="#" data-target="#library-drawer" data-toggle="sidebar" class="btn btn-outline-secondary"><i class="material-icons icon--left">tune</i> Filters</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid page__container">
+                <div class="page-section">
+                    <div class="card card-form d-flex flex-column flex-sm-row mb-lg-32pt">
+                        <div class="card-form__body card-body-form-group flex">
+                            <div class="row">
+                                <div class="col-sm-auto">
+                                    <div class="form-group" style="width: 200px;">
+                                        <label for="filter_date">기간설정</label>
+                                        <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-group">
+                                        <label for="filter_category">공간선택</label><br>
+                                        <select id="filter_category" class="custom-select" style="width: 200px;">
+                                            <option value="all">교류 플랫폼</option>
+                                            <option value="all">휴게실</option>
+                                            <option value="all">회의실</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-group">
+                                        <label for="filter_category">공간선택</label><br>
+                                        <select id="filter_category" class="custom-select" style="width: 200px;">
+                                            <option value="all">교류 플랫폼</option>
+                                            <option value="all">휴게실</option>
+                                            <option value="all">회의실</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-group">
+                                        <label for="filter_category">공간선택</label><br>
+                                        <select id="filter_category" class="custom-select" style="width: 200px;">
+                                            <option value="all">모든공간</option>
+                                            <option value="all">모든공간</option>
+                                            <option value="all">모든공간</option>
+                                            <option value="all">모든공간</option>
+                                            <option value="all">모든공간</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-auto">
+                                    <div class="form-group">
+                                        <label for="filter_stock">이벤트 활성화</label>
+                                        <div class="custom-control custom-checkbox mt-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="filter_stock" checked="">
+                                            <label class="custom-control-label" for="filter_stock">활성화</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="btn bg-alt border-left border-top border-top-sm-0 rounded-0"><i class="material-icons text-primary icon-20pt">refresh</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-0">
+                                <div class="card-header d-flex align-items-center">
+                                    <div class="flatpickr-wrapper flex">
+                                        <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+                                            <strong class="card-title d-block">관제기간</strong>
+                                            <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 to 20/03/2018</a>
+                                            <input class="d-none" type="hidden" value="13/03/2018 to 20/03/2018" data-input>
+                                        </div>
+                                    </div>
+                                    <i class="material-icons text-20">help_outline</i>
+                                </div>
+                                <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-orders-user" data-lists-values='["js-lists-values-orders-user", "js-lists-values-orders-gender", "js-lists-values-orders-age", "js-lists-values-orders-type", "js-lists-values-orders-device", "js-lists-values-orders-time"]'>
+                                    <table class="table mb-0 table-nowrap thead-border-top-0">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 18px;">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input js-toggle-check-all" data-target="#orders" id="customCheckAll">
+                                                        <label class="custom-control-label" for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-user">사용자구분</a>
+                                                </th>
+                                                <th style="width: 300px;">
+                                                    <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-gender">성별</a>
+                                                </th>
+                                                <th style="width: 300px;">
+                                                    <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-age">연령</a>
+                                                </th>
+                                                <th style="width: 300px;">
+                                                    <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-type">OS 타입</a>
+                                                </th>
+                                                <th style="width: 300px;">
+                                                    <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-device">기기 명</a>
+                                                </th>
+                                                <th style="width: 300px;">
+                                                    <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-orders-time">체류시간</a>
+                                                </th>
+                                                <th style="width: 24px;"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="list" id="orders">
+
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_1">
+                                                        <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td class="js-lists-values-orders-user">01012345678</td>
+                                                <td class="js-lists-values-orders-gender">남성</td>
+                                                <td class="js-lists-values-orders-age">32세</td>
+                                                <td class="js-lists-values-orders-type">IOS</td>
+                                                <td class="js-lists-values-orders-device">iPhone PRO 11</td>
+                                                <td class="js-lists-values-orders-time">10분</td>
+                                                <td class="text-right">
+                                                    <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_2">
+                                                        <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td class="js-lists-values-orders-user">01039489438</td>
+                                                <td class="js-lists-values-orders-gender">여성</td>
+                                                <td class="js-lists-values-orders-age">45세</td>
+                                                <td class="js-lists-values-orders-type">AOS</td>
+                                                <td class="js-lists-values-orders-device">note 9</td>
+                                                <td class="js-lists-values-orders-time">10분</td>
+                                                <td class="text-right">
+                                                    <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_3">
+                                                        <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td class="js-lists-values-orders-user">01085922939</td>
+                                                <td class="js-lists-values-orders-gender">여성</td>
+                                                <td class="js-lists-values-orders-age">23세</td>
+                                                <td class="js-lists-values-orders-type">IOS</td>
+                                                <td class="js-lists-values-orders-device">iPhone XS 10</td>
+                                                <td class="js-lists-values-orders-time">10분</td>
+                                                <td class="text-right">
+                                                    <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_4">
+                                                        <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td class="js-lists-values-orders-user">01040505911</td>
+                                                <td class="js-lists-values-orders-gender">남성</td>
+                                                <td class="js-lists-values-orders-age">39세</td>
+                                                <td class="js-lists-values-orders-type">IOS</td>
+                                                <td class="js-lists-values-orders-device">iPhone 11</td>
+                                                <td class="js-lists-values-orders-time">10분</td>
+                                                <td class="text-right">
+                                                    <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_5">
+                                                        <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                    </div>
+                                                </td>
+                                                <td class="js-lists-values-orders-user">01023950059</td>
+                                                <td class="js-lists-values-orders-gender">남성</td>
+                                                <td class="js-lists-values-orders-age">51세</td>
+                                                <td class="js-lists-values-orders-type">AOS</td>
+                                                <td class="js-lists-values-orders-device">galaxy 10</td>
+                                                <td class="js-lists-values-orders-time">10분</td>
+                                                <td class="text-right">
+                                                    <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
+                                                </td>
+                                            </tr>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+
+                                    <ul class="pagination justify-content-start pagination-xsm m-0">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                                <span>Prev</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Page 1">
+                                                <span>1</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Page 2">
+                                                <span>2</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span>Next</span>
+                                                <span aria-hidden="true" class="material-icons">chevron_right</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+            <!-- // END Page Content -->
+
+        </div>
+
+        <!-- // END drawer-layout__content -->
+
+        <!-- Drawer -->
+
+        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-light sidebar-light-dodger-blue sidebar-left" data-perfect-scrollbar>
+
+                    <!-- Sidebar Content -->
+
+                    <a href="index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
+                        <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
+
+                        <img src="../../public/images/wata_logo.png" alt="WATA" />
+
+                    </a>
+
+                    <div class="sidebar-heading">장소선택</div>
+                    <ul class="sidebar-menu">
+
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="index.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
+                                <span class="sidebar-menu-text">홈</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="courses.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
+                                <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
+                                <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">NEW</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="paths.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
+                                <span class="sidebar-menu-text">K-ASEAN XR LAB</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-dashboard.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
+                                <span class="sidebar-menu-text">나루공원</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="sidebar-heading">영상후반 작업시설</div>
+                    <ul class="sidebar-menu">
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse" data-toggle="collapse" href="#enterprise_menu">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">donut_large</span>
+                                K-ASEAN XR LAB
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="enterprise_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="erp-dashboard.html">
+                                        <span class="sidebar-menu-text">대시보드</span>
+                                    </a>
+                                </li>
+                                  <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="user.html">
+                                        <span class="sidebar-menu-text">이용자 정보</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="event.html">
+                                        <span class="sidebar-menu-text">이벤트 관리</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="employees.html">
+                                        <span class="sidebar-menu-text">관리자 설정</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- // END Sidebar Content -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- // END Drawer -->
+
+        <div class="mdk-drawer js-mdk-drawer" id="library-drawer" data-align="end">
+            <div class="mdk-drawer__content ">
+                <div class="sidebar sidebar-black-dodger-blue sidebar-right py-16pt" data-perfect-scrollbar data-perfect-scrollbar-wheel-propagation="true">
+
+                    <div class="d-flex align-items-center mb-24pt  d-lg-none">
+                        <form action="index.html" class="search-form search-form--light mx-16pt pr-0 pl-16pt">
+                            <input type="text" class="form-control pl-0" placeholder="Search">
+                            <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-heading">Category</div>
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item active">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
+                                <span class="sidebar-menu-text">Web Development</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">brush</span>
+                                <span class="sidebar-menu-text">Design</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">settings_cell</span>
+                                <span class="sidebar-menu-text">iOS &amp; Swift</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                                <span class="sidebar-menu-text">Android</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">business_center</span>
+                                <span class="sidebar-menu-text">Business</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="" class="sidebar-menu-button">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">crop_original</span>
+                                <span class="sidebar-menu-text">Photography</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="sidebar-heading">신관 4층</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck01" checked="">
+                                <label class="custom-control-label" for="filtersCheck01">이벤트 참여자</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck02">
+                                <label class="custom-control-label" for="filtersCheck02">신규방문자</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">성별</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck07" checked="">
+                                <label class="custom-control-label" for="filtersCheck07">남</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck08">
+                                <label class="custom-control-label" for="filtersCheck08">여</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">폰타입</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck11" checked="">
+                                <label class="custom-control-label" for="filtersCheck11">Android</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck12">
+                                <label class="custom-control-label" for="filtersCheck12">iOS</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">연령대</div>
+                    <div class="sidebar-block">
+                        <div class="flex" style="max-width: 100%">
+                            <input type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="25" data-to="75" data-type="double" data-grid="true">
+                        </div>
+                    </div>
+
+                    <div class="sidebar-heading">체류시간<span class="sidebar-heading__sub">(minute)</span></div>
+                    <div class="sidebar-block">
+                        <div class="flex" style="max-width: 100%">
+                            <input type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fullScreenMap" class="full-map modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" class="faull-map-close" rel="modal:close"><i class="material-icons icon-40pt">fullscreen_exit</i></a>
+    </div>
+
+
+
+    <!-- // END Drawer Layout -->
+
+    <!-- jQuery -->
+    <script src="../../public/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../../public/vendor/popper.min.js"></script>
+    <script src="../../public/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="../../public/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="../../public/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="../../public/js/app.js"></script>
+
+    <!-- Preloader -->
+    <script src="../../public/js/preloader.js"></script>
+
+    <!-- Range Slider -->
+    <script src="../../public/vendor/ion.rangeSlider.min.js"></script>
+    <script src="../../public/js/ion-rangeslider.js"></script>
+
+    <!-- Global Settings -->
+    <script src="../../public/js/settings.js"></script>
+
+    <!-- Moment.js -->
+    <script src="../../public/vendor/moment.min.js"></script>
+    <script src="../../public/vendor/moment-range.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="../../public/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="../../public/js/flatpickr.js"></script>
+
+    <!-- Chart.js -->
+    <script src="../../public/vendor/Chart.min.js"></script>
+    <script src="../../public/js/chartjs.js"></script>
+    <script src="../../public/js/chartjs-rounded-bar.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="../../public/js/page.ecommerce.js"></script>
+
+    <!-- List.js -->
+    <script src="../../public/vendor/list.min.js"></script>
+    <script src="../../public/js/list.js"></script>
+
+    <!-- Tables -->
+    <script src="../../public/js/toggle-check-all.js"></script>
+    <script src="../../public/js/check-selected-row.js"></script>
+
+    <script src="../../public/js/jquery.modal.min.js"></script>
+
+</body>
+
+</html>
