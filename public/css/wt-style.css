@@ -14,6 +14,9 @@
     padding: 1rem 6rem;
     margin: 0;
 }
+[dir] .preloader{
+    background-color: #1d1e26;
+}
 
 /* global */
 [dir] .btn-outline-identity{
@@ -49,6 +52,9 @@ video{
     top: 50%;
     margin-top: -350px;
     margin-left: -208px;
+}
+.layout-login-image__form h5{
+    text-align: center;
 }
 
 
@@ -250,9 +256,7 @@ a.btn-fullScreen i.material-icon{
     max-width: 100% !important;
     width: 100% !important;
 }
-.close-modal {
-    display: none !important;
-}
+
 a.faull-map-close{
     display: inline-block;
     position: absolute;
@@ -311,6 +315,17 @@ a.faull-map-close{
     z-index: 1;
     box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
+.side-btn-wrap-left{
+    position: absolute;
+    left: 2rem;
+    top: 120px;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.side-btn-wrap-left button.btn{
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 16px;
+}
 .side-btn-wrap button.btn{
     display: block;
     width: 50px;
@@ -326,7 +341,7 @@ a.faull-map-close{
     font-size: 18px;
 }
 
-[dir] .btn-secondary:not(:disabled):not(.disabled).active, [dir] .btn-secondary:not(:disabled):not(.disabled):active, [dir] .show > .btn-secondary.dropdown-toggle{
+[dir] .nav-btn__styling .btn-secondary:not(:disabled):not(.disabled).active, [dir] .nav-btn__styling .btn-secondary:not(:disabled):not(.disabled):active, [dir] .nav-btn__styling .show > .btn-secondary.dropdown-toggle{
     background-color: #ec104c;
     border-color: #c10637;
 }
@@ -338,16 +353,63 @@ a.faull-map-close{
     margin-right: 2.5rem;
 }
 
+.wide-modal{
 
+}
 
+.wide-modal .modal-dialog{
+    width:100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.wide-modal .modal-dialog .modal-content{
+    position: relative;
+    height: 100%;
+    border-radius: 0;
+}
 
+.wide-modal .modal-dialog .modal-content button.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    font-size: 40px;
+    padding: 10px 20px;
 
+}
 
+.wide-modal .modal-dialog .modal-content .modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
-
-
+.wide-modal .modal-dialog .modal-content .modal-body .caution-title{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background-color: #fff;
+    width: 30%;
+    padding: 2rem 0;
+    border-radius: .5rem;
+}
+.wide-modal .modal-dialog .modal-content .modal-body .caution-title i.material-icons{
+    font-size: 120px;
+    color: #1d1e26;
+}
+.wide-modal .modal-dialog .modal-content .modal-body .caution-title h2{
+    margin: 15px 0 2px;
+    color: #1d1e26;
+}
+.wide-modal .modal-dialog .modal-content .modal-body .caution-title p.desc{
+     font-size: 16px;
+    margin-bottom: 40px;
+    color: #1d1e26;
+}
+.wide-modal .modal-dialog .modal-content .modal-body .caution-title button.btn{
+    font-size: 20px;
+}
 
 
 
