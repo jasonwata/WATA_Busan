@@ -728,7 +728,6 @@
                     <!-- Sidebar Content -->
 
                     <a href="index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
-                        <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
 
                         <img src="../../public/images/wata_logo.png" alt="WATA" />
 
@@ -738,26 +737,31 @@
                     <ul class="sidebar-menu">
 
                         <li class="sidebar-menu-item active">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">홈</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+
+                            <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
                                 <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">NEW</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+
+                            <a class="sidebar-menu-button" href="index.html">
+
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">K-ASEAN XR LAB</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+
+                            <a class="sidebar-menu-button" href="index.html">
+
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">나루공원</span>
                             </a>
@@ -796,14 +800,37 @@
                                     </a>
                                 </li>
 
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="staff.html">
+                                        <span class="sidebar-menu-text">유저데이터</span>
+                                    </a>
+                                </li>
+
                             </ul>
                         </li>
                     </ul>
-                    <div class="sidebar-heading">통계지표</div>
-
-
 
                     <!-- // END Sidebar Content -->
+
+
+
+
+                    <div class="btn-group dropup wt-user-menu">
+                        <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <span class="avatar avatar-sm mr-8pt2">
+
+                                <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header"><strong>계정</strong></div>
+                            <a class="dropdown-item" href="account.html">관리자 설정</a>
+                            <a class="dropdown-item" href="login.html">로그아웃</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -822,6 +849,27 @@
                         </form>
                     </div>
 
+                    <div class="sidebar-heading">기간설정</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <input id="filter_date" type="text" class="form-control" placeholder="기간선택" value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+                        </div>
+                    </div>
+
+
+                   <div class="sidebar-heading">시작시간</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <input id="flatpickrSample05" type="text" class="form-control" placeholder="Flatpickr time example" data-toggle="flatpickr" data-flatpickr-enable-time="true" data-flatpickr-no-calendar="true" data-flatpickr-alt-format="H:i" data-flatpickr-date-format="H:i" value="15:35">
+                        </div>
+                    </div>
+
+                   <div class="sidebar-heading">종료시간</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <input id="flatpickrSample05" type="text" class="form-control" placeholder="Flatpickr time example" data-toggle="flatpickr" data-flatpickr-enable-time="true" data-flatpickr-no-calendar="true" data-flatpickr-alt-format="H:i" data-flatpickr-date-format="H:i" value="15:35">
+                        </div>
+                    </div>
 
 
                     <div class="sidebar-heading">성별</div>
@@ -869,6 +917,13 @@
                             <input type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
                         </div>
                     </div>
+
+                    <div class="sidebar-block mb-4 wt-btn-side">
+                        <a href="#" class="btn btn-primary btn-block">적용</a>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>

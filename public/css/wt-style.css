@@ -524,10 +524,22 @@ label.form-label.essential:after{
     border-radius: .5rem;
 }
 
-
-
-
-
+.wt-sidebar .sidebar-block{
+    margin-bottom: 1rem;
+}
+.wt-btn-side{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.wt-user-menu{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+.wt-user-menu .nav-link{
+    padding: 1rem 0;
+}
 
 
 
