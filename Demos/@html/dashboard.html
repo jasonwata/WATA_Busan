@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="보고서 출력port" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>WATA // Platform. </title>
 
     <!-- Prevent the demo from appearing in search engines -->
@@ -159,45 +159,61 @@
                                 <div class="col-sm-auto">
                                     <div class="form-group" style="width: 200px;">
                                         <label for="filter_date">기간설정</label>
-                                        <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+                                        <input id="filter_date" type="text" class="form-control" placeholder="기간선택" value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="form-group">
-                                        <label for="filter_category">공간선택</label><br>
-                                        <select id="filter_category" class="custom-select" style="width: 200px;">
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
+                                    <label for="filter_category">성별</label><br>
+                                    <input id="flatpickrSample05"
+                                           type="text"
+                                           class="form-control"
+                                           placeholder="Flatpickr time example"
+                                           data-toggle="flatpickr"
+                                           data-flatpickr-enable-time="true"
+                                           data-flatpickr-no-calendar="true"
+                                           data-flatpickr-alt-format="H:i"
+                                           data-flatpickr-date-format="H:i"
+                                           value="15:35">
+                                </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-group">
+                                    <label for="filter_category">성별</label><br>
+                                    <input id="flatpickrSample05"
+                                           type="text"
+                                           class="form-control"
+                                           placeholder="Flatpickr time example"
+                                           data-toggle="flatpickr"
+                                           data-flatpickr-enable-time="true"
+                                           data-flatpickr-no-calendar="true"
+                                           data-flatpickr-alt-format="H:i"
+                                           data-flatpickr-date-format="H:i"
+                                           value="15:35">
+                                </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-group">
+                                        <label for="filter_category">성별</label><br>
+                                        <select id="filter_category" class="custom-select" style="width: 100px;">
+                                            <option value="all">전체</option>
+                                            <option value="all">여성</option>
+                                            <option value="all">남성</option>
+
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="form-group">
-                                        <label for="filter_category">공간선택</label><br>
-                                        <select id="filter_category" class="custom-select" style="width: 200px;">
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
+                                        <label for="filter_category">폰타입</label><br>
+                                        <select id="filter_category" class="custom-select" style="width: 100px;">
+                                            <option value="all">전체</option>
+                                            <option value="all">AOS</option>
+                                            <option value="all">iOS</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-sm-auto">
-                                    <div class="form-group">
-                                        <label for="filter_category">공간선택</label><br>
-                                        <select id="filter_category" class="custom-select" style="width: 200px;">
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                            <option value="all">모든공간</option>
-                                        </select>
-                                    </div>
-                                </div>
+
                                 <div class="col-sm-auto">
                                     <div class="form-group">
                                         <label for="filter_category">공간선택</label><br>
@@ -211,16 +227,6 @@
                                     </div>
                                 </div>
 
-
-                                <div class="col-sm-auto">
-                                    <div class="form-group">
-                                        <label for="filter_stock">이벤트 활성화</label>
-                                        <div class="custom-control custom-checkbox mt-sm-2">
-                                            <input type="checkbox" class="custom-control-input" id="filter_stock" checked="">
-                                            <label class="custom-control-label" for="filter_stock">활성화</label>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>
@@ -229,7 +235,11 @@
                 </div>
             </div>
             <div class="container-fluid page__container">
+
                 <div class="page-section">
+                    <div class="page-separator">
+                        <div class="page-separator__text">통계 지표</div>
+                    </div>
                     <div class="row card-group-row mb-lg-8pt">
                         <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
@@ -237,14 +247,14 @@
                                     <div class="flex d-flex align-items-center">
                                         <div class="h2 mb-0 mr-3">1,622</div>
                                         <div class="flex">
-                                            <div class="card-title">방문자</div>
+                                            <div class="card-title">총 방문자</div>
                                             <p class="card-subtitle text-50 d-flex align-items-center">
-                                                31.5% 증가
+                                                31.5%
                                                 <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i>
                                             </p>
                                         </div>
                                     </div>
-                                    <i class="material-icons icon-32pt text-20 ml-8pt">assessment</i>
+                                    <i class="material-icons icon-32pt text-20 ml-8pt">group</i>
                                 </div>
                             </div>
                         </div>
@@ -252,16 +262,16 @@
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex align-items-center">
                                     <div class="flex d-flex align-items-center">
-                                        <div class="h2 mb-0 mr-3">12.3k</div>
+                                        <div class="h2 mb-0 mr-3">0</div>
                                         <div class="flex">
-                                            <div class="card-title">이벤트참여자</div>
+                                            <div class="card-title">사고발생</div>
                                             <p class="card-subtitle text-50 d-flex align-items-center">
-                                                51.5% 증가
-                                                <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i>
+                                                0%
+                                                <i class="material-icons text-accent ml-4pt icon-16pt">remove</i>
                                             </p>
                                         </div>
                                     </div>
-                                    <i class="material-icons icon-32pt text-20 ml-8pt">shopping_basket</i>
+                                    <i class="material-icons icon-32pt text-20 ml-8pt">blur_circular</i>
                                 </div>
                             </div>
                         </div>
@@ -269,16 +279,16 @@
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex align-items-center">
                                     <div class="flex d-flex align-items-center">
-                                        <div class="h2 mb-0 mr-3">78</div>
+                                        <div class="h2 mb-0 mr-3">22.1 </div>
                                         <div class="flex">
-                                            <div class="card-title">고객수</div>
+                                            <div class="card-title">평균 체류시간</div>
                                             <p class="card-subtitle text-50 d-flex align-items-center">
-                                                20% 증가
+                                                20%
                                                 <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i>
                                             </p>
                                         </div>
                                     </div>
-                                    <i class="material-icons icon-32pt text-20 ml-8pt">perm_identity</i>
+                                    <i class="material-icons icon-32pt text-20 ml-8pt">access_time</i>
                                 </div>
                             </div>
                         </div>
@@ -286,16 +296,16 @@
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex align-items-center">
                                     <div class="flex d-flex align-items-center">
-                                        <div class="h2 mb-0 mr-3">12.3k</div>
+                                        <div class="h2 mb-0 mr-3">17%</div>
                                         <div class="flex">
-                                            <div class="card-title">이벤트참여자</div>
+                                            <div class="card-title">재방문율</div>
                                             <p class="card-subtitle text-50 d-flex align-items-center">
-                                                51.5% 증가
+                                                51.5%
                                                 <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i>
                                             </p>
                                         </div>
                                     </div>
-                                    <i class="material-icons icon-32pt text-20 ml-8pt">shopping_basket</i>
+                                    <i class="material-icons icon-32pt text-20 ml-8pt">offline_pin</i>
                                 </div>
                             </div>
                         </div>
@@ -303,16 +313,16 @@
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex align-items-center">
                                     <div class="flex d-flex align-items-center">
-                                        <div class="h2 mb-0 mr-3">78</div>
+                                        <div class="h2 mb-0 mr-3">30%</div>
                                         <div class="flex">
-                                            <div class="card-title">고객수</div>
+                                            <div class="card-title">앱</div>
                                             <p class="card-subtitle text-50 d-flex align-items-center">
-                                                20% 증가
+                                                20%
                                                 <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i>
                                             </p>
                                         </div>
                                     </div>
-                                    <i class="material-icons icon-32pt text-20 ml-8pt">perm_identity</i>
+                                    <i class="material-icons icon-32pt text-20 ml-8pt">donut_large</i>
                                 </div>
                             </div>
                         </div>
@@ -322,55 +332,16 @@
                         <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">82.99</div>
+                                    <div class="h2 mb-0 mr-3">452 </div>
                                     <div class="flex">
-                                        <div class="card-title">급상승 장소</div>
-                                        <div class="card-subtitle text-50 d-flex align-items-center">2.6% 증가 <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
-                                    </div>
-                                    <div class="ml-3 align-self-start">
-                                        <div class="dropdown mb-2">
-                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body flex-0">
-                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">장소 1</span>
-                                        <span class="mx-3">50.99</span>
-                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 3.2%</span>
-                                    </small>
-                                    <small class="d-flex align-items-center font-weight-bold text-muted">
-                                        <span class="flex text-body">장소 1</span>
-                                        <span class="mx-3">&dollar;32.00</span>
-                                        <span class="d-flex align-items-center"><i class="material-icons text-danger icon-16pt mr-1">keyboard_arrow_down</i> 7.0%</span>
-                                    </small>
-                                </div>
-                                <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
-                                    <div class="chart w-100" style="height: 150px;">
-                                        <canvas class="chart-canvas js-update-chart-line js-update-chart-area" id="totalSalesChart" data-chart-legend="#totalSalesChartLegend" data-chart-line-background-color="gradient:primary" data-chart-line-background-opacity="0.24" data-chart-line-border-color="primary" data-chart-prefix="" data-chart-dark-mode="false">
-                                            <span style="font-size: 1rem;"><strong>les</strong> ㅁㅁ</span>
-                                        </canvas>
-                                    </div>
-                                    <div id="totalSalesChartLegend" class="chart-legend chart-legend--horizontal mt-16pt"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
-                            <div class="card card-group-row__card">
-                                <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">452</div>
-                                    <div class="flex">
-                                        <div class="card-title">Total visitors</div>
+                                        <div class="card-title">증가</div>
                                         <div class="card-subtitle text-50 d-flex align-items-center">9.6% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_down</i></div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 </a>
                                             </div>
                                         </div>
                                     </div>
@@ -378,7 +349,7 @@
                                 <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
                                     <div class="chart w-100" style="height: 200px;">
                                         <canvas class="chart-canvas js-update-chart-bar" id="totalVisitorsChart" data-chart-legend="#totalVisitorsChartLegend" data-chart-line-background-color="gradient:primary" data-chart-suffix="k" data-chart-dark-mode="false">
-                                            <span style="font-size: 1rem;"><strong>Total Visitors</strong> chart goes here.</span>
+                                            <span style="font-size: 1rem;"><strong>총 방문객</strong> chart goes here.</span>
                                         </canvas>
                                     </div>
                                     <div id="totalVisitorsChartLegend" class="chart-legend chart-legend--horizontal mt-16pt"></div>
@@ -388,43 +359,55 @@
                         <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">5.43%</div>
+                                    <div class="h2 mb-0 mr-3">0건</div>
                                     <div class="flex">
-                                        <div class="card-title">Repeat customer</div>
-                                        <div class="card-subtitle text-50 d-flex align-items-center">2.6% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
+                                        <div class="card-title">유지</div>
+                                        <div class="card-subtitle text-50 d-flex align-items-center">2.6% 증가 <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card-body flex-0">
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">K-Asean XR Lab</span>
+                                        <span class="mx-3">0건</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">remove</i> 0%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted">
+                                        <span class="flex text-body">주차장</span>
+                                        <span class="mx-3">0건</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">remove</i> 0%</span>
+                                    </small>
+                                </div>
                                 <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
-                                    <div class="chart w-100" style="height: 200px;">
-                                        <canvas class="chart-canvas js-update-chart-line-2nd-accent" id="repeatCustomerRateChart" data-chart-legend="#repeatCustomerRateChartLegend" data-chart-line-border-color="primary,gray" data-chart-suffix="%" data-chart-dark-mode="false">
-                                            <span style="font-size: 1rem;"><strong>Repeat Customer Rate</strong> chart goes here.</span>
+                                    <div class="chart w-100" style="height: 150px;">
+                                        <canvas class="chart-canvas js-update-chart-line js-update-chart-area" id="totalSalesChart" data-chart-legend="#totalSalesChartLegend" data-chart-line-background-color="gradient:primary" data-chart-line-background-opacity="0.24" data-chart-line-border-color="primary" data-chart-prefix="" data-chart-dark-mode="false">
+                                            <span style="font-size: 1rem;"><strong>aa</strong> </span>
                                         </canvas>
                                     </div>
-                                    <div id="repeatCustomerRateChartLegend" class="chart-legend chart-legend--horizontal mt-16pt"></div>
+                                    <div id="totalSalesChartLegend" class="chart-legend chart-legend--horizontal mt-16pt"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">4</div>
+                                    <div class="h2 mb-0 mr-3">4분</div>
                                     <div class="flex">
-                                        <div class="card-title">Total orders</div>
-                                        <div class="card-subtitle text-50 d-flex align-items-center">92% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
+                                        <div class="card-title">증가</div>
+                                        <div class="card-subtitle text-50 d-flex align-items-center">32% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
                                             </div>
                                         </div>
                                     </div>
@@ -432,7 +415,7 @@
                                 <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
                                     <div class="chart w-100" style="height: 150px;">
                                         <canvas class="chart-canvas js-update-chart-line" id="totalOrdersChart" data-chart-legend="#totalOrdersChartLegend" data-chart-line-border-color="primary" data-chart-dark-mode="false">
-                                            <span style="font-size: 1rem;"><strong>Total Orders</strong> chart goes here.</span>
+                                            <span style="font-size: 1rem;"><strong>체류시간 추이</strong> chart goes here.</span>
                                         </canvas>
                                     </div>
                                     <div id="totalOrdersChartLegend" class="chart-legend chart-legend--horizontal mt-16pt"></div>
@@ -442,14 +425,42 @@
                         <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
+                                    <div class="h2 mb-0 mr-3">5.43%</div>
                                     <div class="flex">
-                                        <div class="card-title">Visits by device</div>
+                                        <div class="card-title">증가</div>
+                                        <div class="card-subtitle text-50 d-flex align-items-center">2.6% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
+                                    <div class="chart w-100" style="height: 200px;">
+                                        <canvas class="chart-canvas js-update-chart-line-2nd-accent" id="repeatCustomerRateChart" data-chart-legend="#repeatCustomerRateChartLegend" data-chart-line-border-color="primary,gray" data-chart-suffix="%" data-chart-dark-mode="false">
+                                            <span style="font-size: 1rem;"><strong>지표</strong> chart goes here.</span>
+                                        </canvas>
+                                    </div>
+                                    <div id="repeatCustomerRateChartLegend" class="chart-legend chart-legend--horizontal mt-16pt"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 wt-col-2 col-md-6 card-group-row__col">
+                            <div class="card card-group-row__card">
+                                <div class="card-body d-flex flex-row align-items-center flex-0">
+                                    <div class="flex">
+                                        <div class="card-title">모바일 앱</div>
+                                    </div>
+                                    <div class="ml-3 align-self-start">
+                                        <div class="dropdown mb-2">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="" class="dropdown-item">보고서 출력</a>
                                             </div>
                                         </div>
                                     </div>
@@ -459,7 +470,7 @@
                                         <div class="position-relative">
                                             <div class="text-center fullbleed d-flex align-items-center justify-content-center flex-column z-0">
                                                 <h3 class="mb-0">59%</h3>
-                                                <small class="text-uppercase">Desktop</small>
+                                                <small class="text-uppercase">모바일</small>
                                             </div>
                                             <canvas id="visitsByDeviceChart" class="chart-canvas" data-chart-line-background-color="primary;gray.300" data-chart-dark-mode="false">
                                                 <span style="font-size: 1rem;"><strong>Visits by Device</strong> chart goes here.</span>
@@ -469,17 +480,17 @@
                                 </div>
                                 <div class="card-body flex-0">
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Desktop</span>
+                                        <span class="flex text-body">모바일</span>
                                         <span class="mx-3">267</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 2.1%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Mobile</span>
+                                        <span class="flex text-body">테블릿</span>
                                         <span class="mx-3">184</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-danger icon-16pt mr-1">keyboard_arrow_down</i> 4.8%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted">
-                                        <span class="flex text-body">Tablet</span>
+                                        <span class="flex text-body">스마트와치</span>
                                         <span class="mx-3">0</span>
                                         <span>&mdash;</span>
                                     </small>
@@ -494,43 +505,43 @@
                         <div class="col-lg-4 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">2.3k</div>
+                                    <div class="h2 mb-0 mr-3">643회</div>
                                     <div class="flex">
-                                        <div class="card-title">Top products by units sold</div>
+                                        <div class="card-title">K-Asean XR Lab</div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body d-flex flex-column justify-content-center">
-                                    <small class="text-muted text-uppercase mb-2 d-block font-weight-bold">Most sold items</small>
+                                    <small class="text-muted text-uppercase mb-2 d-block font-weight-bold">방문 빈도 순위 </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Wool shirt heavy</span>
-                                        <span class="mx-3">643</span>
+                                        <span class="flex text-body">K-Asean XR Lab</span>
+                                        <span class="mx-3">643회</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 5.00%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Wool shirt light</span>
+                                        <span class="flex text-body">로비</span>
                                         <span class="mx-3">322</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 4.70%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Wool long sleve</span>
+                                        <span class="flex text-body">영상 후반작업센터 1층</span>
                                         <span class="mx-3">234</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 60.6%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Wool shorts</span>
+                                        <span class="flex text-body">문화 콘텐츠 콤플렉스 주차장</span>
                                         <span class="mx-3">78</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 11.1%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted">
-                                        <span class="flex text-body">Wool socks</span>
+                                        <span class="flex text-body">나루공원</span>
                                         <span class="mx-3">45</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 15.8%</span>
                                     </small>
@@ -540,91 +551,92 @@
                         <div class="col-lg-4 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">17</div>
+                                    <div class="h2 mb-0 mr-3">32분 체류</div>
                                     <div class="flex">
-                                        <div class="card-title">Online store visits by location</div>
+                                        <div class="card-title">나루공원</div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body d-flex flex-column justify-content-center">
-                                    <small class="text-muted text-uppercase mb-2 d-block font-weight-bold">Top countries</small>
-                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">USA</span>
-                                        <span class="mx-3">1.438</span>
+                                    <small class="text-muted text-uppercase mb-2 d-block font-weight-bold">공간별 추이</small>
+                                      <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">나루공원</span>
+                                        <span class="mx-3">32분</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 5.8%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Canada</span>
-                                        <span class="mx-3">928</span>
+                                        <span class="flex text-body">K-Asean XR Lab</span>
+                                        <span class="mx-3">22분</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 5.8%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">로비</span>
+                                        <span class="mx-3">14분</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-danger icon-16pt mr-1">keyboard_arrow_down</i> 3.2%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Germany</span>
-                                        <span class="mx-3">674</span>
+                                        <span class="flex text-body">문화 콘텐츠 콤플렉스 주차장</span>
+                                        <span class="mx-3">12분</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 2.1%</span>
                                     </small>
                                     <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
-                                        <span class="flex text-body">Mexico</span>
-                                        <span class="mx-3">258</span>
+                                        <span class="flex text-body">로비</span>
+                                        <span class="mx-3">5분</span>
                                         <span class="d-flex align-items-center"><i class="material-icons text-danger icon-16pt mr-1">keyboard_arrow_down</i> 4.8%</span>
                                     </small>
-                                    <small class="d-flex align-items-center font-weight-bold text-muted">
-                                        <span class="flex text-body">France</span>
-                                        <span class="mx-3">90</span>
-                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 9.8%</span>
-                                    </small>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">5.63%</div>
+                                    <div class="h2 mb-0 mr-3">26.63%</div>
                                     <div class="flex">
-                                        <div class="card-title">Conversion rate</div>
+                                        <div class="card-title">방문 대비 이벤트 이용률</div>
                                         <div class="card-subtitle text-50 d-flex align-items-center">3.6% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body d-flex flex-column justify-content-center">
-                                    <small class="text-muted text-uppercase mb-3 d-block font-weight-bold">Conversion Funnel</small>
+                                    <small class="text-muted text-uppercase mb-3 d-block font-weight-bold">체험 전환율</small>
                                     <small class="d-flex align-items-start font-weight-bold text-muted mb-2">
                                         <span class="flex d-flex flex-column">
-                                            <span class="text-body">Added to cart</span>
-                                            5 visits
+                                            <span class="text-body">AR 실감체험 A</span>
+                                            20회 방문
                                         </span>
-                                        <span class="mx-3">7.04%</span>
-                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 4.0%</span>
+                                        <span class="mx-3">12회 체험</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 16%</span>
                                     </small>
                                     <small class="d-flex align-items-start font-weight-bold text-muted mb-2">
                                         <span class="flex d-flex flex-column">
-                                            <span class="text-body">Reached checkout</span>
-                                            5 visits
+                                            <span class="text-body">AR 실감체험 C</span>
+                                            18회 방문
                                         </span>
-                                        <span class="mx-3">7.04%</span>
-                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 2.0%</span>
+                                        <span class="mx-3">9회 체험</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 8.0%</span>
                                     </small>
                                     <small class="d-flex align-items-start font-weight-bold text-muted">
                                         <span class="flex d-flex flex-column">
-                                            <span class="text-body">Purchased</span>
-                                            4 orders
+                                            <span class="text-body">AR 실감체험 B</span>
+                                            14회 방문
                                         </span>
-                                        <span class="mx-3">5.63%</span>
-                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 1.4%</span>
+                                        <span class="mx-3">6회 체험</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 6.4%</span>
                                     </small>
                                 </div>
                             </div>
@@ -634,16 +646,16 @@
                         <div class="col-lg-12 col-md-12 card-group-row__col">
                             <div class="card card-group-row__card">
                                 <div class="card-body d-flex flex-row align-items-center flex-0">
-                                    <div class="h2 mb-0 mr-3">&dollar;36.23</div>
+                                    <div class="h2 mb-0 mr-3">57명</div>
                                     <div class="flex">
-                                        <div class="card-title">Average order</div>
+                                        <div class="card-title">시간대별 방문객 추이</div>
                                         <div class="card-subtitle text-50 d-flex align-items-center">6.7% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
                                     </div>
                                     <div class="ml-3 align-self-start">
                                         <div class="dropdown mb-2">
                                             <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="" class="dropdown-item">View report</a>
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
                                             </div>
                                         </div>
                                     </div>
@@ -664,7 +676,7 @@
                             <div class="row no-gutters flex" role="tablist">
                                 <div class="col-auto">
                                     <div class="p-card-header">
-                                        <div class="card-title">Total Views</div>
+                                        <div class="card-title">Total 보고서 출력s</div>
                                         <p class="card-subtitle text-50 d-flex align-items-center">
                                             4,412
                                             <i class="material-icons text-accent ml-4pt icon-16pt">keyboard_arrow_up</i>
@@ -687,8 +699,8 @@
                         </div>
                         <div class="card-body">
                             <div class="chart" style="height: 280px;">
-                                <canvas class="chart-canvas js-update-chart-line-2nd-accent" id="viewsChart" data-chart-line-border-color="primary,accent" data-chart-dark-mode="false">
-                                    <span style="font-size: 1rem;"><strong>Views</strong> area chart goes here.</span>
+                                <canvas class="chart-canvas js-update-chart-line-2nd-accent" id="보고서 출력sChart" data-chart-line-border-color="primary,accent" data-chart-dark-mode="false">
+                                    <span style="font-size: 1rem;"><strong>보고서 출력s</strong> area chart goes here.</span>
                                 </canvas>
                             </div>
                         </div>
@@ -787,6 +799,9 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="sidebar-heading">통계지표</div>
+
+
 
                     <!-- // END Sidebar Content -->
 
@@ -807,62 +822,7 @@
                         </form>
                     </div>
 
-                    <div class="sidebar-heading">Category</div>
-                    <ul class="sidebar-menu">
-                        <li class="sidebar-menu-item active">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
-                                <span class="sidebar-menu-text">Web Development</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">brush</span>
-                                <span class="sidebar-menu-text">Design</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">settings_cell</span>
-                                <span class="sidebar-menu-text">iOS &amp; Swift</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
-                                <span class="sidebar-menu-text">Android</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">business_center</span>
-                                <span class="sidebar-menu-text">Business</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">crop_original</span>
-                                <span class="sidebar-menu-text">Photography</span>
-                            </a>
-                        </li>
 
-                    </ul>
-
-                    <div class="sidebar-heading">신관 4층</div>
-                    <div class="sidebar-block">
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck01" checked="">
-                                <label class="custom-control-label" for="filtersCheck01">이벤트 참여자</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck02">
-                                <label class="custom-control-label" for="filtersCheck02">신규방문자</label>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="sidebar-heading">성별</div>
                     <div class="sidebar-block">
