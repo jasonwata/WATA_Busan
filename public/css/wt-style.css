@@ -251,12 +251,6 @@ a.btn-fullScreen{
 a.btn-fullScreen i.material-icon{
     color: #000 !important;
 }
-
-.full-map
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
 a.faull-map-close{
     display: inline-block;
     position: absolute;
@@ -273,7 +267,6 @@ a.faull-map-close{
     padding: 2rem;
     border-radius: .5rem;
 }
-
 .home-map-wrap{
     position: absolute;
     top: 0;
@@ -292,6 +285,7 @@ a.faull-map-close{
     background: url(../../public/images/img_heatmap.png) no-repeat center;
     background-size: cover;
 }
+/* data panel */
 .contents-wrap{
     position: absolute;
     bottom: 0;
@@ -303,6 +297,7 @@ a.faull-map-close{
 .contents-wrap .contents-wrap-inner{
     background-color: #22242e;
     height: 100%;
+    border-radius: .5rem .5rem 0 0;
 }
 .contents-wrap .card{
     transition: all 0.2s ease-out;
@@ -310,8 +305,19 @@ a.faull-map-close{
     -moz-transition: all 0.2s ease-out;
     border-radius: .5rem .5rem 0 0;
 }
+.contents-wrap .card .wt-pd-va{
+
+}
+.contents-wrap .card .wt-pd-va .row{
+    padding-left: -6px;
+    padding-right: -6px;
+}
+.contents-wrap .card .wt-pd-va .row .wt-col-2{
+    padding-left: 6px;
+    padding-right: 6px;
+}
 .contents-wrap .tab-content{
-    padding: 24px;
+    padding: .625rem;
 }
 
 [dir] .navbar{
@@ -363,10 +369,46 @@ a.faull-map-close{
     margin-right: 2.5rem;
 }
 
-.wide-modal{
+
+/* modal */
+html.dark-mode .modal h5{
+    color: #1d1e26;
+}
+html.dark-mode .modal-body{
+    color: #1d1e26;
+}
+html.dark-mode .form-label{
+    color: #303956;
+}
+label.form-label.essential:after{
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+.form-group .wt-cell{
+    padding-top: 6px;
+}
+.form-group .wt-cell .form-label{
+    margin: 0;
+    vertical-align: middle;
 
 }
-
+.form-group .wt-cell .custom-control{
+    vertical-align: middle;
+}
+.wt-event-pop .col-lg{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.wt-event-pop .modal-body{
+    padding: 1.875rem;
+}
+.wt-event-pop .form-group{
+    margin-bottom: 1.25rem;
+}
+.wt-event-pop .modal-footer{
+    justify-content: center;
+}
 .wide-modal .modal-dialog{
     width:100%;
     max-width: 100%;
@@ -378,7 +420,6 @@ a.faull-map-close{
     height: 100%;
     border-radius: 0;
 }
-
 .wide-modal .modal-dialog .modal-content button.close{
     position: absolute;
     right: 0;
@@ -388,13 +429,11 @@ a.faull-map-close{
     padding: 10px 20px;
 
 }
-
 .wide-modal .modal-dialog .modal-content .modal-body{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .wide-modal .modal-dialog .modal-content .modal-body .caution-title{
     position: relative;
     z-index: 2;
@@ -422,12 +461,55 @@ a.faull-map-close{
 }
 
 
+/* picker */
+.wt-picker{
+    background-color: #fff;
+}
+.wt-picker label{
+    font-weight: 600;
+    flex: 40%;
+    max-width: 40%;
+    padding: 4px 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+}
+.wt-picker label span{
+    font-size: 12px;
+}
+.wt-picker .input-wrap{
+    flex: 55%;
+    max-width: 55%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
+.map-picker-pointer .map-pointer{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+/*
+.map-picker-pointer .map-pointer:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
 
+    background-color: rgba(246,78,96,0.3);
+}
+*/
+.map-picker-pointer .map-pointer i{
+}
+.map-picker-pointer .pointer-red{
+    background-color: rgba(246,78,96,1);
+}
+.map-picker-pointer .pointer-puple{
+    background-color: rgba(246,78,96,1);
 
-
-
-
+}
 
 
 

@@ -1,10 +1,10 @@
-$(document).ready(function(){
+$(function(){
   $("button.testBtn").click(function(){
     $(".testCon").toggle('active');
   });
 });
 
-$(document).ready(function(){
+$(function(){
     $('#opener').on('click', function() {
     var panel = $('#slide-panel');
     if (panel.hasClass("visible")) {
@@ -15,3 +15,18 @@ $(document).ready(function(){
       return false;
     });
 });
+
+//$('.btn-gl-top button').click( function(){
+//    if ( $(this).hasClass('current') ) {
+//        $(this).removeClass('current');
+//    } else {
+//        $('.btn-gl-top button.current').removeClass('current');
+//        $(this).addClass('current');
+//    }
+//});
+$(function(){
+    $('.btn-gl-top button.btn-congestion').click(function() {
+        $('.heat-sensing').toggle()
+    })
+});
+
