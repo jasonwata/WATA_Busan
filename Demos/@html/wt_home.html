@@ -84,6 +84,13 @@
                         <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
                     </div>
                 </div>
+                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 30%;">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary btn-block">메세지 전송</a>
+                        <a href="#" class="btn btn-primary btn-block">동선 추적</a>
+                        <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
+                    </div>
+                </div>
             </div>
             <!-- picker pointer-->
 
@@ -95,6 +102,7 @@
                            <ellipse stroke="#ffffff" ry="24" rx="24" id="svg_2" cy="300" cx="400" stroke-width="0" fill="#ff0000" />
                            <ellipse opacity="0.3" ry="100" rx="100" id="svg_3" cy="300" cx="400" stroke="#ffffff" fill="#f64e60" />
                        </g>
+
                    </svg>
                </div>
             </div>
@@ -163,6 +171,9 @@
                     <ul class="nav navbar-nav ml-auto mr-0">
                         <li class="nav-item">
                             <a href="#" data-target="#library-drawer" data-toggle="sidebar" class="btn btn-outline-secondary"><i class="material-icons icon--left">tune</i> Filters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn-user-target" data-toggle="tooltip" data-title="사용자추적" data-placement="bottom" data-boundary="window" data-original-title="" title=""><i class="material-icons text-white text-80">history</i></a>
                         </li>
                         <li class="nav-item">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -243,6 +254,19 @@
 
                 </div>
 
+            </div>
+
+            <!-- range slider -->
+            <div class="wt-rs-wrap">
+               <div class="wt-rs-wrap-inner">
+                    <div class="col-lg d-flex align-items-center">
+                        <div class="flex" style="max-width: 100%">
+
+                            <input type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="21" data-grid="true" data-max-postfix="" data-prefix="" data-postfix="분전">
+
+                        </div>
+                    </div>
+               </div>
             </div>
             <!-- data list -->
             <div id="slide-panel" class="contents-wrap">

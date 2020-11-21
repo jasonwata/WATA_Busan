@@ -30,3 +30,8 @@ $(function(){
     })
 });
 
+$(function(){
+    $('.navbar-nav a.btn-user-target').click(function() {
+        $('.wt-rs-wrap').toggle()
+    })
+});
