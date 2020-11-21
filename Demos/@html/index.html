@@ -71,6 +71,41 @@
             <div class="home-map-wrap"></div>
             <!-- 열감지 -->
             <div class="heat-sensing"></div>
+            <!-- picker box-->
+            <div class="map-picker">
+                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 50%;">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="m-0">반경<span class="text-50">meter</span></label>
+                            <div class="input-wrap">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="ex)10.5">
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
+                    </div>
+                </div>
+                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 30%;">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary btn-block">메세지 전송</a>
+                        <a href="#" class="btn btn-primary btn-block">동선 추적</a>
+                        <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
+                    </div>
+                </div>
+            </div>
+            <!-- picker pointer-->
+
+            <div class="map-picker-pointer">
+               <div>
+                   <svg pointer-events="none" viewBox="-595 -182 2998 1499" style="transform: translate3d(-295px, -82px, 0px);">
+                       <g>
+                           <ellipse opacity="0.3" ry="100" rx="100" id="svg_1" cy="300" cx="400" stroke="#ffffff" fill="#f64e60" />
+                           <ellipse stroke="#ffffff" ry="24" rx="24" id="svg_2" cy="300" cx="400" stroke-width="0" fill="#ff0000" />
+                           <ellipse opacity="0.3" ry="100" rx="100" id="svg_3" cy="300" cx="400" stroke="#ffffff" fill="#f64e60" />
+                       </g>
+
+                   </svg>
+               </div>
+            </div>
             <!-- Header -->
             <div class="navbar-wrap nav-btn__styling">
                 <div class="navbar navbar-expand navbar-dark navbar-dark-pickled-bluewood navbar-shadow navbar-float" id="default-navbar" data-primary>
@@ -97,33 +132,12 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" data-caret="false">한아세안ICT융합빌리지</a>
                             <div class="dropdown-menu">
-                                <a href="wt_home.html" class="dropdown-item">문화 콘텐츠 콤플렉스</a>
-                                <a href="wt_home.html" class="dropdown-item">K-ASEAN XR LAB</a>
-                                <a href="wt_home.html" class="dropdown-item">나루공원</a>
+                                <a href="index.html" class="dropdown-item">문화 콘텐츠 콤플렉스</a>
+                                <a href="index.html" class="dropdown-item">K-ASEAN XR LAB</a>
+                                <a href="index.html" class="dropdown-item">나루공원</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
-                        </li>
-                        <li class="nav-item">
-                            <select id="filter_category" class="custom-select" style="width: 200px;">
-                                <option value="all" selected>공간선택</option>
-                                <option value="all">모든공간</option>
-                                <option value="all">모든공간</option>
-                                <option value="all">모든공간</option>
-                                <option value="all">모든공간</option>
-                            </select>
-                        </li>
-                        <li class="nav-item">
-                            <select id="filter_category" class="custom-select" style="width: 200px;">
-                                <option value="all" selected>공간선택</option>
-                                <option value="all">모든공간</option>
-                                <option value="all">모든공간</option>
-                                <option value="all">모든공간</option>
-                                <option value="all">모든공간</option>
-                            </select>
-                        </li>
-
+                        <li class="nav-item">관제기간 2020.11.14 ~ 2020.11.21</li>
                     </ul>
 
                     <!--
@@ -134,6 +148,9 @@
 -->
 
                     <ul class="nav navbar-nav ml-auto mr-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn-user-target" data-toggle="tooltip" data-title="사용자추적" data-placement="bottom" data-boundary="window" data-original-title="" title=""><i class="material-icons text-white text-80">history</i></a>
+                        </li>
                         <li class="nav-item">
                             <a href="#" data-target="#library-drawer" data-toggle="sidebar" class="btn btn-outline-secondary"><i class="material-icons icon--left">tune</i> Filters</a>
                         </li>
@@ -148,30 +165,10 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="nav-item dropdown">
-                            <a href="#"
-                               class="nav-link d-flex align-items-center dropdown-toggle"
-                               data-toggle="dropdown"
-                               data-caret="false">
 
-                                <span class="avatar avatar-sm mr-8pt2">
-
-                                    <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
-
-                                </span>
-
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-header"><strong>계정</strong></div>
-                                <a class="dropdown-item"
-                                   href="account.html">관리자 설정</a>
-                                <a class="dropdown-item"
-                                   href="login.html">로그아웃</a>
-                            </div>
-                        </div>
                 </div>
             </div>
-
+            <!-- 좌측 메뉴 -->
             <div class="side-btn-wrap-left">
                 <div class="btn-gl-mid">
                     <div class="btn-group-vertical mb-0">
@@ -180,23 +177,28 @@
                         <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu03">3</button>
                         <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu04">4</button>
                         <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu05">5</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu06">6</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu07">7</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu08">8</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu09">9</button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu09">10</button>
                     </div>
-               </div>
+                </div>
             </div>
-
+            <!-- 우측 메뉴 -->
             <div class="side-btn-wrap">
 
 
                 <div class="btn-gl-top">
 
                     <div class="btn-group-vertical mb-0">
-                        <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
+                        <button type="button" class="btn btn-white btn-congestion" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="이벤트"><i class="material-icons text-dark">blur_circular</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="경보"><i class="material-icons text-dark">notification_important</i></button>
                         <button id="opener" type="button" class="btn btn-white testBtn" data-toggle="tooltip" data-placement="left" title="정보창"><i class="material-icons text-dark">call_to_action</i></button>
                     </div>
 
-               </div>
+                </div>
 
 
                 <div class="btn-gl-mid">
@@ -218,21 +220,75 @@
 
             </div>
 
+            <!-- range slider -->
+            <div class="wt-rs-wrap">
+               <div class="wt-rs-wrap-inner">
+                    <div class="col-lg d-flex align-items-center">
+                        <div class="flex" style="max-width: 100%">
+
+                            <input type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="21" data-grid="true" data-max-postfix="" data-prefix="" data-postfix="분전">
+
+                        </div>
+                    </div>
+               </div>
+            </div>
             <!-- data list -->
             <div id="slide-panel" class="contents-wrap">
                 <div class="contents-wrap-inner">
                     <!-- Nav tabs -->
 
-                    <div class="card p-relative o-hidden mb-0">
-                        <div class="card-header card-header-tabs-basic nav px-0" role="tablist">
-                            <a href="#menu01" class="active" aria-controls="menu01" role="tab" data-toggle="tab">이용자 정보</a>
-                            <a href="#menu02" aria-controls="menu02" role="tab" data-toggle="tab">일간 통계</a>
-                            <a href="#menu03" aria-controls="menu03" role="tab" data-toggle="tab">주간 통계</a>
-                            <a href="#menu04" aria-controls="menu04" role="tab" data-toggle="tab">월간 통계</a>
-                        </div>
 
-                        <!-- Tab panes -->
-                        <div class="tab-content">
+
+
+
+
+
+
+
+
+                    <div class="card dashboard-area-tabs p-relative o-hidden mb-0">
+                        <div class="card-header p-0 nav">
+                            <div class="row no-gutters" role="tablist">
+                                <div class="col-auto">
+                                    <a href="#menu01" data-toggle="tab" role="tab" aria-selected="menu01" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start active">
+                                        <span class="h2 mb-0 mr-3">4명</span>
+                                        <span class="flex d-flex flex-column">
+                                            <strong class="card-title">이용자 정보</strong>
+                                            <small class="card-subtitle text-50">활성 이용자 수</small>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-auto border-left border-right">
+                                    <a href="#menu02" data-toggle="tab" role="tab" aria-selected="menu02" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start">
+                                        <span class="h2 mb-0 mr-3">2%<i class="material-icons text-accent ml-4pt icon-24pt">keyboard_arrow_up</i></span>
+                                        <span class="flex d-flex flex-column">
+                                            <strong class="card-title">이용자 추이</strong>
+                                            <small class="card-subtitle text-50">전일 대비</small>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-auto border-left border-right">
+                                    <a href="#menu03" data-toggle="tab" role="tab" aria-selected="menu03" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start">
+                                        <span class="h2 mb-0 mr-3">2</span>
+                                        <span class="flex d-flex flex-column">
+                                            <strong class="card-title">방문자 통계</strong>
+                                            <small class="card-subtitle text-50">현시점 기준</small>
+                                        </span>
+                                    </a>
+                                </div>
+                               <div class="col-auto border-left border-right">
+                                   <a href="#menu04" data-toggle="tab" role="tab" aria-selected="menu03" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start">
+                                       <span class="h2 mb-0 mr-3">2</span>
+                                       <span class="flex d-flex flex-column">
+                                           <strong class="card-title">장소 통계</strong>
+                                           <small class="card-subtitle text-50">현시점 기준</small>
+                                       </span>
+                                   </a>
+                               </div>
+
+                            </div>
+                        </div>
+                        <div class="card-body tab-content">
                             <div role="tabpanel" class="tab-pane active" id="menu01">
                                 <div class="card mb-0">
                                     <div class="card-header d-flex align-items-center">
@@ -346,23 +402,6 @@
                                                         <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_5">
-                                                            <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="js-lists-values-orders-user">01023950059</td>
-                                                    <td class="js-lists-values-orders-gender">남성</td>
-                                                    <td class="js-lists-values-orders-age">51세</td>
-                                                    <td class="js-lists-values-orders-type">AOS</td>
-                                                    <td class="js-lists-values-orders-device">galaxy 10</td>
-                                                    <td class="js-lists-values-orders-time">10분</td>
-                                                    <td class="text-right">
-                                                        <a href="" class="text-50"><i class="material-icons">more_vert</i></a>
-                                                    </td>
-                                                </tr>
                                         </table>
                                     </div>
                                     <div class="card-footer">
@@ -430,7 +469,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="menu03">
+                            <div role="tabpanel" class="tab-pane wt-pd-va" id="menu03">
                                 <div class="row card-group-row">
                                     <div class="col-lg-2 wt-col-2 card-group-row__col">
                                         <div class="card card-group-row__card">
@@ -602,6 +641,149 @@
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="menu04">
+                     <div class="row card-group-row">
+                        <div class="col-lg-4 col-md-6 card-group-row__col">
+                            <div class="card card-group-row__card">
+                                <div class="card-body d-flex flex-row align-items-center flex-0">
+                                    <div class="h2 mb-0 mr-3">643회</div>
+                                    <div class="flex">
+                                        <div class="card-title">K-Asean XR Lab</div>
+                                    </div>
+                                    <div class="ml-3 align-self-start">
+                                        <div class="dropdown mb-2">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <small class="text-muted text-uppercase mb-2 d-block font-weight-bold">방문 빈도 순위 </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">K-Asean XR Lab</span>
+                                        <span class="mx-3">643회</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 5.00%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">로비</span>
+                                        <span class="mx-3">322</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 4.70%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">영상 후반작업센터 1층</span>
+                                        <span class="mx-3">234</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 60.6%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">문화 콘텐츠 콤플렉스 주차장</span>
+                                        <span class="mx-3">78</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 11.1%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted">
+                                        <span class="flex text-body">나루공원</span>
+                                        <span class="mx-3">45</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 15.8%</span>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 card-group-row__col">
+                            <div class="card card-group-row__card">
+                                <div class="card-body d-flex flex-row align-items-center flex-0">
+                                    <div class="h2 mb-0 mr-3">32분 체류</div>
+                                    <div class="flex">
+                                        <div class="card-title">나루공원</div>
+                                    </div>
+                                    <div class="ml-3 align-self-start">
+                                        <div class="dropdown mb-2">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <small class="text-muted text-uppercase mb-2 d-block font-weight-bold">공간별 추이</small>
+                                      <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">나루공원</span>
+                                        <span class="mx-3">32분</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 5.8%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">K-Asean XR Lab</span>
+                                        <span class="mx-3">22분</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 5.8%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">로비</span>
+                                        <span class="mx-3">14분</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-danger icon-16pt mr-1">keyboard_arrow_down</i> 3.2%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">문화 콘텐츠 콤플렉스 주차장</span>
+                                        <span class="mx-3">12분</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 2.1%</span>
+                                    </small>
+                                    <small class="d-flex align-items-center font-weight-bold text-muted mb-1">
+                                        <span class="flex text-body">로비</span>
+                                        <span class="mx-3">5분</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-danger icon-16pt mr-1">keyboard_arrow_down</i> 4.8%</span>
+                                    </small>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 card-group-row__col">
+                            <div class="card card-group-row__card">
+                                <div class="card-body d-flex flex-row align-items-center flex-0">
+                                    <div class="h2 mb-0 mr-3">26.63%</div>
+                                    <div class="flex">
+                                        <div class="card-title">방문 대비 이벤트 이용률</div>
+                                        <div class="card-subtitle text-50 d-flex align-items-center">3.6% <i class="material-icons text-accent icon-16pt ml-4pt">keyboard_arrow_up</i></div>
+                                    </div>
+                                    <div class="ml-3 align-self-start">
+                                        <div class="dropdown mb-2">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-caret="false"><i class="material-icons text-50">more_horiz</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="" class="dropdown-item">보고서 출력 report</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <small class="text-muted text-uppercase mb-3 d-block font-weight-bold">체험 전환율</small>
+                                    <small class="d-flex align-items-start font-weight-bold text-muted mb-2">
+                                        <span class="flex d-flex flex-column">
+                                            <span class="text-body">AR 실감체험 A</span>
+                                            20회 방문
+                                        </span>
+                                        <span class="mx-3">12회 체험</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 16%</span>
+                                    </small>
+                                    <small class="d-flex align-items-start font-weight-bold text-muted mb-2">
+                                        <span class="flex d-flex flex-column">
+                                            <span class="text-body">AR 실감체험 C</span>
+                                            18회 방문
+                                        </span>
+                                        <span class="mx-3">9회 체험</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 8.0%</span>
+                                    </small>
+                                    <small class="d-flex align-items-start font-weight-bold text-muted">
+                                        <span class="flex d-flex flex-column">
+                                            <span class="text-body">AR 실감체험 B</span>
+                                            14회 방문
+                                        </span>
+                                        <span class="mx-3">6회 체험</span>
+                                        <span class="d-flex align-items-center"><i class="material-icons text-success icon-16pt mr-1">keyboard_arrow_up</i> 6.4%</span>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="menu05">
                                 <div class="row card-group-row">
                                     <div class="col-lg-12 col-md-12 card-group-row__col">
                                         <div class="card card-group-row__card">
@@ -634,6 +816,8 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 
@@ -659,14 +843,14 @@
                     <ul class="sidebar-menu">
 
                         <li class="sidebar-menu-item active">
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
                                 <span class="sidebar-menu-text">홈</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
 
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
                                 <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">NEW</span>
@@ -674,7 +858,7 @@
                         </li>
                         <li class="sidebar-menu-item">
 
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="index.html">
 
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">K-ASEAN XR LAB</span>
@@ -682,7 +866,7 @@
                         </li>
                         <li class="sidebar-menu-item">
 
-                            <a class="sidebar-menu-button" href="wt_home.html">
+                            <a class="sidebar-menu-button" href="index.html">
 
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">나루공원</span>
@@ -734,6 +918,26 @@
 
                     <!-- // END Sidebar Content -->
 
+
+
+
+                    <div class="btn-group dropup wt-user-menu">
+                        <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <span class="avatar avatar-sm mr-8pt2">
+
+                                <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header"><strong>계정</strong></div>
+                            <a class="dropdown-item" href="account.html">관리자 설정</a>
+                            <a class="dropdown-item" href="login.html">로그아웃</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -743,7 +947,7 @@
         <!-- filter menu -->
         <div class="mdk-drawer js-mdk-drawer" id="library-drawer" data-align="end">
             <div class="mdk-drawer__content ">
-                <div class="sidebar sidebar-black-dodger-blue sidebar-right py-16pt" data-perfect-scrollbar data-perfect-scrollbar-wheel-propagation="true">
+                <div class="sidebar sidebar-black-dodger-blue sidebar-right py-16pt wt-sidebar" data-perfect-scrollbar data-perfect-scrollbar-wheel-propagation="true">
 
                     <div class="d-flex align-items-center mb-24pt  d-lg-none">
                         <form action="index.html" class="search-form search-form--light mx-16pt pr-0 pl-16pt">
@@ -752,62 +956,31 @@
                         </form>
                     </div>
 
-                    <div class="sidebar-heading">Category</div>
-                    <ul class="sidebar-menu">
-                        <li class="sidebar-menu-item active">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
-                                <span class="sidebar-menu-text">Web Development</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">brush</span>
-                                <span class="sidebar-menu-text">Design</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">settings_cell</span>
-                                <span class="sidebar-menu-text">iOS &amp; Swift</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
-                                <span class="sidebar-menu-text">Android</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">business_center</span>
-                                <span class="sidebar-menu-text">Business</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item">
-                            <a href="" class="sidebar-menu-button">
-                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">crop_original</span>
-                                <span class="sidebar-menu-text">Photography</span>
-                            </a>
-                        </li>
 
-                    </ul>
 
-                    <div class="sidebar-heading">신관 4층</div>
+                    <div class="sidebar-heading">기간설정</div>
                     <div class="sidebar-block">
                         <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck01" checked="">
-                                <label class="custom-control-label" for="filtersCheck01">이벤트 참여자</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck02">
-                                <label class="custom-control-label" for="filtersCheck02">신규방문자</label>
-                            </div>
+                            <input id="filter_date" type="text" class="form-control" placeholder="기간선택" value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
                         </div>
                     </div>
+
+
+                   <div class="sidebar-heading">시작시간</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <input id="flatpickrSample05" type="text" class="form-control" placeholder="Flatpickr time example" data-toggle="flatpickr" data-flatpickr-enable-time="true" data-flatpickr-no-calendar="true" data-flatpickr-alt-format="H:i" data-flatpickr-date-format="H:i" value="15:35">
+                        </div>
+                    </div>
+
+                   <div class="sidebar-heading">종료시간</div>
+                    <div class="sidebar-block">
+                        <div class="form-group">
+                            <input id="flatpickrSample05" type="text" class="form-control" placeholder="Flatpickr time example" data-toggle="flatpickr" data-flatpickr-enable-time="true" data-flatpickr-no-calendar="true" data-flatpickr-alt-format="H:i" data-flatpickr-date-format="H:i" value="15:35">
+                        </div>
+                    </div>
+
+
 
                     <div class="sidebar-heading">성별</div>
                     <div class="sidebar-block">
@@ -854,121 +1027,496 @@
                             <input type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
                         </div>
                     </div>
+
+
+                    <div class="sidebar-block mb-4 wt-btn-side">
+                        <a href="#" class="btn btn-primary btn-block">적용</a>
+                    </div>
+
                 </div>
             </div>
         </div>
 
     </div>
 
-<!-- Modal -->
-<div class="modal fade wide-modal" id="iconMenu01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../../public/images/bg_virus.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                <div class="caution-title">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                   <i class="material-icons">coronavirus</i>
-                   <h2>감염병 위험이 감지되었습니다.</h2>
-                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
-                   <button type="button" class="btn btn-outline-accent">감염병 위치 확인</button>
+    <!-- Modal -->
+    <div class="modal fade wide-modal" id="iconMenu01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="../../public/images/bg_virus.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div class="caution-title">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <i class="material-icons">coronavirus</i>
+                        <h2>감염병 위험이 감지되었습니다.</h2>
+                        <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                        <button type="button" class="btn btn-outline-accent">감염병 위치 확인</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
-<div class="modal fade wide-modal" id="iconMenu02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../../public/images/bg_fire.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                <div class="caution-title">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                   <i class="material-icons">local_fire_department</i>
-                   <h2>화재 위험이 감지되었습니다.</h2>
-                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
-                   <button type="button" class="btn btn-outline-accent">화재 위치 확인</button>
+    <!-- Modal -->
+    <div class="modal fade wide-modal" id="iconMenu02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="../../public/images/bg_fire.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div class="caution-title">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <i class="material-icons">local_fire_department</i>
+                        <h2>화재 위험이 감지되었습니다.</h2>
+                        <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                        <button type="button" class="btn btn-outline-accent">화재 위치 확인</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
-<div class="modal fade wide-modal" id="iconMenu03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../../public/images/bg_warning.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                <div class="caution-title">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                   <i class="material-icons">warning</i>
-                   <h2>긴급상황이 감지되었습니다.</h2>
-                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
-                   <button type="button" class="btn btn-outline-accent">긴급상황 위치 확인</button>
+    <!-- Modal -->
+    <div class="modal fade wide-modal" id="iconMenu03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="../../public/images/bg_warning.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div class="caution-title">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <i class="material-icons">warning</i>
+                        <h2>긴급상황이 감지되었습니다.</h2>
+                        <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                        <button type="button" class="btn btn-outline-accent">긴급상황 위치 확인</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
-<div class="modal fade wide-modal" id="iconMenu04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <video autoplay muted loop id="myVideo">
-                    <source src="../../public/images/bg_warning.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                <div class="caution-title">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                   <i class="material-icons">warning</i>
-                   <h2>구조 요청이 감지되었습니다.</h2>
-                    <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
-                   <button type="button" class="btn btn-outline-accent">구조 위치 확인</button>
+    <!-- Modal -->
+    <div class="modal fade wide-modal" id="iconMenu04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="../../public/images/bg_warning.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div class="caution-title">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <i class="material-icons">warning</i>
+                        <h2>구조 요청이 감지되었습니다.</h2>
+                        <p class="desc">실내지도에서 위치를 확인해 주세요.</p>
+                        <button type="button" class="btn btn-outline-accent">구조 위치 확인</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="iconMenu05" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="iconMenu05" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">제목</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    본문
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary">저장</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-    <!-- // END Drawer Layout -->
+    <!-- Modal -->
+    <div class="modal fade wt-event-pop" id="iconMenu06" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">이벤트 생성</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <select id="setPosition" class="form-control custom-select">
+                                    <option selected>위치안내</option>
+                                    <option value="1">위치1</option>
+                                    <option value="2">위치2</option>
+                                    <option value="3">위치3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg">
+                                <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                    <label class="form-label" for="setActivation">활성화 여부</label>
+                                    <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                        <input checked="" type="checkbox" id="setActivation" class="custom-control-input">
+                                        <label class="custom-control-label" style="font-size: 0;" for="setActivation">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요." style="margin-bottom: 10px;">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="내용을 입력하세요." rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">노출 대상</label>
+                           </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates" placeholder="노출 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates" placeholder="노출 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates" placeholder="노출 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">실행 대상</label>
+                           </div>
+                       </div>
+
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates2" placeholder="실행 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates2" placeholder="실행 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates2" placeholder="실행 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetArea">실행 대상 반경</label>
+                                <input type="text" class="form-control" id="eventSetArea" placeholder="실행 대상 반경">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">설정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade wt-event-pop" id="iconMenu07" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">이벤트 생성</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <select id="setPosition" class="form-control custom-select">
+                                    <option selected>개별 위치기반</option>
+                                    <option value="1">위치1</option>
+                                    <option value="2">위치2</option>
+                                    <option value="3">위치3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg">
+                                <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                    <label class="form-label" for="setActivation">활성화 여부</label>
+                                    <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                        <input checked="" type="checkbox" id="setActivation" class="custom-control-input">
+                                        <label class="custom-control-label" style="font-size: 0;" for="setActivation">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요." style="margin-bottom: 10px;">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="내용을 입력하세요." rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">노출 대상</label>
+                           </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates" placeholder="노출 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates" placeholder="노출 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates" placeholder="노출 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">실행 대상</label>
+                           </div>
+                       </div>
+
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates2" placeholder="실행 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates2" placeholder="실행 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates2" placeholder="실행 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetArea">실행 대상 반경</label>
+                                <input type="text" class="form-control" id="eventSetArea" placeholder="실행 대상 반경">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="custom-controls-stacked">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" checked="">
+                                        <label for="radioStacked1" class="custom-control-label">전체</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
+                                        <label for="radioStacked2" class="custom-control-label">특정 사용자</label>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">추가</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">설정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade wt-event-pop" id="iconMenu08" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">이벤트 생성</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <select id="setPosition" class="form-control custom-select">
+                                    <option selected>구조 요청</option>
+                                    <option value="1">위치1</option>
+                                    <option value="2">위치2</option>
+                                    <option value="3">위치3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg">
+                                <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                    <label class="form-label" for="setActivation">활성화 여부</label>
+                                    <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                        <input checked="" type="checkbox" id="setActivation" class="custom-control-input">
+                                        <label class="custom-control-label" style="font-size: 0;" for="setActivation">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">노출 대상</label>
+                           </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates" placeholder="노출 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates" placeholder="노출 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates" placeholder="노출 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">설정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade wt-event-pop" id="iconMenu09" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">이벤트 생성</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <select id="setPosition" class="form-control custom-select">
+                                    <option selected>긴급 재난</option>
+                                    <option value="1">위치1</option>
+                                    <option value="2">위치2</option>
+                                    <option value="3">위치3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg">
+                                <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                    <label class="form-label" for="setActivation">활성화 여부</label>
+                                    <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                        <input checked="" type="checkbox" id="setActivation" class="custom-control-input">
+                                        <label class="custom-control-label" style="font-size: 0;" for="setActivation">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">노출 대상</label>
+                           </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates" placeholder="노출 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates" placeholder="노출 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates" placeholder="노출 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">설정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade wt-event-pop" id="iconMenu010" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">이벤트 생성</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <select id="setPosition" class="form-control custom-select">
+                                    <option selected>글로벌</option>
+                                    <option value="1">위치1</option>
+                                    <option value="2">위치2</option>
+                                    <option value="3">위치3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg">
+                                <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                    <label class="form-label" for="setActivation">활성화 여부</label>
+                                    <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                        <input checked="" type="checkbox" id="setActivation" class="custom-control-input">
+                                        <label class="custom-control-label" style="font-size: 0;" for="setActivation">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetCode">노출 대상 코드</label>
+                                <input type="text" class="form-control" id="eventSetCode" placeholder="코드를 입력하세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="row">
+                          <div class="col-lg">
+                                <label class="form-label essential" for="">노출 대상</label>
+                           </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates" placeholder="노출 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates" placeholder="노출 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates" placeholder="노출 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">설정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery -->
     <script src="../../public/vendor/jquery.min.js"></script>

@@ -463,7 +463,7 @@ label.form-label.essential:after{
 
 /* picker */
 .wt-picker{
-    background-color: #fff;
+    background-color: rgba(34,36,46,0.9) !important;
 }
 .wt-picker label{
     font-weight: 600;
@@ -511,14 +511,35 @@ label.form-label.essential:after{
 
 }
 
+.wt-rs-wrap{
+    position: absolute;
+    top: 42.5%;
+    width: 100%;
+}
+.wt-rs-wrap .wt-rs-wrap-inner{
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(25,25,26,0.8);
+    padding: 1rem;
+    border-radius: .5rem;
+}
 
-
-
-
-
-
-
-
+.wt-sidebar .sidebar-block{
+    margin-bottom: 1rem;
+}
+.wt-btn-side{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.wt-user-menu{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+.wt-user-menu .nav-link{
+    padding: 1rem 0;
+}
 
 
 
