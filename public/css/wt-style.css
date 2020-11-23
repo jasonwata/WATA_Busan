@@ -542,7 +542,9 @@ label.form-label.essential:after{
 }
 
 
-
+.mdk-drawer__content ul.sidebar-menu{
+    letter-spacing: -1px;
+}
 
 
 
