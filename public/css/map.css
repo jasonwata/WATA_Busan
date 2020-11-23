@@ -76,7 +76,7 @@ section {
 }
 
 body {
-    font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: "Noto Sans KR", Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     font-size: .8125rem;
     font-weight: 400;
     line-height: 1.5;
@@ -451,7 +451,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     line-height: 1.5;
     color: #303956
@@ -3868,7 +3868,7 @@ textarea.form-control {
 
 .btn {
     display: inline-block;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     color: #272c33;
     vertical-align: middle;
@@ -11668,7 +11668,7 @@ a.close.disabled {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: Roboto, Helvetica Neue, Arial, "Noto Sans KR", sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -11849,7 +11849,7 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 304px;
-    font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: Roboto, Helvetica Neue, Arial, "Noto Sans KR", sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -29419,7 +29419,7 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 .text-headings {
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif !important
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif !important
 }
 
 .lh-24pt {
@@ -30588,7 +30588,7 @@ strong {
 
 .display-1 {
     line-height: 1.25;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif
 }
 
 .h1,
@@ -30624,7 +30624,7 @@ h5 {
 .headings-family-exo2 h4,
 .headings-family-exo2 h5,
 .headings-family-exo2 h6 {
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600
 }
 
@@ -30640,7 +30640,7 @@ h5 {
 .headings-family-lato h4,
 .headings-family-lato h5,
 .headings-family-lato h6 {
-    font-family: Lato, Helvetica Neue, Arial, sans-serif;
+    font-family: Lato, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 700
 }
 
@@ -30656,7 +30656,7 @@ h5 {
 .headings-family-oswald h4,
 .headings-family-oswald h5,
 .headings-family-oswald h6 {
-    font-family: Oswald, Helvetica Neue, Arial, sans-serif;
+    font-family: Oswald, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 500
 }
 
@@ -31309,7 +31309,7 @@ body {
     font-size: .8125rem;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     letter-spacing: 2px
 }
 
@@ -31321,7 +31321,7 @@ body {
     font-size: .8125rem;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     letter-spacing: 2px;
     color: rgba(39, 44, 51, .5)
 }
@@ -32307,7 +32307,7 @@ body {
 
 .card-title {
     font-size: 1rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     color: #303956;
     line-height: 1.25
@@ -32536,7 +32536,7 @@ body {
 
 .card-header-tabs-basic a {
     color: rgba(39, 44, 51, .54);
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 400
 }
 
@@ -32803,7 +32803,7 @@ body {
 .table thead th {
     color: #303956;
     text-transform: uppercase;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
@@ -33438,7 +33438,7 @@ body {
     color: #303956;
     font-weight: 600;
     letter-spacing: 2px;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif
 }
 
 [dir] .page-separator__text {
@@ -33707,7 +33707,7 @@ body {
 .page-num {
     width: 2.5rem;
     height: 2.5rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     line-height: 1.5;
     font-size: 1.414rem;
@@ -34248,7 +34248,7 @@ code.django .hljs-template-tag {
 .tooltip-inner {
     font-size: .9375rem;
     font-weight: 600;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif
 }
 
 [dir] .tooltip-inner {
@@ -37215,7 +37215,7 @@ label {
     color: #303956;
     text-transform: uppercase;
     font-size: .8125rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
@@ -37247,7 +37247,7 @@ label {
     color: #303956;
     text-transform: uppercase;
     font-size: .8125rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
@@ -37665,7 +37665,7 @@ label {
 .sidebar-heading {
     font-weight: 600;
     font-size: .9rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, sans-serif;
+    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: normal
