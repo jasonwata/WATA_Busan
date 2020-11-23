@@ -80,7 +80,8 @@ body {
     font-size: .8125rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #272c33
+    color: #272c33;
+    letter-spacing: -0.03em;
 }
 
 [dir] body {
@@ -451,7 +452,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     line-height: 1.5;
     color: #303956
@@ -3868,7 +3869,7 @@ textarea.form-control {
 
 .btn {
     display: inline-block;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     color: #272c33;
     vertical-align: middle;
@@ -30624,7 +30625,7 @@ h5 {
 .headings-family-exo2 h4,
 .headings-family-exo2 h5,
 .headings-family-exo2 h6 {
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600
 }
 
@@ -31309,7 +31310,7 @@ body {
     font-size: .8125rem;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     letter-spacing: 2px
 }
 
@@ -31321,7 +31322,7 @@ body {
     font-size: .8125rem;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     letter-spacing: 2px;
     color: rgba(39, 44, 51, .5)
 }
@@ -32307,7 +32308,7 @@ body {
 
 .card-title {
     font-size: 1rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     color: #303956;
     line-height: 1.25
@@ -32536,7 +32537,7 @@ body {
 
 .card-header-tabs-basic a {
     color: rgba(39, 44, 51, .54);
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 400
 }
 
@@ -32803,7 +32804,7 @@ body {
 .table thead th {
     color: #303956;
     text-transform: uppercase;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
@@ -33707,7 +33708,7 @@ body {
 .page-num {
     width: 2.5rem;
     height: 2.5rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     line-height: 1.5;
     font-size: 1.414rem;
@@ -37215,7 +37216,7 @@ label {
     color: #303956;
     text-transform: uppercase;
     font-size: .8125rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
@@ -37247,7 +37248,7 @@ label {
     color: #303956;
     text-transform: uppercase;
     font-size: .8125rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     font-weight: 600;
     letter-spacing: 2px
 }
@@ -37665,7 +37666,7 @@ label {
 .sidebar-heading {
     font-weight: 600;
     font-size: .9rem;
-    font-family: Exo\ 2, Helvetica Neue, Arial, "Noto Sans KR", sans-serif;
+    font-family: Exo\ 2, "Noto Sans KR", Arial, Helvetica Neue, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: normal
