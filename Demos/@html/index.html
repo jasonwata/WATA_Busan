@@ -87,6 +87,10 @@
                 </div>
                 <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 30%;">
                     <div class="card-body">
+                       <dl class="wt-card-title">
+                            <dt>사용자</dt>
+                            <dd>01012345678</dd>
+                        </dl>
                         <a href="#" class="btn btn-primary btn-block">메세지 전송</a>
                         <a href="#" class="btn btn-primary btn-block">동선 추적</a>
                         <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
@@ -123,14 +127,30 @@
 
                     <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" data-caret="false">한아세안ICT융합빌리지</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">한아세안ICT융합빌리지</a>
                             <div class="dropdown-menu">
                                 <a href="index.html" class="dropdown-item">문화 콘텐츠 콤플렉스</a>
                                 <a href="index.html" class="dropdown-item">K-ASEAN XR LAB</a>
                                 <a href="index.html" class="dropdown-item">나루공원</a>
                             </div>
                         </li>
-                        <li class="nav-item">관제기간 2020.11.14 ~ 2020.11.21</li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">구역선택</a>
+                            <div class="dropdown-menu">
+                                <a href="index.html" class="dropdown-item">주차장</a>
+                                <a href="index.html" class="dropdown-item">실외1층</a>
+                                <a href="index.html" class="dropdown-item">건물1층</a>
+                                <a href="index.html" class="dropdown-item">4층</a>
+                                <a href="index.html" class="dropdown-item">교육실</a>
+                                <a href="index.html" class="dropdown-item">회의실</a>
+                                <a href="index.html" class="dropdown-item">교류플랫폼</a>
+                                <a href="index.html" class="dropdown-item">사무실</a>
+                                <a href="index.html" class="dropdown-item">AR스튜디오</a>
+                                <a href="index.html" class="dropdown-item">미디어회의실</a>
+
+                            </div>
+                        </li>
+
                     </ul>
 
                     <!--
@@ -184,8 +204,27 @@
 
                 <div class="btn-gl-top">
 
+
                     <div class="btn-group-vertical mb-0">
+
+                        <!-- Default dropleft button -->
+                        <div class="btn-group dropleft">
+                            <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons text-dark">layers</i>
+                            </button>
+                            <div class="dropdown-menu" onClick="event.stopPropagation();">
+                                <div class="dropdown-header">
+                                    <h6 class="text-dark m-0">지도설정</h6>
+                                </div>
+                                <ul class="dropdown-item-list">
+                                    <li><a href="#n"><i class="material-icons">scatter_plot</i></a><span>분포도</span></li>
+                                    <li><a href="#n"><i class="material-icons">blur_on</i></a><span>열지도</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--
                         <button type="button" class="btn btn-white btn-congestion" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
+                        -->
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="이벤트"><i class="material-icons text-dark">blur_circular</i></button>
                         <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="경보"><i class="material-icons text-dark">notification_important</i></button>
                         <button id="opener" type="button" class="btn btn-white testBtn" data-toggle="tooltip" data-placement="left" title="정보창"><i class="material-icons text-dark">call_to_action</i></button>
@@ -230,16 +269,19 @@
                 <div class="contents-wrap-inner">
                     <!-- Nav tabs -->
 
+                    <div class="card p-relative o-hidden mb-0">
 
 
 
+                        <div class="card-header card-header-tabs-basic nav px-0" role="tablist">
+                            <a href="#menu01" class="active" data-toggle="tab" role="tab" aria-selected="menu01">이용자 정보</a>
+                            <a href="#menu02" data-toggle="tab" role="tab" aria-selected="menu02">이용자 추이</a>
+                            <a href="#menu03" data-toggle="tab" role="tab" aria-selected="menu03">방문자 통계</a>
+                            <a href="#menu04" data-toggle="tab" role="tab" aria-selected="menu04">장소 통계</a>
+                        </div>
 
+<!--
 
-
-
-
-
-                    <div class="card dashboard-area-tabs p-relative o-hidden mb-0">
                         <div class="card-header p-0 nav">
                             <div class="row no-gutters" role="tablist">
                                 <div class="col-auto">
@@ -281,6 +323,9 @@
 
                             </div>
                         </div>
+-->
+
+
                         <div class="card-body tab-content">
                             <div role="tabpanel" class="tab-pane active" id="menu01">
                                 <div class="card mb-0">
@@ -1566,7 +1611,6 @@
 
     <script src="../../public/js/wt-global.js"></script>
 
-    <script src="../../public/js/bootstrap-datepicker.ko.min.js"></script>
 
 
 </body>

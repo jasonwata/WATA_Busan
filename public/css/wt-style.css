@@ -291,7 +291,7 @@ a.faull-map-close{
     bottom: 0;
     width: 100%;
     padding: 0 2rem;
-    height: 500px;
+    height: 450px;
 
 }
 .contents-wrap .contents-wrap-inner{
@@ -355,6 +355,47 @@ a.faull-map-close{
 }
 .side-btn-wrap button.btn i.material-icons{
     font-size: 18px;
+}
+.side-btn-wrap .btn-group-vertical .dropleft .dropdown-toggle:before{
+    display: none;
+}
+.side-btn-wrap .btn-group-vertical .dropleft .dropdown-menu{
+    margin-top: 0 !important;
+}
+.side-btn-wrap .btn-group-vertical .dropleft .dropdown-menu .dropdown-header{
+    border-bottom: 1px solid #eaeaea;
+}
+.side-btn-wrap .btn-group-vertical .dropleft .dropdown-menu:before{
+    display: none;
+}
+.side-btn-wrap .btn-group-vertical ul.dropdown-item-list{
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0 .5rem;
+    text-align: center;
+}
+.side-btn-wrap .btn-group-vertical ul.dropdown-item-list li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+}
+.side-btn-wrap .btn-group-vertical ul.dropdown-item-list li a{
+    display: block;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: #ececec;
+    color: #303956;
+}
+.side-btn-wrap .btn-group-vertical ul.dropdown-item-list li span{
+    display: block;
+    padding-top: 3px;
+}
+.side-btn-wrap .btn-group-vertical ul.dropdown-item-list li:hover span{
+    text-decoration: underline;
+}
+.side-btn-wrap .btn-group-vertical ul.dropdown-item-list li a.current{
+    color: #fff;
+    background-color: #5567ff;
 }
 
 [dir] .nav-btn__styling .btn-secondary:not(:disabled):not(.disabled).active, [dir] .nav-btn__styling .btn-secondary:not(:disabled):not(.disabled):active, [dir] .nav-btn__styling .show > .btn-secondary.dropdown-toggle{
@@ -482,6 +523,24 @@ label.form-label.essential:after{
     max-width: 55%;
     padding-left: 12px;
     padding-right: 12px;
+}
+.wt-picker dl.wt-card-title{
+    font-size: 0;
+    margin-bottom: .5rem;
+}
+.wt-picker dl.wt-card-title dt,
+.wt-picker dl.wt-card-title dd{
+    display: inline-block;
+}
+.wt-picker dl.wt-card-title dt{
+    font-size: 16px;
+    width: 35%;
+    font-weight: 600;
+}
+.wt-picker dl.wt-card-title dd{
+    font-size: 14px;
+    width: 65%;
+    text-align: right;
 }
 
 .map-picker-pointer .map-pointer{
