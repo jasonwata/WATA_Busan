@@ -1542,6 +1542,11 @@
                                 gridLines: {
                                     display: !1
                                 },
+                                ticks: {
+                                    callback: function (value) {
+                                        return moment(new Date(value)).format("MM월 DD일");
+                                    }
+                                },
                                 type: "time",
                                 time: {
                                     unit: "day"
