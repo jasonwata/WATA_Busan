@@ -540,7 +540,7 @@
                                             </div>
                                             <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
                                                 <div class="chart w-100" style="height: 150px;">
-                                                    <canvas class="chart-canvas js-update-chart-line js-update-chart-area" id="totalSalesChart" data-chart-legend="#totalSalesChartLegend" data-chart-line-background-color="gradient:primary" data-chart-line-background-opacity="0.24" data-chart-line-border-color="primary" data-chart-prefix="" data-chart-dark-mode="false">
+                                                    <canvas class="chart-canvas js-update-chart-line js-update-chart-area" id="totalSalesChart" data-chart-legend="#totalSalesChartLegend" data-chart-line-background-color="primary" data-chart-line-background-opacity="0.24" data-chart-line-border-color="primary" data-chart-prefix="" data-chart-dark-mode="false">
                                                         <span style="font-size: 1rem;"><strong>les</strong> ㅁㅁ</span>
                                                     </canvas>
                                                 </div>
@@ -567,7 +567,7 @@
                                             </div>
                                             <div class="card-body text-muted flex d-flex flex-column align-items-center justify-content-center">
                                                 <div class="chart w-100" style="height: 200px;">
-                                                    <canvas class="chart-canvas js-update-chart-bar" id="totalVisitorsChart" data-chart-legend="#totalVisitorsChartLegend" data-chart-line-background-color="gradient:primary" data-chart-suffix="k" data-chart-dark-mode="false">
+                                                    <canvas class="chart-canvas js-update-chart-bar" id="totalVisitorsChart" data-chart-legend="#totalVisitorsChartLegend" data-chart-line-background-color="primary" data-chart-suffix="k" data-chart-dark-mode="false">
                                                         <span style="font-size: 1rem;"><strong>Total Visitors</strong> chart goes here.</span>
                                                     </canvas>
                                                 </div>
@@ -1611,6 +1611,13 @@
 
     <script src="../../public/js/wt-global.js"></script>
 
+    <script>
+        (function () {
+            /* 20201124 임시 */
+            document.getElementById('visitsByDeviceChart').height = 150;
+            document.getElementById('visitsByDeviceChart').style.height = '150px';
+        })();
+    </script>
 
 
 </body>
