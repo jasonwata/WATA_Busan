@@ -38,6 +38,8 @@
     });
 
     // 성별
+    let navBarGender = document.getElementById("navBarGender");
+    navBarGender.innerText = "전체";
     document.getElementsByName("navBarGenderVal").forEach(function (element) {
         element.addEventListener("click", function (e) {
             let value = e.target.value;
@@ -51,11 +53,13 @@
                     break;
             }
 
-            document.getElementById("navBarGender").innerText = text;
+            navBarGender.innerText = text;
         });
     });
 
     // 휴대폰
+    let navBarDeviceType = document.getElementById("navBarDeviceType");
+    navBarDeviceType.innerText = "전체";
     document.getElementsByName("navBarDeviceTypeVal").forEach(function (element) {
         element.addEventListener("click", function (e) {
             let value = e.target.value;
@@ -69,7 +73,7 @@
                     break;
             }
 
-            document.getElementById("navBarDeviceType").innerText = text;
+            navBarDeviceType.innerText = text;
         });
     });
 
@@ -142,7 +146,12 @@
     $('#layer-kind').on('hide.bs.dropdown', function (e) {
         let $this = $(this)
         if ($this.find('li a.current').length > 0) {
-            e.preventDefault();
+            $("#layer-btn").addClass("active");
+            $('#layer-icon').text($this.find('li a.current .material-icons').text());
+            //console.log($this.find('li a.current').get(0).find('material-icons').text());
+        } else {
+            $("#layer-btn").removeClass("active");
+            $('#layer-icon').text('layers');
         }
     });
 
