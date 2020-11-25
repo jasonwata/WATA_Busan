@@ -44,3 +44,13 @@ $('ul.dropdown-item-list li a').click( function(){
         $(this).addClass('current');
     }
 });
+
+$('.btn-user-target').click( function(){
+    if ( $(this).hasClass('active') ) {
+        $(this).removeClass('active');
+    } else {
+        $(this).removeClass('active');
+        $(this).addClass('active');
+    }
+});
+

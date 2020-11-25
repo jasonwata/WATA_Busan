@@ -64,7 +64,7 @@ video{
 }
 
 .sidebar-brand img{
-    width: 120px;
+    width: 100px;
     display: block;
     padding-left: 10px;
 }
@@ -350,8 +350,11 @@ a.faull-map-close{
     font-size: 16px;
 }
 
+.side-btn-wrap .btn-gl-top{
+    padding-bottom: 1rem;
+}
 .side-btn-wrap .btn-gl-mid{
-    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 .side-btn-wrap button.btn i.material-icons{
     font-size: 18px;
@@ -593,7 +596,7 @@ label.form-label.essential:after{
 }
 .wt-user-menu{
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 3rem;
     left: 1.5rem;
 }
 .wt-user-menu .nav-link{
@@ -612,15 +615,21 @@ label.form-label.essential:after{
     width: 0;
     display: none;
 }
+.navbar-wrap ul.wt-nav li{
+    margin-right: 2.5rem !important;
+}
 .navbar-wrap ul.wt-nav li .form-check{
     padding-left: 1.25rem;
 }
-.navbar-wrap ul.wt-nav li.nav-item .item-cover{
+.navbar-wrap ul.wt-nav li.nav-item .item-cover > span{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.7);
 }
 .navbar-wrap ul.wt-nav li.nav-item a{
     height: inherit;
     display: block;
-    padding: .5rem !important;
 }
 .navbar-wrap ul.wt-nav li.nav-item a > span{
     display: block;
@@ -638,4 +647,56 @@ label.form-label.essential:after{
 .navbar-wrap ul.wt-nav li.nav-item .dp-item-cover{
     padding: 1rem;
 }
+
+.sidebar-brand-cover span{
+    font-size: 12px;
+    padding-left: .3rem;
+    color: #949799;
+}
+.sidebar-brand-cover img.sub-logo{
+    width: 90px;
+    padding-left: .3rem;
+}
+
+
+.sidebar-copy{
+    position: absolute;
+    bottom: 1.5rem;
+    color: rgba(255,255,255,0.4);
+    font-size: 14px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
