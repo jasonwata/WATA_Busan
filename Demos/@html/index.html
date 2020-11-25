@@ -235,7 +235,7 @@
                                 <div class="dropdown-menu" style="width: 300px;">
                                     <div class="dp-item-cover" onclick="event.stopPropagation();">
                                         <div class="flex" style="max-width: 100%">
-                                            <input id="navVarAgeRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="25" data-to="75" data-type="double" data-grid="true">
+                                            <input id="navVarAgeRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="0" data-to="100" data-type="double" data-grid="true">
                                         </div>
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@
                                     <div class="dp-item-cover" onclick="event.stopPropagation();">
 
                                         <div class="flex" style="max-width: 100%">
-                                            <input id="navVarVisitRangeVal" type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
+                                            <input id="navVarVisitRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="50" data-from="0" data-to="5" data-type="double" data-grid="true">
                                         </div>
                                     </div>
                                 </div>
@@ -316,7 +316,7 @@
                     <div class="btn-group-vertical mb-0">
 
                         <!-- Default dropleft button -->
-                        <div class="btn-group dropleft">
+                        <div class="btn-group dropleft" id="layer-kind">
                             <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="material-icons text-dark">layers</i>
                             </button>
@@ -333,8 +333,8 @@
                         <!--
                         <button type="button" class="btn btn-white btn-congestion" data-toggle="tooltip" data-placement="left" title="혼잡도"><i class="material-icons text-dark">layers</i></button>
                         -->
-                        <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="이벤트"><i class="material-icons text-dark">blur_circular</i></button>
-                        <button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="경보"><i class="material-icons text-dark">notification_important</i></button>
+                        <button type="button" class="btn btn-white btn-extra" data-toggle="tooltip" data-placement="left" title="이벤트"><i class="material-icons text-dark">blur_circular</i></button>
+                        <button type="button" class="btn btn-white btn-extra" data-toggle="tooltip" data-placement="left" title="경보"><i class="material-icons text-dark">notification_important</i></button>
                         <button id="opener" type="button" class="btn btn-white testBtn" data-toggle="tooltip" data-placement="left" title="정보창"><i class="material-icons text-dark">call_to_action</i></button>
                     </div>
 
