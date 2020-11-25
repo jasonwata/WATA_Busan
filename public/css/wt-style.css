@@ -397,6 +397,17 @@ a.faull-map-close{
     color: #fff;
     background-color: #5567ff;
 }
+/*
+.side-btn-wrap .btn-group-vertical button.active{
+    color: #fff !important;
+    background-color: #5567ff !important;
+}
+.side-btn-wrap .btn-group-vertical button.active i{
+    color: #fff !important;
+}
+*/
+
+
 
 [dir] .nav-btn__styling .btn-secondary:not(:disabled):not(.disabled).active, [dir] .nav-btn__styling .btn-secondary:not(:disabled):not(.disabled):active, [dir] .nav-btn__styling .show > .btn-secondary.dropdown-toggle{
     background-color: #ec104c;
@@ -627,7 +638,6 @@ label.form-label.essential:after{
 .navbar-wrap ul.wt-nav li.nav-item a{
     height: inherit;
     display: block;
-    color: #fff;
 }
 .navbar-wrap ul.wt-nav li.nav-item a > span{
     display: block;
@@ -672,7 +682,6 @@ label.form-label.essential:after{
 .navbar-expand .navbar-nav .nav-link.btn-user-target.active i{
     color: rgba(255,255,255,1) !important;
 }
-
 
 
 
