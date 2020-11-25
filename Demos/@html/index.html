@@ -165,57 +165,62 @@
 
                         </li>
                         <li class="nav-item">
-                            <div class="item-cover">
-                                <span>시작시간</span>
-                                <a href="#n" class="nav-link">시간선택</a>
+                            <div id="navStartTime">
+                                <div class="item-cover">
+                                    <span>시작시간</span>
+                                    <a href="javascript:void(0)" class="nav-link" data-toggle>시간선택</a>
+                                    <input class="d-none" type="hidden" value="" data-input>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item">
                             <div class="item-cover">
                                 <span>종료시간</span>
-                                <a href="#n" class="nav-link">시간선택</a>
+                                <div id="navEndTime">
+                                    <a href="#n" class="nav-link" data-toggle>시간선택</a>
+                                    <input class="d-none" type="hidden" value="" data-input>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <div class="item-cover">
                                 <span>성별</span>
-                                <a href="#n" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">성별</a>
+                                <a href="#n" class="nav-link dropdown-toggle" id="navBarGender" data-toggle="dropdown" data-caret="false">성별</a>
                                 <div class="dropdown-menu">
                                     <div class="dp-item-cover" onclick="event.stopPropagation();">
                                         <div class="form-check custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" value="" id="navBarGenderAll" checked>
+                                            <input class="custom-control-input" type="radio" name="navBarGenderVal" value="" id="navBarGenderAll" checked>
                                             <label class="custom-control-label" for="navBarGenderAll">전체</label>
                                         </div>
                                         <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="checkbox" value="" id="navBarGenderMale">
+                                            <input class="custom-control-input" type="radio" name="navBarGenderVal" value="1" id="navBarGenderMale">
                                             <label class="custom-control-label" for="navBarGenderMale">남</label>
                                         </div>
                                         <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="checkbox" value="" id="navBarGenderFeMale">
+                                            <input class="custom-control-input" type="radio" name="navBarGenderVal" value="2" id="navBarGenderFeMale">
                                             <label class="custom-control-label" for="navBarGenderFeMale">여</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </li>
                         <li class="nav-item dropdown">
                             <div class="item-cover">
                                 <span>휴대폰</span>
-                                <a href="#n" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">휴대폰</a>
+                                <a href="#n" class="nav-link dropdown-toggle" id="navBarDeviceType" data-toggle="dropdown" data-caret="false">휴대폰</a>
                                 <div class="dropdown-menu">
                                     <div class="dp-item-cover" onclick="event.stopPropagation();">
                                         <div class="form-check custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" value="" id="deviceTypeAll" checked>
+                                            <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="" id="deviceTypeAll" checked>
                                             <label class="custom-control-label" for="deviceTypeAll">전체</label>
                                         </div>
 
                                         <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="checkbox" value="" id="deviceTypeAos">
+                                            <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="1" id="deviceTypeAos">
                                             <label class="custom-control-label" for="deviceTypeAos">Android</label>
                                         </div>
                                         <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="checkbox" value="" id="deviceTypeIos">
+                                            <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="2" id="deviceTypeIos">
                                             <label class="custom-control-label" for="deviceTypeIos">iOS</label>
                                         </div>
                                     </div>
@@ -225,11 +230,12 @@
                         <li class="nav-item dropdown">
                             <div class="item-cover">
                                 <span>연령</span>
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">연령대</a>
+                                <a href="#" id="navVarAgeRange" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">연령대</a>
+
                                 <div class="dropdown-menu" style="width: 300px;">
                                     <div class="dp-item-cover" onclick="event.stopPropagation();">
                                         <div class="flex" style="max-width: 100%">
-                                            <input type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="25" data-to="75" data-type="double" data-grid="true">
+                                            <input id="navVarAgeRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="25" data-to="75" data-type="double" data-grid="true">
                                         </div>
                                     </div>
                                 </div>
@@ -238,12 +244,12 @@
                         <li class="nav-item dropdown">
                             <div class="item-cover">
                                 <span>체류시간(minute)</span>
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">체류시간</a>
+                                <a href="#" id="navVarVisitRange" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">체류시간</a>
                                 <div class="dropdown-menu" style="width: 300px;">
                                     <div class="dp-item-cover" onclick="event.stopPropagation();">
 
                                         <div class="flex" style="max-width: 100%">
-                                            <input type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
+                                            <input id="navVarVisitRangeVal" type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
                                         </div>
                                     </div>
                                 </div>
@@ -1717,14 +1723,7 @@
 
     <script src="../../public/js/wt-global.js"></script>
 
-    <script>
-        (function() {
-            /* 20201124 임시 */
-            document.getElementById('visitsByDeviceChart').height = 150;
-            document.getElementById('visitsByDeviceChart').style.height = '150px';
-        })();
-    </script>
-
+    <script src="../@js/index.js"></script>
 
 </body>
 
