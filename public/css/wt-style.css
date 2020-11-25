@@ -619,12 +619,22 @@ label.form-label.essential:after{
 }
 .navbar-wrap ul.wt-nav li.nav-item a{
     height: inherit;
+    display: block;
+    padding: .5rem !important;
 }
-.navbar-wrap ul.wt-nav li.nav-item span{
+.navbar-wrap ul.wt-nav li.nav-item a > span{
     display: block;
     font-size: 10px;
     font-weight: bold;
+    color: rgba(255,255,255,0.7);
 }
+.navbar-wrap ul.wt-nav li.nav-item a:hover > span{
+    color: rgba(255,255,255,1);
+}
+.navbar-wrap ul.wt-nav li.nav-item span{
+
+}
+
 .navbar-wrap ul.wt-nav li.nav-item .dp-item-cover{
     padding: 1rem;
 }
