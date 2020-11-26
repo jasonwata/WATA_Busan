@@ -74,7 +74,7 @@
             <div class="heat-sensing"></div>
             <!-- picker box-->
             <div class="map-picker">
-                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 50%;">
+                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 60%;">
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="colFormLabel" class="m-0">반경<span class="text-50">meter</span></label>
@@ -85,7 +85,7 @@
                         <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
                     </div>
                 </div>
-                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 30%;">
+                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 20%;">
                     <div class="card-body">
                         <dl class="wt-card-title">
                             <dt>사용자</dt>
@@ -96,6 +96,20 @@
                         <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
                     </div>
                 </div>
+                <!-- 20201126 / 16:28 / reo -->
+                <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 40%;">
+                    <div class="card-body">
+                        <dl class="wt-card-title">
+                            <dt>이벤트</dt>
+                            <dd></dd>
+                        </dl>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="undefinedstudent-path.html" class="btn btn-secondary mr-8pt ">삭제</a>
+                            <a href="undefinedstudent-path.html" class="btn btn-primary ml-0">수정</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
             </div>
             <!-- picker pointer-->
 
@@ -126,25 +140,22 @@
                     </a>
 
                     <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
-                        <!--
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">한아세안ICT융합빌리지</a>
-                            <div class="dropdown-menu">
-                                <a href="index.html" class="dropdown-item">문화 콘텐츠 콤플렉스</a>
-                                <a href="index.html" class="dropdown-item">K-ASEAN XR LAB</a>
-                                <a href="index.html" class="dropdown-item">나루공원</a>
-                            </div>
-                        </li>
--->
                         <li class="nav-item dropdown" style="width: 100px;">
                             <div class="item-cover">
                                 <span>구역</span>
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">미디어회의실</a>
+                                
+                                <!-- 20201126 / 14:48 / reo / start -->
                                 <div class="dropdown-menu">
-                                    <a href="index.html" class="dropdown-item">주차장</a>
-                                    <a href="index.html" class="dropdown-item">실외1층</a>
-                                    <a href="index.html" class="dropdown-item">건물1층</a>
-                                    <a href="index.html" class="dropdown-item">4층</a>
+                                    <div class="dropdown-header"><strong>건물구분</strong></div>
+                                    <a href="index.html" class="dropdown-item">전체구역</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-header"><strong>문화콘텐츠 컴플렉스</strong></div>
+                                    <a href="index.html" class="dropdown-item">1층 주차장</a>
+                                    <a href="index.html" class="dropdown-item">1층 로비</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-header"><strong>영상후반작업시설</strong></div>
+                                    <a href="index.html" class="dropdown-item">4층 전체</a>
                                     <a href="index.html" class="dropdown-item">교육실</a>
                                     <a href="index.html" class="dropdown-item">회의실</a>
                                     <a href="index.html" class="dropdown-item">교류플랫폼</a>
@@ -152,8 +163,11 @@
                                     <a href="index.html" class="dropdown-item">AR스튜디오</a>
                                     <a href="index.html" class="dropdown-item">미디어회의실</a>
                                 </div>
+                                <!-- end -->
+                                
                             </div>
                         </li>
+                        
                         <li class="nav-item" style="width: 200px;">
                             <div class="item-cover">
                                 <span>기간</span>
@@ -389,51 +403,6 @@
                             <a href="#menu03" data-toggle="tab" role="tab" aria-selected="menu03">방문자 통계</a>
                             <a href="#menu04" data-toggle="tab" role="tab" aria-selected="menu04">장소 통계</a>
                         </div>
-
-                        <!--
-
-                        <div class="card-header p-0 nav">
-                            <div class="row no-gutters" role="tablist">
-                                <div class="col-auto">
-                                    <a href="#menu01" data-toggle="tab" role="tab" aria-selected="menu01" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start active">
-                                        <span class="h2 mb-0 mr-3">4명</span>
-                                        <span class="flex d-flex flex-column">
-                                            <strong class="card-title">이용자 정보</strong>
-                                            <small class="card-subtitle text-50">활성 이용자 수</small>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-auto border-left border-right">
-                                    <a href="#menu02" data-toggle="tab" role="tab" aria-selected="menu02" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start">
-                                        <span class="h2 mb-0 mr-3">2%<i class="material-icons text-accent ml-4pt icon-24pt">keyboard_arrow_up</i></span>
-                                        <span class="flex d-flex flex-column">
-                                            <strong class="card-title">이용자 추이</strong>
-                                            <small class="card-subtitle text-50">전일 대비</small>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-auto border-left border-right">
-                                    <a href="#menu03" data-toggle="tab" role="tab" aria-selected="menu03" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start">
-                                        <span class="h2 mb-0 mr-3">2</span>
-                                        <span class="flex d-flex flex-column">
-                                            <strong class="card-title">방문자 통계</strong>
-                                            <small class="card-subtitle text-50">현시점 기준</small>
-                                        </span>
-                                    </a>
-                                </div>
-                               <div class="col-auto border-left border-right">
-                                   <a href="#menu04" data-toggle="tab" role="tab" aria-selected="menu03" class="dashboard-area-tabs__tab card-body d-flex flex-row align-items-center justify-content-start">
-                                       <span class="h2 mb-0 mr-3">2</span>
-                                       <span class="flex d-flex flex-column">
-                                           <strong class="card-title">장소 통계</strong>
-                                           <small class="card-subtitle text-50">현시점 기준</small>
-                                       </span>
-                                   </a>
-                               </div>
-
-                            </div>
-                        </div>
--->
 
 
                         <div class="card-body tab-content">

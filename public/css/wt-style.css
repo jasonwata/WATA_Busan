@@ -205,7 +205,7 @@ video{
 }
 
 [dir] .bg-alt{
-    background-color: #202129 !important;
+    background-color: #868e96 !important;
 }
 [dir] .bg-alt .text-primary{
     color: #fff !important;
@@ -535,10 +535,12 @@ label.form-label.essential:after{
     padding-left: 12px;
     padding-right: 12px;
 }
+/* 20201126 / 16:28 / reo */
 .wt-picker dl.wt-card-title{
     font-size: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
+/* end */
 .wt-picker dl.wt-card-title dt,
 .wt-picker dl.wt-card-title dd{
     display: inline-block;
@@ -548,11 +550,14 @@ label.form-label.essential:after{
     width: 35%;
     font-weight: 600;
 }
+/* 20201126 / 16:28 / reo */
 .wt-picker dl.wt-card-title dd{
     font-size: 14px;
     width: 65%;
     text-align: right;
+    margin-bottom: 0;
 }
+/* end */
 
 .map-picker-pointer .map-pointer{
     position: relative;
@@ -660,6 +665,15 @@ label.form-label.essential:after{
     padding: 1rem;
 }
 
+/* 20201126 / 16:28 / reo */
+.navbar-wrap ul.wt-nav .dropdown-menu .dropdown-header{
+    font-weight: bold;
+    color: #000;
+}
+/* end */
+
+
+
 .sidebar-brand-cover span{
     font-size: 12px;
     padding-left: .3rem;
@@ -695,7 +709,13 @@ label.form-label.essential:after{
 
 
 
-
+/* 20201126 / 16:28 / reo */
+@media (max-width: 1860px) {
+    .navbar-wrap ul.wt-nav li{
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+    }
+}
 
 
 
