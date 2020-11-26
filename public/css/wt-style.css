@@ -336,6 +336,11 @@ a.faull-map-close{
     border: 1px solid rgba(0,0,0,0.1);
     font-size: 16px;
 }
+/* 20201126 / 17:30 / reo */
+.side-btn-wrap-left button.btn i{
+    font-size: 18px;
+}
+/* end */
 .side-btn-wrap button.btn{
     display: block;
     width: 50px;
@@ -703,10 +708,27 @@ label.form-label.essential:after{
 
 
 
-
-
-
-
+/* 20201126 / 17:37 / reo */
+span.wt-user-type:before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.wt-user-type-yellow:before{background-color: #ffd633;}
+.wt-user-type-orange:before{background-color: #ff9333;}
+.wt-user-type-coral:before{background-color: #ea4444;}
+.wt-user-type-violet:before{background-color: #ce40aa;}
+.wt-user-type-indigo:before{background-color: #694fd6;}
+.wt-user-type-ocean:before{background-color: #5297da;}
+.wt-user-type-teal:before{background-color: #47d3d9;}
+.wt-user-type-green:before{background-color: #7dc97f;}
+.wt-user-type-honeydew:before{background-color: #dbe765;}
+.wt-user-type-mub:before{background-color: #9a927e;}
+.wt-user-type-coffee:before{background-color: #886a53;}
 
 
 /* 20201126 / 16:28 / reo */
