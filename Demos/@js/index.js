@@ -148,7 +148,6 @@
         if ($this.find('li a.current').length > 0) {
             $("#layer-btn").addClass("active");
             $('#layer-icon').text($this.find('li a.current .material-icons').text());
-            //console.log($this.find('li a.current').get(0).find('material-icons').text());
         } else {
             $("#layer-btn").removeClass("active");
             $('#layer-icon').text('layers');
