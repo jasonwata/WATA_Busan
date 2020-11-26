@@ -629,6 +629,10 @@ label.form-label.essential:after{
 .navbar-wrap ul.wt-nav li .form-check{
     padding-left: 1.25rem;
 }
+.navbar-wrap ul.wt-nav li.nav-item .item-cover{
+    color: rgba(242,249,255,.7);
+    font-size: 1rem;
+}
 .navbar-wrap ul.wt-nav li.nav-item .item-cover > span{
     display: block;
     font-size: 10px;
@@ -649,7 +653,7 @@ label.form-label.essential:after{
     color: rgba(255,255,255,1);
 }
 .navbar-wrap ul.wt-nav li.nav-item span{
-
+    
 }
 
 .navbar-wrap ul.wt-nav li.nav-item .dp-item-cover{
