@@ -40,12 +40,6 @@ video{
 .navbar-brand img{
     width: 120px;
 }
-.layout-login-image__overlay{
-/*
-    background: url(../../public/images/bg_login.jpg) no-repeat center;
-    background-size: cover;
-*/
-}
 .layout-login-image__form{
     position: absolute;
     left: 50%;
