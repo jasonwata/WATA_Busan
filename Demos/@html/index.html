@@ -77,9 +77,9 @@
                 <div class="card wt-picker m-0" style="width: 12rem; position: absolute; top: 20%; left: 60%;">
                     <div class="card-body">
                         <div class="form-group row">
-                            <label for="colFormLabel" class="m-0">반경<span class="text-50">meter</span></label>
+                            <label for="colFormLabel" class="label-desc" class="m-0">반경<span class="text-50">meter</span></label>
                             <div class="input-wrap">
-                                <input type="email" class="form-control" id="colFormLabel" placeholder="ex)10.5">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="ex)10.5">
                             </div>
                         </div>
                         <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
@@ -110,6 +110,44 @@
                     </div>
                 </div>
                 <!-- end -->
+                
+                
+                <div class="card wt-picker m-0" style="width: 14rem; position: absolute; top: 20%; left: 80%;">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-8">
+                                    <select id="setPosition" class="form-control custom-select">
+                                        <option selected>위치안내</option>
+                                        <option value="1">위치1</option>
+                                        <option value="2">위치2</option>
+                                        <option value="3">위치3</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                        <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                            <input checked="" type="checkbox" id="setActivation02" class="custom-control-input">
+                                            <label class="custom-control-label" style="font-size: 0;" for="setActivation02">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="row">
+                                <div class="col-lg">
+                                    <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                    <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="undefinedstudent-path.html" class="btn btn-secondary mr-8pt ">취소</a>
+                            <a href="undefinedstudent-path.html" class="btn btn-primary ml-0">수정</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- picker pointer-->
 
@@ -312,6 +350,7 @@
                         <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu02"><i class="material-icons">local_fire_department</i></button>
                         <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu03"><i class="material-icons">warning</i></button>
                         <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu04"><i class="material-icons">directions_run</i></button>
+                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#iconMenu11"><i class="material-icons">directions_run</i></button>
                     </div>
                     <!-- end -->
                 </div>
@@ -931,8 +970,8 @@
                     <!-- Sidebar Content -->
                     <div class="sidebar-brand-cover">
                         <a href="index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
-                            <img src="../../public/images/wata_logo.png" alt="WATA" /><span>with</span>
-                            <img src="../../public/images/realmaker_logo.png" class="sub-logo" alt="realmaker" />
+                            <h4 class="m-0">K-ASEAN XR LAB</h4>
+                            <h5 class="mb-3">5G기반 실내외 연속형<br>사용자 위치추적 시스템</h5>
                         </a>
                         <a href="#n"></a>
                     </div>
@@ -1005,6 +1044,7 @@
                         </li>
                     </ul>
                     <!-- // END Sidebar Content -->
+
                     <div class="btn-group dropup wt-user-menu">
                         <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="avatar avatar-sm mr-8pt2">
@@ -1017,8 +1057,16 @@
                             <a class="dropdown-item" href="login.html">로그아웃</a>
                         </div>
                     </div>
-                    <div class="sidebar-copy">ⓒ WATA Inc. All rights reserved.</div>
-
+                    
+                    <div class="sidebar-brand-cover-footer footer-brand02">
+                        <img src="../../public/images/realmaker_logo.png" class="sub-logo" alt="realmaker" />
+                        <div class="sidebar-copy">Operated by REALMAKER.</div>
+                    </div>
+                    <div class="sidebar-brand-cover-footer">
+                        <img src="../../public/images/wata_logo.png" alt="WATA" />
+                        <div class="sidebar-copy">ⓒ WATA Inc. All rights reserved.</div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -1530,7 +1578,7 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade wt-event-pop" id="iconMenu010" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade wt-event-pop" id="iconMenu10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1597,7 +1645,88 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade wt-event-pop" id="iconMenu11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">이벤트 생성</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <select id="setPosition" class="form-control custom-select">
+                                    <option selected>위치안내</option>
+                                    <option value="1">위치1</option>
+                                    <option value="2">위치2</option>
+                                    <option value="3">위치3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg">
+                                <div class="flex wt-cell" style="max-width: 100%; text-align: right;">
+                                    <label class="form-label" for="setActivation">활성화 여부</label>
+                                    <div class="custom-control custom-checkbox-toggle custom-control-inline mr-0">
+                                        <input checked="" type="checkbox" id="setActivation" class="custom-control-input">
+                                        <label class="custom-control-label" style="font-size: 0;" for="setActivation">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
+                                <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요." style="margin-bottom: 10px;">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="내용을 입력하세요." rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="">노출 대상</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates" placeholder="노출 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates" placeholder="노출 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates" placeholder="노출 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="">실행 대상</label>
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetXcoordinates2" placeholder="실행 대상 x 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetYcoordinates2" placeholder="실행 대상 y 좌표"></div>
+                            <div class="col-lg"><input type="text" class="form-control" id="eventSetZcoordinates2" placeholder="실행 대상 z 좌표"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg">
+                                <label class="form-label essential" for="eventSetArea">실행 대상 반경</label>
+                                <input type="text" class="form-control" id="eventSetArea" placeholder="실행 대상 반경">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">설정</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="../../public/vendor/jquery.min.js"></script>

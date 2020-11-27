@@ -37,8 +37,9 @@ video{
     min-width: 100%;
     min-height: 100%;
 }
+
 .navbar-brand img{
-    width: 120px;
+    width: 220px;
 }
 .layout-login-image__form{
     position: absolute;
@@ -46,7 +47,9 @@ video{
     top: 50%;
     margin-top: -350px;
     margin-left: -208px;
+    padding: 2rem 3rem !important;
 }
+.layout-login-image__form h4{text-align: center}
 .layout-login-image__form h5{
     text-align: center;
 }
@@ -516,7 +519,7 @@ label.form-label.essential:after{
 .wt-picker{
     background-color: rgba(34,36,46,0.9) !important;
 }
-.wt-picker label{
+.wt-picker label.label-desc {
     font-weight: 600;
     flex: 40%;
     max-width: 40%;
@@ -524,6 +527,9 @@ label.form-label.essential:after{
     font-weight: 600;
     font-size: 16px;
     line-height: 1;
+}
+.wt-picker label.essential{
+    color: #fff;
 }
 .wt-picker label span{
     font-size: 12px;
@@ -557,7 +563,6 @@ label.form-label.essential:after{
     margin-bottom: 0;
 }
 /* end */
-
 .map-picker-pointer .map-pointer{
     position: relative;
     width: 100px;
@@ -608,7 +613,7 @@ label.form-label.essential:after{
 }
 .wt-user-menu{
     position: absolute;
-    bottom: 3rem;
+    bottom: 15rem;
     left: 1.5rem;
 }
 .wt-user-menu .nav-link{
@@ -678,18 +683,36 @@ label.form-label.essential:after{
     padding-left: .3rem;
     color: #949799;
 }
+.sidebar-brand-cover a.sidebar-brand{
+    display: block;
+    margin-top: .8rem;
+    margin-left: 1.5rem !important;
+}
+.sidebar-brand-cover a.sidebar-brand h5{
+    font-size: 12px;
+}
+.sidebar-brand-cover-footer{
+    position: absolute;
+    bottom: 1rem;
+    padding: 1.5rem 1.5rem 1rem;
+    width: 100%;
+}
+.sidebar-brand-cover-footer img{
+    width: 100px;
+}
+.sidebar-brand-cover-footer .sidebar-copy{
+    font-size: 13px;
+    color: #fff;
+    padding-top: .5rem;
+    color: #949799;
+}
 .sidebar-brand-cover img.sub-logo{
     width: 90px;
     padding-left: .3rem;
 }
-
-.sidebar-copy{
-    position: absolute;
-    bottom: 1.5rem;
-    color: rgba(255,255,255,0.4);
-    font-size: 14px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+.sidebar-brand-cover-footer.footer-brand02{
+    bottom: 8rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .navbar-expand .navbar-nav .nav-link.btn-user-target i{
