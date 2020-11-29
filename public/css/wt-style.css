@@ -49,11 +49,22 @@ video{
     margin-left: -208px;
     padding: 2rem 3rem !important;
 }
-.layout-login-image__form h4{text-align: center}
-.layout-login-image__form h5{
+.layout-login-image h4{text-align: center}
+.layout-login-image h5{
     text-align: center;
 }
-
+.layout-login-image__form h5{
+    letter-spacing: -1px;
+}
+.layout-login-image__form  a.text-body{
+    padding: 5px;
+    display: inline-block;
+}
+.layout-login-image__form.wt-signup{
+    max-width: 960px;
+    width: 100%;
+    margin-left: -480px;
+}
 
 /* side bar */
 .mdk-drawer{
@@ -63,6 +74,7 @@ video{
 .sidebar-brand img{
     width: 100px;
     display: block;
+    margin-top: 50%;
     padding-left: 10px;
 }
 

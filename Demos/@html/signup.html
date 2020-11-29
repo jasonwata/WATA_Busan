@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login</title>
+    <title>회원가입</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -54,47 +54,34 @@
 
         <h4 class="m-0">K-ASEAN XR LAB</h4>
         <h5 class="mb-3">5G기반 실내외 연속형 사용자 위치추적 시스템</h5>
-
-        <form action="index.html" novalidate>
+    
+        
+        <form action="signup-payment.html">
             <div class="form-group">
-                <div class="input-group input-group-merge">
-                    <input id="email_2" type="email" required="" class="form-control form-control-prepended" placeholder="이메일을 입력하세요">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <span class="far fa-envelope"></span>
-                        </div>
-                    </div>
-                </div>
+                <label class="form-label" for="name">이름</label>
+                <input id="name" type="text" class="form-control" placeholder="이름을 입력해 주세요.">
             </div>
             <div class="form-group">
-                <div class="input-group input-group-merge">
-                    <input id="password_2" type="password" required="" class="form-control form-control-prepended" placeholder="패스워드를 입력하세요">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <span class="fa fa-key"></span>
-                        </div>
-                    </div>
-                </div>
+                <label class="form-label" for="email">E-mail</label>
+                <input id="email" type="email" class="form-control" placeholder="이메일을 입력해 주세요.">
             </div>
-            <div class="form-group mb-5">
+            <div class="form-group mb-24pt">
+                <label class="form-label" for="password">비밀번호</label>
+                <input id="password" type="password" class="form-control mb-12pt" placeholder="비밀번호를 입력해 주세요.">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" checked="" id="remember">
-                    <label class="custom-control-label" for="remember">아이디 기억하기</label>
+                    <input type="checkbox" class="custom-control-input" checked id="topic-all">
+                    <label class="custom-control-label">Terms and conditions</label>
+                    <small class="form-text text-muted">By checking here and continuing, I agree to the Luma Terms of Use</small>
                 </div>
             </div>
-            <div class="form-group text-center mb-4">
-                <button class="btn btn-primary mb-4" type="submit">로그인</button><br>
-                <a class="text-body text-underline" href="">비밀번호 찾기</a><br>
-                <a class="text-body text-underline" href="index.html">계정생성</a>
-            </div>
-<!--
-            <div class="form-group text-center mb-4">
-                <button class="btn btn-primary mb-4" type="submit">로그인</button><br>
-                <a href="">비밀번호 찾기?</a> <br>
-                <a class="text-body text-underline" href="index.html">계정생성</a>
-            </div>
--->
         </form>
+
+        <div class="form-group text-center mb-4">
+            <button class="btn btn-primary mb-4" type="submit">회원가입</button><br>
+            <a class="text-body text-underline" href="">비밀번호 찾기</a><br>
+            <a class="text-body text-underline" href="index.html">계정생성</a>
+        </div>
+
         <div class="d-flex justify-content-center navbar-light">
             <a href="#n" class="navbar-brand flex-column mb-2 align-items-center mr-0" style="min-width: 0">
                 <img src="../../public/images/busan_logo.png" alt="한 아세안 ICT 융합빌리지" />
