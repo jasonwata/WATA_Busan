@@ -160,11 +160,21 @@
                             <label class="form-label text-white">비밀번호</label>
                             <input type="password" class="form-control" placeholder="비밀번호를 입력해 주세요.">
                         </div>
-                        <div class="form-group mb-40pt">
+                        <div class="form-group">
                             <label class="form-label text-white">비밀번호 확인</label>
                             <input type="password" class="form-control" placeholder="비밀번호를 확인해 주세요.">
                         </div>
-                        <button class="btn btn-primary mt-24pt">정보 수정</button>
+                        <div class="alert bg-accent text-white border-0" role="alert">
+                            <div class="d-flex flex-wrap align-items-start">
+                                <div class="mr-8pt">
+                                    <i class="material-icons">error_outline</i>
+                                </div>
+                                <div class="flex" style="min-width: 180px;">
+                                    <small>입력하신 비밀번호가 다릅니다.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-24pt">수정</button>
                     </form>
                 </div>
             </div>
@@ -182,18 +192,16 @@
         <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
             <div class="mdk-drawer__content">
                 <div class="sidebar sidebar-light sidebar-light-dodger-blue sidebar-left" data-perfect-scrollbar>
-
                     <!-- Sidebar Content -->
-
-                    <a href="index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
-
-                        <img src="../../public/images/wata_logo.png" alt="WATA" />
-
-                    </a>
-
+                    <div class="sidebar-brand-cover">
+                        <a href="index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
+                            <h4 class="m-0">K-ASEAN XR LAB</h4>
+                            <h5 class="mb-3">5G기반 실내외 연속형<br>사용자 위치추적 시스템</h5>
+                        </a>
+                        <a href="#n"></a>
+                    </div>
                     <div class="sidebar-heading">장소선택</div>
                     <ul class="sidebar-menu">
-
                         <li class="sidebar-menu-item active">
                             <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
@@ -201,7 +209,6 @@
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-
                             <a class="sidebar-menu-button" href="index.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
@@ -209,7 +216,6 @@
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-
                             <a class="sidebar-menu-button" href="index.html">
 
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
@@ -217,18 +223,14 @@
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-
                             <a class="sidebar-menu-button" href="index.html">
-
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
                                 <span class="sidebar-menu-text">나루공원</span>
                             </a>
                         </li>
                     </ul>
-
                     <div class="sidebar-heading">영상후반 작업시설</div>
                     <ul class="sidebar-menu">
-
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button js-sidebar-collapse" data-toggle="collapse" href="#enterprise_menu">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">donut_large</span>
@@ -259,38 +261,38 @@
                                 </li>
 
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="staff.html">
+                                    <a class="sidebar-menu-button" href="user.html">
                                         <span class="sidebar-menu-text">유저데이터</span>
                                     </a>
                                 </li>
-
                             </ul>
                         </li>
                     </ul>
-
                     <!-- // END Sidebar Content -->
-
-
-
 
                     <div class="btn-group dropup wt-user-menu">
                         <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                             <span class="avatar avatar-sm mr-8pt2">
-
                                 <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
-
                             </span>
-
                         </a>
                         <div class="dropdown-menu">
                             <div class="dropdown-header"><strong>계정</strong></div>
+                            <a class="dropdown-item" href="edit-account.html">계정정보</a>
                             <a class="dropdown-item" href="account.html">관리자 설정</a>
-                            <a class="dropdown-item" href="edit-account.html">정보수정</a>
                             <a class="dropdown-item" href="login.html">로그아웃</a>
                         </div>
                     </div>
-
+                    
+                    <div class="sidebar-brand-cover-footer footer-brand02">
+                        <img src="../../public/images/realmaker_logo.png" class="sub-logo" alt="realmaker" />
+                        <div class="sidebar-copy">Operated by REALMAKER.</div>
+                    </div>
+                    <div class="sidebar-brand-cover-footer">
+                        <img src="../../public/images/wata_logo.png" alt="WATA" />
+                        <div class="sidebar-copy">ⓒ WATA Inc. All rights reserved.</div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
