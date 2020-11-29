@@ -58,22 +58,46 @@
         
         <form action="signup-payment.html">
             <div class="form-group">
-                <label class="form-label" for="name">이름</label>
-                <input id="name" type="text" class="form-control" placeholder="이름을 입력해 주세요.">
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="email">E-mail</label>
-                <input id="email" type="email" class="form-control" placeholder="이메일을 입력해 주세요.">
-            </div>
-            <div class="form-group mb-24pt">
-                <label class="form-label" for="password">비밀번호</label>
-                <input id="password" type="password" class="form-control mb-12pt" placeholder="비밀번호를 입력해 주세요.">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" checked id="topic-all">
-                    <label class="custom-control-label">Terms and conditions</label>
-                    <small class="form-text text-muted">By checking here and continuing, I agree to the Luma Terms of Use</small>
+                <div class="input-group input-group-merge">
+                    <input id="email_2" type="email" required="" class="form-control form-control-prepended" placeholder="이메일을 입력하세요.">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <span class="far fa-envelope"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="form-group">
+                <div class="input-group input-group-merge">
+                    <input id="password_1" type="password" required="" class="form-control form-control-prepended" placeholder="비밀번호를 입력하세요.">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <span class="fa fa-key"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-5">
+                <div class="input-group input-group-merge">
+                    <input id="password_2" type="password" required="" class="form-control form-control-prepended" placeholder="비밀번호를 확인해 주세요.">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <span class="fa fa-key"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert bg-accent text-white border-0 mt-12pt" role="alert">
+                    <div class="d-flex flex-wrap align-items-start">
+                        <div class="mr-8pt">
+                            <i class="material-icons">error_outline</i>
+                        </div>
+                        <div class="flex" style="min-width: 180px;">
+                            <small>입력하신 비밀번호가 다릅니다.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </form>
 
         <div class="form-group text-center mb-4">
