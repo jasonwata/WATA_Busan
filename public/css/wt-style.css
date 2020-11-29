@@ -66,6 +66,12 @@ video{
     margin-left: -480px;
 }
 
+.layout-login-image__form .form-control:focus{
+    border-color: #edf0f2 !important;
+}
+[dir] .input-group.input-group-merge .form-control:focus ~ [class*=input-group] .input-group-text{
+    border-color: #edf0f2 !important;
+}
 /* side bar */
 .mdk-drawer{
     background-color: #0f0f1b;
