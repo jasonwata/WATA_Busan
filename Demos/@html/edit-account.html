@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark-mode">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="보고서 출력port" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>정보수정</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css" href="../../public/vendor/spinkit.css" rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="../../public/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="../../public/css/material-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="../../public/css/fontawesome.css" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css" href="../../public/css/preloader.css" rel="stylesheet">
+
+
+
+    <link type="text/css" href="../../public/css/map.css" rel="stylesheet">
+
+
+    <link type="text/css" href="../../public/css/dark.css" rel="stylesheet">
+    <!-- Flatpickr -->
+    <link type="text/css" href="../../public/css/flatpickr.css" rel="stylesheet">
+    <link type="text/css" href="../../public/css/flatpickr-airbnb.css" rel="stylesheet">
+    <!-- wtStyle CSS -->
+    <link type="text/css" href="../../public/css/wt-style.css" rel="stylesheet">
+    <!-- ion Range Slider -->
+    <link type="text/css" href="../../public/css/ion-rangeslider.css" rel="stylesheet">
+    <link type="text/css" href="../../public/css/jquery.modal.min.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-boxed ">
+
+    <div class="preloader">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+
+        <!-- <div class="sk-bounce">
+        <div class="sk-bounce-dot"></div>
+        <div class="sk-bounce-dot"></div>
+      </div> -->
+
+    </div>
+
+    <!-- Drawer Layout -->
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+        <div class="mdk-drawer-layout__content page-content">
+
+            <!-- Header -->
+
+            <div style="display: none;" class="navbar navbar-expand navbar-dark navbar-dark-pickled-bluewood navbar-shadow" id="default-navbar" data-primary>
+
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
+                    <span class="material-icons">short_text</span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <a href="index.html" class="navbar-brand mr-16pt d-lg-none">
+                    <!-- <img class="navbar-brand-icon" src="../../public/images/logo/white-100@2x.png" width="30" alt="WATA"> -->
+
+                    <img src="../../public/images/wata_logo.png" alt="WATA" />
+                </a>
+
+                <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">홈</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">내 어플리케이션</a>
+                        <div class="dropdown-menu">
+                            <a href="paths.html" class="dropdown-item">Browse Paths</a>
+                            <a href="student-path.html" class="dropdown-item">Path Details</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pricing.html" class="nav-link">문서</a>
+                    </li>
+                    <li class="nav-item dropdown" data-toggle="tooltip" data-title="Community" data-placement="bottom" data-boundary="window">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                            <i class="material-icons">people_outline</i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="teachers.html" class="dropdown-item">계정관리</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="index.html" style="max-width: 230px">
+                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                    <input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+                </form>
+
+                <ul class="nav navbar-nav ml-auto mr-0">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link" data-toggle="tooltip" data-title="로그인" data-placement="bottom" data-boundary="window"><i class="material-icons">lock_open</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="btn btn-outline-identity">시작하기</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- // END Header -->
+
+       
+            
+            <!-- Page Content -->
+            <div class="container page__container page-section mt-24pt" style="max-width: 960px;">
+                <div class="pt-32pt">
+                    <div class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
+                        <div class="flex d-flex flex-column flex-sm-row align-items-center">
+                            <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                                <h2 class="mb-0">계정정보</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-6 p-0">
+                    <form>
+                        <div class="page-separator mt-44pt">
+                            <div class="page-separator__text">계정</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label text-white">이름</label>
+                            <input type="text" class="form-control" value="홍길동" placeholder="이름을 입력해 주세요.">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label text-white">E-mail</label>
+                            <input type="email" class="form-control" value="test@test.com" placeholder="이메일을 입력해 주세요.">
+                            <small class="form-text text-muted">Note that if you change your email, you will have to confirm it again.</small>
+                        </div>
+                        <div class="page-separator mt-44pt">
+                            <div class="page-separator__text">비밀번호</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label text-white">비밀번호</label>
+                            <input type="password" class="form-control" placeholder="비밀번호를 입력해 주세요.">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label text-white">비밀번호 확인</label>
+                            <input type="password" class="form-control" placeholder="비밀번호를 확인해 주세요.">
+                        </div>
+                        <div class="alert bg-accent text-white border-0" role="alert">
+                            <div class="d-flex flex-wrap align-items-start">
+                                <div class="mr-8pt">
+                                    <i class="material-icons">error_outline</i>
+                                </div>
+                                <div class="flex" style="min-width: 180px;">
+                                    <small>입력하신 비밀번호가 다릅니다.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-24pt">수정</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <!-- // END Page Content -->
+
+        </div>
+
+        <!-- // END drawer-layout__content -->
+
+        <!-- Drawer -->
+
+        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-light sidebar-light-dodger-blue sidebar-left" data-perfect-scrollbar>
+                    <!-- Sidebar Content -->
+                    <div class="sidebar-brand-cover">
+                        <a href="index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
+                            <h4 class="m-0">K-ASEAN XR LAB</h4>
+                            <h5 class="mb-3">5G기반 실내외 연속형<br>사용자 위치추적 시스템</h5>
+                        </a>
+                        <a href="#n"></a>
+                    </div>
+                    <div class="sidebar-heading">장소선택</div>
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="index.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
+                                <span class="sidebar-menu-text">홈</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="index.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
+                                <span class="sidebar-menu-text">문화 콘텐츠 콤플렉스</span>
+                                <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">NEW</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="index.html">
+
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
+                                <span class="sidebar-menu-text">K-ASEAN XR LAB</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="index.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">place</span>
+                                <span class="sidebar-menu-text">나루공원</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sidebar-heading">영상후반 작업시설</div>
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse" data-toggle="collapse" href="#enterprise_menu">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">donut_large</span>
+                                K-ASEAN XR LAB
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="enterprise_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="dashboard.html">
+                                        <span class="sidebar-menu-text">대시보드</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="user.html">
+                                        <span class="sidebar-menu-text">이용자 정보</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="event.html">
+                                        <span class="sidebar-menu-text">이벤트 관리</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="account.html">
+                                        <span class="sidebar-menu-text">관리자 설정</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="user.html">
+                                        <span class="sidebar-menu-text">유저데이터</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- // END Sidebar Content -->
+
+                    <div class="btn-group dropup wt-user-menu">
+                        <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar avatar-sm mr-8pt2">
+                                <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header"><strong>계정</strong></div>
+                            <a class="dropdown-item" href="edit-account.html">계정정보</a>
+                            <a class="dropdown-item" href="account.html">관리자 설정</a>
+                            <a class="dropdown-item" href="login.html">로그아웃</a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-brand-cover-footer footer-brand02">
+                        <img src="../../public/images/realmaker_logo.png" class="sub-logo" alt="realmaker" />
+                        <div class="sidebar-copy">Operated by REALMAKER.</div>
+                    </div>
+                    <div class="sidebar-brand-cover-footer">
+                        <img src="../../public/images/wata_logo.png" alt="WATA" />
+                        <div class="sidebar-copy">ⓒ WATA Inc. All rights reserved.</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- // END Drawer -->
+
+
+    </div>
+
+
+
+    <!-- // END Drawer Layout -->
+
+    <!-- jQuery -->
+    <script src="../../public/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../../public/vendor/popper.min.js"></script>
+    <script src="../../public/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="../../public/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="../../public/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="../../public/js/app.js"></script>
+
+    <!-- Preloader -->
+    <script src="../../public/js/preloader.js"></script>
+
+    <!-- Range Slider -->
+    <script src="../../public/vendor/ion.rangeSlider.min.js"></script>
+    <script src="../../public/js/ion-rangeslider.js"></script>
+
+    <!-- Global Settings -->
+    <script src="../../public/js/settings.js"></script>
+
+    <!-- Moment.js -->
+    <script src="../../public/vendor/moment.min.js"></script>
+    <script src="../../public/vendor/moment-range.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="../../public/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="../../public/js/flatpickr.js"></script>
+
+    <!-- Chart.js -->
+    <script src="../../public/vendor/Chart.min.js"></script>
+    <script src="../../public/js/chartjs.js"></script>
+    <script src="../../public/js/chartjs-rounded-bar.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="../../public/js/page.ecommerce.js"></script>
+
+    <!-- List.js -->
+    <script src="../../public/vendor/list.min.js"></script>
+    <script src="../../public/js/list.js"></script>
+
+    <!-- Tables -->
+    <script src="../../public/js/toggle-check-all.js"></script>
+    <script src="../../public/js/check-selected-row.js"></script>
+
+    <script src="../../public/js/jquery.modal.min.js"></script>
+
+</body>
+
+</html>
