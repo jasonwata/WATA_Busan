@@ -25,6 +25,7 @@
 }
 [dir] .layout-boxed > .mdk-drawer-layout{
     padding: 0;
+    min-width: 1700px;
 }
 
 
@@ -73,9 +74,14 @@ video{
     border-color: #edf0f2 !important;
 }
 /* side bar */
+.sidebar{
+
+}
+/*
 .mdk-drawer{
     background-color: #0f0f1b;
 }
+*/
 
 .sidebar-brand img{
     width: 100px;
@@ -237,6 +243,7 @@ table a.js-lists-values-orders-amount{
 }
 html[dir].dark-mode .layout-boxed #default-drawer .sidebar-brand{
     background-color: transparent !important;
+    box-shadow: none;
 }
 [data-position=right] > .mdk-drawer__content{
     right: auto;
@@ -561,7 +568,7 @@ label.form-label.essential:after{
 /* 20201126 / 16:28 / reo */
 .wt-picker dl.wt-card-title{
     font-size: 0;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 /* end */
 .wt-picker dl.wt-card-title dt,
@@ -775,16 +782,46 @@ span.wt-user-type:before{
 }
 
 
+.wt-drawer__content{
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+a.drawer-panel-btn{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 1rem 0;
+    color: rgba(255,255,255,0.5);
+/*    transition: all .2s ease;*/
+    display: block;
+    background-color: #2a2b35;
+    border: 1px solid rgba(0,0,0,0.8);
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    margin-top: -35px;
+}
+a.drawer-panel-btn.active{
+    left: 256px;
+/*    transition: all .2s ease;*/
+}
+a.drawer-panel-btn:before, a.drawer-panel-btn.active:before{
+    font-family: 'Material Icons';
+    font-size: 24px;
+}
+a.drawer-panel-btn:before{
+    content: '\e315';
+}
+a.drawer-panel-btn.active:before{
+    content: '\e314';
+}
 
-
-
-
-
-
-
-
-
-
+.wt-drawer[data-opened]{
+    display: block ;
+    visibility: inherit;
+}
+.wt-drawer{
+    display: none;
+    visibility: inherit;
+}
 
 
 

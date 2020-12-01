@@ -91,9 +91,22 @@
                             <dt>사용자</dt>
                             <dd>01012345678</dd>
                         </dl>
+                        <dl class="wt-card-title">
+                            <dt>성별</dt>
+                            <dd>남성</dd>
+                        </dl>
+                        <dl class="wt-card-title">
+                            <dt>나이</dt>
+                            <dd>32</dd>
+                        </dl>
+                        <dl class="wt-card-title">
+                            <dt>OS 타입</dt>
+                            <dd>AOS</dd>
+                        </dl>
                         <a href="#" class="btn btn-primary btn-block">메세지 전송</a>
                         <a href="#" class="btn btn-primary btn-block">동선 추적</a>
                         <a href="#" class="btn btn-primary btn-block">이벤트 생성</a>
+
                     </div>
                 </div>
                 <!-- 20201126 / 16:28 / reo -->
@@ -151,6 +164,7 @@
             </div>
             <!-- picker pointer-->
 
+<!--
             <div class="map-picker-pointer">
                 <div>
                     <svg pointer-events="none" viewBox="-595 -182 2998 1499" style="transform: translate3d(-295px, -82px, 0px);">
@@ -163,6 +177,7 @@
                     </svg>
                 </div>
             </div>
+-->
             <!-- Header -->
             <div class="navbar-wrap nav-btn__styling">
                 <div class="navbar navbar-expand navbar-dark navbar-dark-pickled-bluewood navbar-shadow navbar-float" id="default-navbar" data-primary>
@@ -176,7 +191,6 @@
                     <a href="index.html" class="navbar-brand mr-16pt d-lg-none">
                         <img src="../../public/images/wata_logo.png" alt="logo" class="img-fluid" />
                     </a>
-
                     <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
                         <li class="nav-item dropdown" style="width: 100px;">
                             <div class="item-cover">
@@ -308,14 +322,6 @@
                             </div>
                         </li>
                     </ul>
-
-                    <!--
-                    <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="index.html" style="max-width: 230px">
-                        <button class="btn" type="submit"><i class="material-icons">search</i></button>
-                        <input type="text" class="form-control" placeholder="Search ...">
-                    </form>
--->
-
                     <ul class="nav navbar-nav ml-auto mr-0">
                         <li class="nav-item">
                             <a href="#" class="nav-link btn-user-target" data-toggle="tooltip" data-title="사용자추적" data-placement="bottom" data-boundary="window" data-original-title="" title=""><i class="material-icons text-white text-80">history</i></a>
@@ -338,7 +344,6 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
             <!-- 좌측 메뉴 -->
@@ -963,8 +968,8 @@
         <!-- // END drawer-layout__content -->
 
         <!-- Drawer -->
-
-        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+        <a href="#" data-target="#default-drawer" data-toggle="sidebar" class="drawer-panel-btn active"></a>
+        <div class="mdk-drawer js-mdk-drawer wt-drawer" id="default-drawer">
             <div class="mdk-drawer__content">
                 <div class="sidebar sidebar-light sidebar-light-dodger-blue sidebar-left" data-perfect-scrollbar>
                     <!-- Sidebar Content -->
@@ -1073,99 +1078,6 @@
         </div>
 
         <!-- // END Drawer -->
-
-        <!-- filter menu -->
-        <div class="mdk-drawer js-mdk-drawer" id="library-drawer" data-align="end">
-            <div class="mdk-drawer__content ">
-                <div class="sidebar sidebar-black-dodger-blue sidebar-right py-16pt wt-sidebar" data-perfect-scrollbar data-perfect-scrollbar-wheel-propagation="true">
-
-                    <div class="d-flex align-items-center mb-24pt  d-lg-none">
-                        <form action="index.html" class="search-form search-form--light mx-16pt pr-0 pl-16pt">
-                            <input type="text" class="form-control pl-0" placeholder="Search">
-                            <button class="btn" type="submit"><i class="material-icons">search</i></button>
-                        </form>
-                    </div>
-
-
-
-                    <div class="sidebar-heading">기간설정</div>
-                    <div class="sidebar-block">
-                        <div class="form-group">
-                            <input id="filter_date" type="text" class="form-control" placeholder="기간선택" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="Y/m/d" data-flatpickr-date-format="Y/m/d">
-                        </div>
-                    </div>
-
-
-                    <div class="sidebar-heading">시작시간</div>
-                    <div class="sidebar-block">
-                        <div class="form-group">
-                            <input id="flatpickrSample05" type="text" class="form-control" placeholder="Flatpickr time example" data-toggle="flatpickr" data-flatpickr-enable-time="true" data-flatpickr-no-calendar="true" data-flatpickr-alt-format="H:i" data-flatpickr-date-format="H:i" value="15:35">
-                        </div>
-                    </div>
-
-                    <div class="sidebar-heading">종료시간</div>
-                    <div class="sidebar-block">
-                        <div class="form-group">
-                            <input id="flatpickrSample05" type="text" class="form-control" placeholder="Flatpickr time example" data-toggle="flatpickr" data-flatpickr-enable-time="true" data-flatpickr-no-calendar="true" data-flatpickr-alt-format="H:i" data-flatpickr-date-format="H:i" value="15:35">
-                        </div>
-                    </div>
-
-
-
-                    <div class="sidebar-heading">성별</div>
-                    <div class="sidebar-block">
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck07" checked="">
-                                <label class="custom-control-label" for="filtersCheck07">남</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck08">
-                                <label class="custom-control-label" for="filtersCheck08">여</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-heading">폰타입</div>
-                    <div class="sidebar-block">
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck11" checked="">
-                                <label class="custom-control-label" for="filtersCheck11">Android</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" value="" id="filtersCheck12">
-                                <label class="custom-control-label" for="filtersCheck12">iOS</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-heading">연령대</div>
-                    <div class="sidebar-block">
-                        <div class="flex" style="max-width: 100%">
-                            <input type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="25" data-to="75" data-type="double" data-grid="true">
-                        </div>
-                    </div>
-
-                    <div class="sidebar-heading">체류시간<span class="sidebar-heading__sub">(minute)</span></div>
-                    <div class="sidebar-block">
-                        <div class="flex" style="max-width: 100%">
-                            <input type="text" data-toggle="ion-rangeslider" data-min="5" data-max="50" data-from="16" data-to="39" data-type="double" data-grid="true">
-                        </div>
-                    </div>
-
-
-                    <div class="sidebar-block mb-4 wt-btn-side">
-                        <a href="#" class="btn btn-primary btn-block">적용</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
     </div>
 
