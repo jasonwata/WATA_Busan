@@ -27,7 +27,9 @@
     padding: 0;
     min-width: 1700px;
 }
-
+[dir] .custom-checkbox-toggle .custom-control-label:after{
+    background-color: #afbfd2;
+}
 
 /* login */
 video{
@@ -586,6 +588,14 @@ label.form-label.essential:after{
     width: 65%;
     text-align: right;
     margin-bottom: 0;
+}
+.wt-picker label.form-label{
+    color: #fff;
+}
+.wt-picker .row .col p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 /* end */
 .map-picker-pointer .map-pointer{
