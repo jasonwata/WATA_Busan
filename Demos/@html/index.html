@@ -40,6 +40,8 @@
     <link type="text/css" href="../../public/css/wt-style.css" rel="stylesheet">
     <!-- ion Range Slider -->
     <link type="text/css" href="../../public/css/ion-rangeslider.css" rel="stylesheet">
+    <!-- Dropzone -->
+    <link type="text/css" href="../../public/css/dropzone.css" rel="stylesheet">
     <link href="http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel='stylesheet' type='text/css'>
 
 </head>
@@ -1619,10 +1621,40 @@
                             <div class="col-lg">
                                 <label class="form-label essential" for="eventSetTitle">이벤트 제목</label>
                                 <input type="text" class="form-control" id="eventSetTitle" placeholder="제목을 입력하세요." style="margin-bottom: 10px;">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="내용을 입력하세요." rows="3"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="내용을 입력하세요." rows="3" style="margin-bottom: 10px;"></textarea>
+                                <input type="url" class="form-control" id="" placeholder="https://example.com" style="margin-bottom: 10px;">
+                                <div class="dropzone dropzone-multiple" data-toggle="dropzone" data-dropzone-multiple data-dropzone-url="http://" data-dropzone-files=''>
+                                    <div class="fallback">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFileUploadMultiple" multiple>
+                                            <label class="custom-file-label" for="customFileUploadMultiple">Choose file</label>
+                                        </div>
+                                    </div>
+                                    <ul class="dz-preview dz-preview-multiple list-group list-group-flush mt-16pt">
+                                        <li class="list-group-item">
+                                            <div class="form-row align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="avatar file-pre-av">
+                                                        <img src="" class="avatar-img rounded" alt="..." data-dz-thumbnail>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="font-weight-bold" data-dz-name>...</div>
+                                                    <p class="small mb-0" data-dz-size>...</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="text-muted-light" data-dz-remove>
+                                                        <i class="material-icons">close</i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <div class="row">
                             <div class="col-lg">
@@ -1721,6 +1753,11 @@
     <script src="../../public/js/wt-global.js"></script>
 
     <script src="../@js/index.js"></script>
+
+
+            <!-- Dropzone -->
+        <script src="../../public/vendor/dropzone.min.js"></script>
+        <script src="../../public/js/dropzone.js"></script>
 
 </body>
 

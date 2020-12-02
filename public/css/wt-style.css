@@ -889,5 +889,38 @@ html[dir].dark-mode .table tbody .selected>td{
     background-color: #3a4392;
 }
 
+.dz-default{
+    border-radius: .25rem;
+}
+.dz-preview li {
+    border-color: #e9edf1 !important;
+}
+.file-pre-av{
+    width: 2rem;
+    height: 2rem;
+}
+.dz-default.dz-message{
+    padding: 1rem !important;
+}
+
+
+.dz-default.dz-message .dz-button{
+    border: 1px solid #f3f3f3;
+    background-color: #fafafa;
+    padding: 2px 4px;
+}
+
+.dz-default.dz-message .dz-button:before{
+    content: '\e2bc';
+    font-family: 'Material Icons';
+    font-size: 18px;
+    line-height: 0;
+    vertical-align: middle;
+    padding-right: 2px;
+}
+
+
+
+
 
 

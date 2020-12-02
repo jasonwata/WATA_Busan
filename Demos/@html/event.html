@@ -181,11 +181,24 @@
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="form-group">
-                                        <label for="filter_category">공간선택</label><br>
+                                        <label for="filter_category">구역</label><br>
                                         <select id="filter_category" class="custom-select" style="width: 200px;">
-                                            <option value="all">교류 플랫폼</option>
-                                            <option value="all">휴게실</option>
-                                            <option value="all">회의실</option>
+                                            <optgroup label="건물구분">
+                                                <option value="전체구역">전체구역</option>
+                                            </optgroup>
+                                            <optgroup label="문화콘텐츠 컴플렉스">
+                                                <option value="1층 주차장">1층 주차장</option>
+                                                <option value="1층 로비">1층 로비</option>
+                                            </optgroup>
+                                            <optgroup label="영상후반작업시설">
+                                                <option value="4층 전체">4층 전체</option>
+                                                <option value="교육실">교육실</option>
+                                                <option value="회의실">회의실</option>
+                                                <option value="교류플랫폼">교류플랫폼</option>
+                                                <option value="사무실">사무실</option>
+                                                <option value="AR스튜디오">AR스튜디오</option>
+                                                <option value="미디어회의실">미디어회의실</option>
+                                            </optgroup>
                                         </select>
                                     </div>
                                 </div>
