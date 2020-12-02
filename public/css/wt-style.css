@@ -92,7 +92,12 @@ video{
     padding-left: 10px;
 }
 
-
+[dir] .sidebar-light{
+    background-color: #1d1e26 !important;
+}
+[dir=ltr] .sidebar-light.sidebar-left{
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
 .sidebar-light .sidebar-menu-button{
     color: rgba(86,186,202,0.7);
 }
