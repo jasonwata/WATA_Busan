@@ -609,12 +609,10 @@ label.form-label.essential:after{
     padding-left: 12px;
     padding-right: 12px;
 }
-/* 20201126 / 16:28 / reo */
 .wt-picker dl.wt-card-title{
     font-size: 0;
     margin-bottom: .5rem;
 }
-/* end */
 .wt-picker dl.wt-card-title dt,
 .wt-picker dl.wt-card-title dd{
     display: inline-block;
@@ -624,7 +622,6 @@ label.form-label.essential:after{
     width: 35%;
     font-weight: 600;
 }
-/* 20201126 / 16:28 / reo */
 .wt-picker dl.wt-card-title dd{
     font-size: 14px;
     width: 65%;
@@ -639,7 +636,6 @@ label.form-label.essential:after{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-/* end */
 .map-picker-pointer .map-pointer{
     position: relative;
     width: 100px;
@@ -703,7 +699,6 @@ label.form-label.essential:after{
 }
 
 /* navbar custum */
-
 .navbar-wrap ul.wt-nav li input.form-control{
     border: none;
     width: 0;
@@ -741,19 +736,32 @@ label.form-label.essential:after{
 .navbar-wrap ul.wt-nav li.nav-item span{
     
 }
-
 .navbar-wrap ul.wt-nav li.nav-item .dp-item-cover{
     padding: 1rem;
 }
-
-/* 20201126 / 16:28 / reo */
 .navbar-wrap ul.wt-nav .dropdown-menu .dropdown-header{
     font-weight: bold;
     color: #000;
 }
-/* end */
-
-
+.navbar-wrap span.liveUser{
+    margin-left: 5px;
+}
+.navbar-wrap span.liveUser:before{
+    content: '\e15b';
+    font-family: 'Material Icons';
+    color: #747e9a;
+    font-size: 1.25rem;
+    vertical-align: middle;
+    line-height: 0;
+}
+.navbar-wrap span.liveUser-up:before{
+    content: '\e316';
+    color: #ed0b4c;
+}
+.navbar-wrap span.liveUser-down:before{
+    content: '\e313';
+    color: #4d93ff;
+}
 
 .sidebar-brand-cover span{
     font-size: 12px;
