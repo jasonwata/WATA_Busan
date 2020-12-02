@@ -323,8 +323,37 @@ a.faull-map-close{
     width: 100%;
     padding: 0 2rem;
     height: 450px;
-
 }
+/*
+.contents-wrap a.wide-modal-btn{
+    background-color: #fff;
+    position: absolute;
+    top: -25px;
+    display: block;
+    background-color: #2a2b35;
+    border: 1px solid rgba(0,0,0,0.8);
+    border-radius: 15px 15px 0 0;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+}
+.contents-wrap a.wide-modal-btn:before{
+    font-family: 'Material Icons';
+    color: rgba(255,255,255,0.5);
+    font-size: 24px;
+    display: block;
+    line-height: 25px;
+    text-align: center;
+}
+.contents-wrap a.wide-modal-btn:before{
+    content: '\e313';
+}
+.contents-wrap a.wide-modal-btn.active:before{
+    content: '\e316';
+}
+*/
+
+
 .contents-wrap .contents-wrap-inner{
     background-color: #22242e;
     height: 100%;
