@@ -884,7 +884,10 @@ a.drawer-panel-btn.active:before{
 }
 
 
-
+/* table */
+html[dir].dark-mode .table tbody .selected>td{
+    background-color: #3a4392;
+}
 
 
 
