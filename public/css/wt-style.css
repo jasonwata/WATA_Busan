@@ -25,7 +25,6 @@
 }
 [dir] .layout-boxed > .mdk-drawer-layout{
     padding: 0;
-    min-width: 1700px;
 }
 [dir] .custom-checkbox-toggle .custom-control-label:after{
     background-color: #afbfd2;
@@ -658,8 +657,6 @@ label.form-label.essential:after{
     background-color: rgba(246,78,96,0.3);
 }
 */
-.map-picker-pointer .map-pointer i{
-}
 .map-picker-pointer .pointer-red{
     background-color: rgba(246,78,96,1);
 }
@@ -767,6 +764,48 @@ label.form-label.essential:after{
     content: '\e313';
     color: #4d93ff;
 }
+.navbar-wrap .navbar-container{
+    position: relative;
+    width: calc(100% - 250px);
+    max-width: 1300px;
+}
+.navbar-wrap .navbar-container .navbar-inner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.navbar-wrap .navbar-container .navbar-inner ul.wt-nav{
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-left: 0 !important;
+    padding-left: 2rem;
+}
+.navbar-wrap .navbar-container .navbar-inner:before,
+.navbar-wrap .navbar-container .navbar-inner:after{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.navbar-wrap .navbar-container .navbar-inner:before{
+    left: 0;
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, rgba(48,59,86,1)),to(rgba(48,59,86,0)));
+    background: -webkit-linear-gradient(left, rgba(48,59,86,1) 60%,rgba(48,59,86,0) 100%);
+    background: linear-gradient(to right, rgba(48,59,86,1) 60%,rgba(48,59,86,0) 100%);
+}
+.navbar-wrap .navbar-container .navbar-inner:after{
+    right: 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(48,59,86,0)),color-stop(40%, rgba(48,59,86,1)));
+    background: -webkit-linear-gradient(left, rgba(48,59,86,0) 0%,rgba(48,59,86,1) 40%);
+    background: linear-gradient(to right, rgba(48,59,86,0) 0%,rgba(48,59,86,1) 40%);
+}
+
+
 
 .sidebar-brand-cover span{
     font-size: 12px;

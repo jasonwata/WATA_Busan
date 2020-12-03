@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <title>K-ASEAN XR LAB</title>
 
     <!-- Prevent the demo from appearing in search engines -->
@@ -69,7 +69,7 @@
 
     <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
         <div class="mdk-drawer-layout__content page-content wt-home-layout">
-
+            
             <!-- map -->
             <div class="home-map-wrap"></div>
             <!-- 열감지 -->
@@ -212,143 +212,151 @@
             <div class="navbar-wrap nav-btn__styling">
                 <div class="navbar navbar-expand navbar-dark navbar-dark-pickled-bluewood navbar-shadow navbar-float" id="default-navbar" data-primary>
 
-                    <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
-                        <li class="nav-item dropdown" style="width: 100px;">
-                            <div class="item-cover">
-                                <span>구역</span>
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">미디어회의실</a>
-                                
-                                <!-- 20201126 / 14:48 / reo / start -->
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-header"><strong>건물구분</strong></div>
-                                    <a href="index.html" class="dropdown-item">전체구역</a>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="dropdown-header"><strong>문화콘텐츠 컴플렉스</strong></div>
-                                    <a href="index.html" class="dropdown-item">1층 주차장</a>
-                                    <a href="index.html" class="dropdown-item">1층 로비</a>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="dropdown-header"><strong>영상후반작업시설</strong></div>
-                                    <a href="index.html" class="dropdown-item">4층 전체</a>
-                                    <a href="index.html" class="dropdown-item">교육실</a>
-                                    <a href="index.html" class="dropdown-item">회의실</a>
-                                    <a href="index.html" class="dropdown-item">교류플랫폼</a>
-                                    <a href="index.html" class="dropdown-item">사무실</a>
-                                    <a href="index.html" class="dropdown-item">AR스튜디오</a>
-                                    <a href="index.html" class="dropdown-item">미디어회의실</a>
-                                </div>
-                                <!-- end -->
-                                
-                            </div>
-                        </li>
-                        
-                        <li class="nav-item" style="width: 200px;">
-                            <div class="item-cover">
-                                <span>기간</span>
-                                <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="Y/m/d" data-flatpickr-date-format="Y/m/d">
-                                    <a href="javascript:void(0)" class="nav-link" data-toggle>기간선택</a>
-                                    <input class="d-none" type="hidden" value="" data-input>
-                                </div>
-                            </div>
+                    <div class="navbar-container">
+                        <div class="navbar-inner">
 
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" title=""><i class="material-icons text-white text-80">switch_left</i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" title=""><i class="material-icons text-white text-80">switch_right</i></a>
-                        </li>
-                        <li class="nav-item" style="width: 60px;">
-                            <div id="navStartTime">
+
+                        <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt wt-nav">
+                            <li class="nav-item dropdown" style="width: 100px;">
                                 <div class="item-cover">
-                                    <span>시작시간</span>
-                                    <a href="javascript:void(0)" class="nav-link" data-toggle>시간선택</a>
-                                    <input class="d-none" type="hidden" value="" data-input>
+                                    <span>구역</span>
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">미디어회의실</a>
+                                    
+                                    <!-- 20201126 / 14:48 / reo / start -->
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-header"><strong>건물구분</strong></div>
+                                        <a href="index.html" class="dropdown-item">전체구역</a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-header"><strong>문화콘텐츠 컴플렉스</strong></div>
+                                        <a href="index.html" class="dropdown-item">1층 주차장</a>
+                                        <a href="index.html" class="dropdown-item">1층 로비</a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-header"><strong>영상후반작업시설</strong></div>
+                                        <a href="index.html" class="dropdown-item">4층 전체</a>
+                                        <a href="index.html" class="dropdown-item">교육실</a>
+                                        <a href="index.html" class="dropdown-item">회의실</a>
+                                        <a href="index.html" class="dropdown-item">교류플랫폼</a>
+                                        <a href="index.html" class="dropdown-item">사무실</a>
+                                        <a href="index.html" class="dropdown-item">AR스튜디오</a>
+                                        <a href="index.html" class="dropdown-item">미디어회의실</a>
+                                    </div>
+                                    <!-- end -->
+                                    
                                 </div>
-                            </div>
-                        </li>
-                        <li class="nav-item" style="width: 60px;">
-                            <div class="item-cover">
-                                <span>종료시간</span>
-                                <div id="navEndTime">
-                                    <a href="#n" class="nav-link" data-toggle>시간선택</a>
-                                    <input class="d-none" type="hidden" value="" data-input>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown"  style="width: 60px;">
-                            <div class="item-cover">
-                                <span>성별</span>
-                                <a href="#n" class="nav-link dropdown-toggle" id="navBarGender" data-toggle="dropdown" data-caret="false">성별</a>
-                                <div class="dropdown-menu">
-                                    <div class="dp-item-cover" onclick="event.stopPropagation();">
-                                        <div class="form-check custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="navBarGenderVal" value="" id="navBarGenderAll" checked>
-                                            <label class="custom-control-label" for="navBarGenderAll">전체</label>
-                                        </div>
-                                        <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="radio" name="navBarGenderVal" value="1" id="navBarGenderMale">
-                                            <label class="custom-control-label" for="navBarGenderMale">남</label>
-                                        </div>
-                                        <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="radio" name="navBarGenderVal" value="2" id="navBarGenderFeMale">
-                                            <label class="custom-control-label" for="navBarGenderFeMale">여</label>
-                                        </div>
+                            </li>
+                            
+                            <li class="nav-item" style="width: 200px;">
+                                <div class="item-cover">
+                                    <span>기간</span>
+                                    <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="Y/m/d" data-flatpickr-date-format="Y/m/d">
+                                        <a href="javascript:void(0)" class="nav-link" data-toggle>기간선택</a>
+                                        <input class="d-none" type="hidden" value="" data-input>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown"  style="width: 60px;">
-                            <div class="item-cover">
-                                <span>휴대폰</span>
-                                <a href="#n" class="nav-link dropdown-toggle" id="navBarDeviceType" data-toggle="dropdown" data-caret="false">휴대폰</a>
-                                <div class="dropdown-menu">
-                                    <div class="dp-item-cover" onclick="event.stopPropagation();">
-                                        <div class="form-check custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="" id="deviceTypeAll" checked>
-                                            <label class="custom-control-label" for="deviceTypeAll">전체</label>
-                                        </div>
 
-                                        <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="1" id="deviceTypeAos">
-                                            <label class="custom-control-label" for="deviceTypeAos">Android</label>
-                                        </div>
-                                        <div class="form-check custom-checkbox mt-12pt">
-                                            <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="2" id="deviceTypeIos">
-                                            <label class="custom-control-label" for="deviceTypeIos">iOS</label>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" title=""><i class="material-icons text-white text-80">switch_left</i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" title=""><i class="material-icons text-white text-80">switch_right</i></a>
+                            </li>
+                            <li class="nav-item" style="width: 60px;">
+                                <div id="navStartTime">
+                                    <div class="item-cover">
+                                        <span>시작시간</span>
+                                        <a href="javascript:void(0)" class="nav-link" data-toggle>시간선택</a>
+                                        <input class="d-none" type="hidden" value="" data-input>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" style="width: 60px;">
+                                <div class="item-cover">
+                                    <span>종료시간</span>
+                                    <div id="navEndTime">
+                                        <a href="#n" class="nav-link" data-toggle>시간선택</a>
+                                        <input class="d-none" type="hidden" value="" data-input>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown"  style="width: 60px;">
+                                <div class="item-cover">
+                                    <span>성별</span>
+                                    <a href="#n" class="nav-link dropdown-toggle" id="navBarGender" data-toggle="dropdown" data-caret="false">성별</a>
+                                    <div class="dropdown-menu">
+                                        <div class="dp-item-cover" onclick="event.stopPropagation();">
+                                            <div class="form-check custom-checkbox">
+                                                <input class="custom-control-input" type="radio" name="navBarGenderVal" value="" id="navBarGenderAll" checked>
+                                                <label class="custom-control-label" for="navBarGenderAll">전체</label>
+                                            </div>
+                                            <div class="form-check custom-checkbox mt-12pt">
+                                                <input class="custom-control-input" type="radio" name="navBarGenderVal" value="1" id="navBarGenderMale">
+                                                <label class="custom-control-label" for="navBarGenderMale">남</label>
+                                            </div>
+                                            <div class="form-check custom-checkbox mt-12pt">
+                                                <input class="custom-control-input" type="radio" name="navBarGenderVal" value="2" id="navBarGenderFeMale">
+                                                <label class="custom-control-label" for="navBarGenderFeMale">여</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown"  style="width: 60px;">
-                            <div class="item-cover">
-                                <span>연령</span>
-                                <a href="#" id="navVarAgeRange" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">연령대</a>
+                            </li>
+                            <li class="nav-item dropdown"  style="width: 60px;">
+                                <div class="item-cover">
+                                    <span>휴대폰</span>
+                                    <a href="#n" class="nav-link dropdown-toggle" id="navBarDeviceType" data-toggle="dropdown" data-caret="false">휴대폰</a>
+                                    <div class="dropdown-menu">
+                                        <div class="dp-item-cover" onclick="event.stopPropagation();">
+                                            <div class="form-check custom-checkbox">
+                                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="" id="deviceTypeAll" checked>
+                                                <label class="custom-control-label" for="deviceTypeAll">전체</label>
+                                            </div>
 
-                                <div class="dropdown-menu" style="width: 300px;">
-                                    <div class="dp-item-cover" onclick="event.stopPropagation();">
-                                        <div class="flex" style="max-width: 100%">
-                                            <input id="navVarAgeRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="0" data-to="100" data-type="double" data-grid="true">
+                                            <div class="form-check custom-checkbox mt-12pt">
+                                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="1" id="deviceTypeAos">
+                                                <label class="custom-control-label" for="deviceTypeAos">Android</label>
+                                            </div>
+                                            <div class="form-check custom-checkbox mt-12pt">
+                                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="2" id="deviceTypeIos">
+                                                <label class="custom-control-label" for="deviceTypeIos">iOS</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown"  style="width: 80px;">
-                            <div class="item-cover">
-                                <span>체류시간(minute)</span>
-                                <a href="#" id="navVarVisitRange" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">체류시간</a>
-                                <div class="dropdown-menu" style="width: 300px;">
-                                    <div class="dp-item-cover" onclick="event.stopPropagation();">
+                            </li>
+                            <li class="nav-item dropdown"  style="width: 60px;">
+                                <div class="item-cover">
+                                    <span>연령</span>
+                                    <a href="#" id="navVarAgeRange" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">연령대</a>
 
-                                        <div class="flex" style="max-width: 100%">
-                                            <input id="navVarVisitRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="50" data-from="0" data-to="5" data-type="double" data-grid="true">
+                                    <div class="dropdown-menu" style="width: 300px;">
+                                        <div class="dp-item-cover" onclick="event.stopPropagation();">
+                                            <div class="flex" style="max-width: 100%">
+                                                <input id="navVarAgeRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="0" data-to="100" data-type="double" data-grid="true">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="nav-item dropdown"  style="width: 80px;">
+                                <div class="item-cover">
+                                    <span>체류시간(minute)</span>
+                                    <a href="#" id="navVarVisitRange" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">체류시간</a>
+                                    <div class="dropdown-menu" style="width: 300px;">
+                                        <div class="dp-item-cover" onclick="event.stopPropagation();">
+
+                                            <div class="flex" style="max-width: 100%">
+                                                <input id="navVarVisitRangeVal" type="text" data-toggle="ion-rangeslider" data-min="0" data-max="50" data-from="0" data-to="5" data-type="double" data-grid="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
                     <ul class="nav navbar-nav ml-auto mr-0">
 <!--
                         <li class="nav-item">
@@ -1754,10 +1762,9 @@
 
     <script src="../@js/index.js"></script>
 
-
-            <!-- Dropzone -->
-        <script src="../../public/vendor/dropzone.min.js"></script>
-        <script src="../../public/js/dropzone.js"></script>
+        <!-- Dropzone -->
+    <script src="../../public/vendor/dropzone.min.js"></script>
+    <script src="../../public/js/dropzone.js"></script>
 
 </body>
 
