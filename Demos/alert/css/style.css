@@ -3479,7 +3479,6 @@ only screen and (max-device-width: 767px) {
     margin-bottom: 40px;
     color: #1d1e26;
 }
-
 .btn-emg {
     font-size: 24px;
     color: #fff;
@@ -3489,7 +3488,6 @@ only screen and (max-device-width: 767px) {
     background: #ed0b4c;
     animation: animate-pulse 2s linear infinite;
 }
-
 .btn-emg {
     -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -moz-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -3511,28 +3509,23 @@ only screen and (max-device-width: 767px) {
     text-align: center;
     vertical-align: bottom;
 }
-
 .btn-emg:focus {
     outline: none;
 
 }
-
 .btn-emg:hover {
     color: #fff;
     background-color: #ff497d;
     text-decoration: none;
 }
-
 .btn-glitch {
     transform: translateZ(0);
     overflow: visible;
 }
-
 .btn-glitch.btn-glitch-active {
     -webkit-filter: url("#filter");
     filter: url("#filter");
 }
-
 .btn-glitch.btn-glitch-active::after,
 .btn-glitch.btn-glitch-active::before {
     content: '';
@@ -3541,21 +3534,18 @@ only screen and (max-device-width: 767px) {
     top: -1px;
     bottom: -1px;
 }
-
 .btn-glitch.btn-glitch-active::after {
     left: -2px;
     background-color: #ff497d;
     animation: colorshift-red 2.6s infinite;
     animation-timing-function: step-end;
 }
-
 .btn-glitch.btn-glitch-active::before {
     right: -2px;
     background-color: #ff497d;
     animation: colorshift-blue 2.6s infinite;
     animation-timing-function: step-end;
 }
-
 @keyframes colorshift-red {
 
     0%,
@@ -3578,7 +3568,6 @@ only screen and (max-device-width: 767px) {
         background-color: transparent;
     }
 }
-
 @keyframes colorshift-blue {
 
     0%,
@@ -3601,7 +3590,6 @@ only screen and (max-device-width: 767px) {
         background-color: transparent;
     }
 }
-
 @keyframes animate-pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(237, 11, 76, 0.7), 0 0 0 0 rgba(237, 11, 76, 0.7);
@@ -3620,18 +3608,14 @@ only screen and (max-device-width: 767px) {
     }
 
 }
-
-
 /* page header */
 .page-header {
     text-align: center;
 }
-
 .page-header h1 {
     display: inline-flex;
     animation: titGlitch 1s linear infinite;
 }
-
 @keyframes titGlitch {
 
     2%,
@@ -3648,19 +3632,16 @@ only screen and (max-device-width: 767px) {
         transform: translate(0, 0) skew(5deg);
     }
 }
-
 .page-header h1:before,
 .page-header h1:after {
     content: attr(title);
     position: absolute;
 }
-
 .page-header h1:before {
     animation: glitchTop 1s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
-
 @keyframes glitchTop {
 
     2%,
@@ -3677,13 +3658,11 @@ only screen and (max-device-width: 767px) {
         transform: translate(13px, -1px) skew(-13deg);
     }
 }
-
 .page-header h1:after {
     animation: glitchBotom 1.5s linear infinite;
     clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
-
 @keyframes glitchBotom {
 
     2%,
@@ -3700,11 +3679,9 @@ only screen and (max-device-width: 767px) {
         transform: translate(-22px, 5px) skew(30deg);
     }
 }
-
 .page-header p.desc {
     margin-bottom: 3rem;
 }
-
 
 /* modal */
 .modal.full-page{

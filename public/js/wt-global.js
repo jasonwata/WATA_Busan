@@ -28,14 +28,7 @@ $(function () {
     });
 });
 
-//$('.btn-gl-top button').click( function(){
-//    if ( $(this).hasClass('current') ) {
-//        $(this).removeClass('current');
-//    } else {
-//        $('.btn-gl-top button.current').removeClass('current');
-//        $(this).addClass('current');
-//    }
-//});
+
 $(function () {
     $('.btn-gl-top button.btn-congestion').click(function () {
         $('.heat-sensing').toggle()
@@ -46,6 +39,15 @@ $(function () {
     $('.navbar-nav a.btn-user-target').click(function () {
         $('.wt-rs-wrap').toggle()
     })
+});
+
+$(function () {
+    // tab 메뉴
+  $('.emg-item a').click(function(e){
+    e.preventDefault();
+    $('.emg-item a, .alert-title').removeClass('active');
+    $(this).add($($(this).attr('href'))).addClass('active');
+  });
 });
 
 $('ul.dropdown-item-list li a').click(function () {
