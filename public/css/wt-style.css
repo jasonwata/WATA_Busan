@@ -964,48 +964,45 @@ html[dir].dark-mode .table tbody .selected>td{
 
 /* card */
 
-.card-header-tabs-basic{
-    font-size: 2em;
-}
-.card-body{
+.lg-type .card-body{
     font-size: 2em;
 }
 
-.card-body .h2{
+.lg-type .card-body .h2{
     font-size: 2.460em;
 }
-.card-body .card-title{
+.lg-type .card-body .card-title{
     font-size: 1.231em;
 }
-.card-body .card-subtitle{
+.lg-type .card-body .card-subtitle{
     font-size: 1em;
 }
-.card-body .card-subtitle .material-icons{
+.lg-type .card-body .card-subtitle .material-icons{
     font-size: 1.231em;
 }
-.card-body .id-material{
+.lg-type .card-body .id-material{
     font-size: 2.462em;
 }
-.card-body .dropdown-item{
+.lg-type .card-body .dropdown-item{
     font-size: 1.5em;
 }
-.card-body small{
+.lg-type .card-body small{
     font-size: 1em;
 }
 
-.card-header{
+.lg-type .card-header{
     font-size: 2em;
 }
-.card-header .card-title{
+.lg-type .card-header .card-title{
     font-size: 1.231em;
 }
-.card-header .card-subtitle{
+.lg-type .card-header .card-subtitle{
     font-size: 1.000em;
 }
-.card-header .btn{
+.lg-type .card-header .btn{
     font-size: 1em;
 }
-.pt-32pt h2{
+.lg-type .pt-32pt h2{
     font-size: 6em;
 }
 
