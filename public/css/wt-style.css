@@ -1547,3 +1547,8 @@ html[dir].dark-mode .table tbody .selected>td{
     }
 
 }
+
+.card.wt-cus .col-sm-auto{
+    padding-right: 8px;
+    padding-left: 8px;
+}
