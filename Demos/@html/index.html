@@ -460,7 +460,11 @@
                         <div class="card-body tab-content">
                             <div role="tabpanel" class="tab-pane active" id="menu01">
                                 <div class="card mb-0">
-
+                                    <div class="card-header align-items-center" id="userInfoBtnArea">
+                                        <a class="btn btn-primary btn-sm mr-8pt" type="button" id="bottomMsgSendBtn"> 실시간 전체 메시지 발송 </a>
+                                        <a href="/monitoring/app-user" class="btn btn-secondary btn-sm mr-8pt" type="button">앱사용자 관리</a>
+                                        <a href="/monitoring/event/message/history" class="btn btn-link" style="float: right;" type="button">메시지 발송 이력 관리 ></a>
+                                    </div>
                                     <div class="table-responsive" data-toggle="lists"
                                         data-lists-sort-by="js-lists-values-orders-user"
                                         data-lists-values='["js-lists-values-orders-user", "js-lists-values-orders-gender", "js-lists-values-orders-age", "js-lists-values-orders-type", "js-lists-values-orders-device", "js-lists-values-orders-time"]'>
@@ -2047,7 +2051,7 @@
             <div class="modal-content">
                 <div class="video-bg">
                     <video autoplay muted loop id="myVideo">
-                        <source src="../../public/images/bg_virus.mp4" type="video/mp4">
+                        <source src="../../public/images/bg_warning_2.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
