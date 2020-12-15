@@ -687,7 +687,8 @@ label.form-label.essential:after{
 }
 .wt-user-menu{
     position: absolute;
-    bottom: 15rem;
+    /* bottom: 15rem; */
+    bottom: 6.3rem;
     left: 1.5rem;
 }
 .wt-user-menu .nav-link{
@@ -831,7 +832,7 @@ label.form-label.essential:after{
 .sidebar-brand-cover-footer .sidebar-copy{
     font-size: 13px;
     color: #fff;
-    padding-top: .5rem;
+    padding-top: .815rem;
     color: #949799;
 }
 .sidebar-brand-cover img.sub-logo{
@@ -842,7 +843,9 @@ label.form-label.essential:after{
     bottom: 8rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-
+.sidebar-brand-cover-footer.footer-brand03 img{
+    width: 180px;
+}
 .navbar-expand .navbar-nav .nav-link.btn-user-target i{
     color: rgba(255,255,255,0.4) !important;
 }
