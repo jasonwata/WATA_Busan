@@ -5,7 +5,7 @@ $(function () {
 });
 
 $(function () {
-    $('#opener').on('click', function () {
+    $('.opener').on('click', function () {
         var panel = $('#slide-panel');
         if (panel.hasClass("visible")) {
             panel.removeClass('visible').animate({
@@ -13,7 +13,7 @@ $(function () {
             });
         } else {
             panel.addClass('visible').animate({
-                'bottom': '-550px'
+                'bottom': '-450px'
             });
         }
 

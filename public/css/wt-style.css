@@ -329,7 +329,7 @@ a.faull-map-close{
     height: 450px;
     z-index: 9;
 }
-/*
+
 .contents-wrap a.wide-modal-btn{
     background-color: #fff;
     position: absolute;
@@ -356,7 +356,7 @@ a.faull-map-close{
 .contents-wrap a.wide-modal-btn.active:before{
     content: '\e316';
 }
-*/
+
 
 
 .contents-wrap .contents-wrap-inner{
@@ -459,6 +459,10 @@ a.faull-map-close{
     border-radius: 50%;
     background-color: #ececec;
     color: #303956;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 12px;
 }
 .side-btn-wrap .btn-group-vertical ul.dropdown-item-list li span{
     display: block;
